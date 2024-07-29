@@ -1,0 +1,344 @@
+/* Segunda Seccion */
+.contenedor-video {
+    min-height: 500px;
+    padding: 20px;
+    padding-top: 60px;
+}
+.contenedor-video video {
+    width: 100%;
+}
+/* Tercera Seccion */
+.tituloServicos {
+    height: auto;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tituloServicos h4 {
+    color: #02ADAE;
+    font-family: "Oswald";
+    font-weight: bold;
+}
+.tituloServicos p {
+    font-weight: bold;
+    font-family: "Red Hat Display";
+    font-size: 22px;
+    width: 80%;
+    text-align: center;
+}
+.sect-servicios{
+    margin: 0;
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    display: flex;
+}
+
+.sect-servicios .row{
+    width: 100%;
+    margin: 0;
+}
+.sect-servicios a{
+    color: white;
+    text-decoration: none;
+}
+.sect-servicios .internet{
+    height: 500px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin: 0 10px 0 0;
+    width: 25%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 0 0 15px 0 black;
+    position: relative;
+    z-index: 1;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+}
+.sect-servicios .internet h3{
+    transform: texto;
+    -webkit-transform: texto;
+    -moz-transform: texto;
+    -ms-transform: texto;
+    -o-transform: texto;
+}
+@keyframes texto {
+    to {
+        transition: all ease-in 0.5s;
+        -webkit-transition: all ease-in 0.5s;
+        -moz-transition: all ease-in 0.5s;
+        -ms-transition: all ease-in 0.5s;
+        -o-transition: all ease-in 0.5s;
+    }
+}
+.sect-servicios .internet::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/67.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    z-index: -1;
+    filter: brightness(20%);
+    -webkit-filter: brightness(20%);
+    transition: background-color 0.5s ease, filter 0.5s ease;
+    -webkit-transition: background-color 0.5s ease, filter 0.5s ease;
+    -moz-transition: background-color 0.5s ease, filter 0.5s ease;
+    -ms-transition: background-color 0.5s ease, filter 0.5s ease;
+    -o-transition: background-color 0.5s ease, filter 0.5s ease;
+}
+.sect-servicios .internet h3 {
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+.sect-servicios .internet .icono img {
+    transition: opacity 0.5s ease;
+}
+.sect-servicios .internet:hover::before {
+    background-image: none;
+    background: transparent linear-gradient(180deg, #1FB2AD 0%, #105A57 100%) 0% 0% no-repeat padding-box;
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+.sect-servicios .internet:hover h3 {
+    transform: translateY(-10px);
+}
+
+.sect-servicios .internet:hover .icono img {
+    opacity: 0;
+}
+.sect-servicios .ciberseguridad{
+    background-color: black;
+    height: 500px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 25%;
+    margin: 0 10px 0 10px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 0 0 15px 0 black;
+    position: relative;
+    z-index: 1;
+}
+.sect-servicios .ciberseguridad h3 {
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+.sect-servicios .ciberseguridad .icono img {
+    transition: opacity 0.5s ease;
+}
+.sect-servicios .ciberseguridad::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/68.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    z-index: -1;
+    filter: brightness(20%);
+    -webkit-filter: brightness(20%);
+    transition: background-color 0.5s ease, filter 0.5s ease;
+}
+.sect-servicios .ciberseguridad:hover::before {
+    background-image: none;
+    background: transparent linear-gradient(180deg, #505050 0%, #000000 100%) 0% 0% no-repeat padding-box;
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+.sect-servicios .ciberseguridad:hover h3 {
+    transform: translateY(-10px);
+}
+
+.sect-servicios .ciberseguridad:hover .icono img {
+    opacity: 0;
+}
+.sect-servicios .telefonia{
+    width: 25%;
+    background-color: #2a2a2a;
+    height: 500px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin: 0 10px;
+    margin: 0 0px 0 10px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 0 0 15px 0 black;
+    position: relative;
+    z-index: 1;
+}
+.sect-servicios .telefonia h3 {
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+.sect-servicios .telefonia .icono img {
+    transition: opacity 0.5s ease;
+}
+.sect-servicios .telefonia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/69.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    z-index: -1;
+    filter: brightness(20%);
+    -webkit-filter: brightness(20%);
+    transition: background-color 0.5s ease, filter 0.5s ease;
+}
+.sect-servicios .telefonia:hover::before {
+    background-image: none;
+    background: transparent linear-gradient(180deg, #1FB2AD 0%, #105A57 100%) 0% 0% no-repeat padding-box;
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+.sect-servicios .telefonia:hover h3 {
+    transform: translateY(-10px);
+}
+
+.sect-servicios .telefonia:hover .icono img {
+    opacity: 0;
+}
+.sect-servicios img{
+    width: 150px;
+}
+.sect-servicios .internet img{
+    width: 230px;
+}
+.sect-servicios .telefonia img{
+    width: 230px;
+}
+.sect-servicios h3{
+    font-size: 350px;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px !important;
+}
+.sect-servicios h3::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+.sect-servicios .ciberseguridad:hover img {
+    display: none;
+}
+.sect-servicios .internet:hover img {
+    display: none;
+}
+.sect-servicios .telefonia:hover img {
+    display: none;
+}
+.sect-servicios .ciberseguridad:hover p{
+    display: block;
+}
+.sect-servicios .internet:hover p{
+    display: block;
+}
+.sect-servicios .telefonia:hover p{
+    display: block;
+}
+.sect-servicios .ciberseguridad:hover button{
+    display: block;
+}
+.sect-servicios .internet:hover button{
+    display: block;
+}
+.sect-servicios .telefonia:hover button{
+    display: block;
+}
+.sect-servicios .ciberseguridad .texto{
+    padding: 1px;
+    font-size: 16px;
+    text-align: center;
+    display: none;
+    margin-top: 40px;
+    font-family: "Red Hat Display";
+}
+.sect-servicios .telefonia .texto{
+    padding: 1px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 40px;
+    display: none;
+    font-family: "Red Hat Display";
+}
+.sect-servicios .internet .texto{
+    padding: 1px;
+    font-size: 16px;
+    text-align: center;
+    display: none;
+    margin-top: 40px;
+    font-family: "Red Hat Display";
+}
+.sect-servicios button {
+    background-color: #F3F3F4;
+    padding: 10px 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: none;
+    display: none;
+    margin-bottom: 60px;
+}
+.sect-servicios button a {
+    color: #02ADAE;
+}
+.sect-servicios p::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}

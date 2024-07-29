@@ -1,0 +1,398 @@
+/* Componente De Internet */
+/* Primera Seccion */
+.sect-pri {
+    height: 450px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 55px black;
+}
+.seccionInternet::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/61.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(30%);
+    -webkit-filter: brightness(30%);
+}
+.sect-pri .row {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.sect-pri header {
+    font-size: 65px;
+    font-family: "Oswald";
+    font-weight: bold;
+}
+.sect-pri .texto {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 60px;
+    color: white;
+    font-family: "Red Hat Display";
+    font-size: 18px;
+    font-weight: 400;
+}
+.sect-pri p {
+    width: 100%;
+}
+.sect-pri .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sect-pri .img img {
+    width: 500px;
+    height: 350px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 10px 10px 15px black;
+}
+/* Segunda Seccion */
+.sect-secc {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 0;
+    height: auto;
+    padding-bottom: 100px;
+}
+.sect-secc header {
+    width: 100%;
+    text-align: center;
+    font-family: "Oswald";
+    font-weight: bold;
+    font-size: 60px;
+    color: #02ADAE;
+    padding: 50px 0 20px 0;
+}
+.sect-secc .row {
+    margin: 0;
+    width: 100%;
+    height: 500px;
+    
+}
+.sect-secc .texto {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+.sect-secc .texto ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 35px;
+}
+.sect-secc li {
+    list-style: circle;
+    font-family: "Red Hat Display";
+    font-size: 18px;
+    font-weight: 400;
+}
+.sect-secc .img {
+    background-image: url("../images/36.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-bottom: 100px;
+    box-shadow: -10px 10px 15px black;
+}
+/* Tercera Seccion */
+.sect-ter {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 30px black;
+}
+.sect-ter .titulo {
+    margin: 0;
+    padding: 0;
+    padding: 30px 40px;
+}
+h1 {
+    font-family: "Oswald";
+    font-weight: bold;
+    font-size: 60px;
+    color: #02ADAE;
+}
+.sect-ter .contenedorInfo {
+    height: 450px;
+    width: 100%;
+    margin: 0;
+}
+.sect-ter .contenedorInfo .texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #FFFFFF;
+}
+.sect-ter .contenedorInfo .texto ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    font-family: "Red Hat Display";
+    font-size: 18px;
+}
+.sect-ter .contenedorInfo .img {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    z-index: 1;
+}
+.sect-ter .contenedorInfo .img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/37.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+}
+.sect-ter .contenedorInfo:hover .texto{
+    background-color: #F8F8F8;
+}
+.sect-ter .contenedorInfo:hover .img::before{
+    filter: brightness(30%);
+    -webkit-filter: brightness(30%);
+}
+.sect-ter .contenedorInfo .img h2 {
+    color: white;
+    font-size: 50px;
+    font-family: "Oswald";
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    width: 60%;
+    z-index: 1;
+}
+
+
+/* Seccion Ciberseguridad */
+/* Primera Seccion */
+.seccionCiberseguridad::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/62.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+/* Segunda Seccion */
+.sectt-sec {
+    color: black;
+    padding: 0;
+    height: auto;
+    padding-bottom: 100px;
+}
+.sectt-sec header {
+    width: 100%;
+    text-align: center;
+    font-family: "Oswald";
+    font-weight: bold;
+    font-size: 60px;
+    color: #02ADAE;
+    padding: 50px 0 20px 0;
+}
+.sectt-sec .row {
+    margin: 0;
+    width: 100%;
+    height: 500px;
+    
+}
+.sectt-sec .texto {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+.sectt-sec .texto ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 35px;
+}
+.sectt-sec li {
+    list-style: circle;
+    font-family: "Red Hat Display";
+    font-size: 18px;
+    font-weight: 400;
+}
+.sectt-sec .img {
+    background-image: url("../images/38.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-bottom: 100px;
+    box-shadow: -5px 5px 10px black;
+}
+/* Tercera Seccion */
+.sect-ter {
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.sect-ter .titulo {
+    margin: 0;
+    padding: 0;
+    padding: 30px 40px;
+    float: left;
+}
+.sect-ter .titulo h1 {
+    font-family: "Oswald";
+    font-weight: bold;
+    font-size: 60px;
+    color: #02ADAE;
+}
+.sect-ter .carrusel {
+    margin: 0;
+    padding: 0;
+    height: 300px;
+}
+.carousel{
+    background-color: rgba(220, 220, 220, 0.2);
+    height: 300px;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contenedor-carusel img{
+    width: 70%;
+    padding: 0;
+    text-align: center;
+    filter: grayscale(100%);
+}
+.contenedor-carusel img:hover{
+    filter: grayscale(0%);
+}
+.col-carusel{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.carousel #flecha-izq{
+    position: absolute;
+    left: 0px;
+}
+.carousel #flecha-der{
+    position: absolute;
+    right: 0px;
+}
+
+
+
+/* Seccion Telefonia */
+/* Primera Seccion */
+.seccionTelefonia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/63.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+/* Segunda Seccion */
+.ssect-sec {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 0;
+    height: auto;
+    padding-bottom: 100px;
+}
+.ssect-sec header {
+    width: 100%;
+    text-align: center;
+    font-family: "Oswald";
+    font-weight: bold;
+    font-size: 60px;
+    color: #02ADAE;
+    padding: 50px 0 20px 0;
+}
+.ssect-sec .row {
+    margin: 0;
+    width: 100%;
+    height: 500px;
+    
+}
+.ssect-sec .texto {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+.ssect-sec .texto ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.ssect-sec li {
+    list-style: circle;
+    font-family: "Red Hat Display";
+    font-weight: 400;
+    font-size: 18px;
+}
+.ssect-sec .img {
+    background-image: url("../images/39.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-bottom: 100px;
+    box-shadow: -10px 10px 15px black;
+}

@@ -1,0 +1,290 @@
+/* Primera Seccion */
+.sect-pri {
+    height: 450px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 55px black;
+}
+.sect-pri button {
+    background-color: #02ADAE;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 5px;
+    border: none;
+    border: none;
+}
+.sect-pri a {
+    color: white;
+    text-decoration: none;
+}
+.seccionNosotros::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/65.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+.sect-pri .row {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.sect-pri header {
+    font-size: 65px;
+    font-family: "Oswald";
+    font-weight: bold;
+}
+.sect-pri .texto {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 60px;
+    color: white;
+    font-family: "Red Hat Display";
+    font-size: 20px;
+    font-weight: 400;
+}
+.sect-pri p {
+    width: 100%;
+}
+.sect-pri .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sect-pri .img img {
+    width: 500px;
+    height: 350px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 10px 10px 15px black;
+}
+#titulo-imagen {
+    width: 80px; 
+    height: auto;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+/* Segunda Seccion */
+.sect-cuarta {
+    height: auto;
+    padding: 0;
+    margin-top: 20px;
+}
+.sect-cuarta .row {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+.sect-cuarta .row .info {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    font-family: "Red Hat Display";
+}
+.sect-cuarta h1 {
+    font-size: 50px;
+    color: #0CABAE;
+    font-family: "Oswald";
+    font-weight: bold;
+    padding: 20px 40px;
+}
+.sect-cuarta .row .imagenes {
+    padding: 0;
+    background-image: url("../images/NOSOTROS.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -10px 10px 15px black;
+}
+/* Tercera Seccion */
+.sect-quinta {
+    height: auto;
+    padding: 0;
+    margin-top: 60px;
+}
+.sect-quinta h3 {
+    color: #02ADAE;
+    font-family: "Oswald";
+    font-weight: bold;
+    font-size: 30px;
+}
+.sect-quinta .row {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+.sect-quinta .row .info {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    font-family: "Red Hat Display";
+}
+.sect-quinta .row .info h1 {
+    font-size: 50px;
+    color: #0CABAE;
+    font-family: "Oswald";
+    font-weight: bold;
+}
+.sect-quinta .row .imagenes {
+    padding: 0;
+}
+.sect-quinta .row .imagenes div:nth-child(2){
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sect-quinta .row .imagenes div img{
+    height: 290px;
+    width: 290px;
+}
+.sect-quinta .row .imagenes div:nth-child(1){
+    height: 50%;
+    background-image: url("../images/70.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 15px black;
+    margin-bottom: 15px;
+}
+/* Cuarta Seccion */
+.sect-es{
+    margin: 0px;
+    padding: 30px 0;
+    max-width: 100%;
+    height: auto;
+    background-color: #2e2e2e;
+    box-shadow: 0 0 20px gray;
+}
+.sect-firts, .sect-sec{
+    height: 50%;
+    margin: 0px;
+    padding: 0px;
+}
+.sect-col-firts, .sect-col-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+.sect-es .icono{
+    font-size: 60px;
+    color: #0CABAE;
+    padding: 10px 0px;
+    text-align: right;
+    margin: 0px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+.sect-es .icono:hover{
+    font-size: 100px;
+}
+.sect-es .texto{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px;
+    font-family: "Red Hat Display";
+    color: white;
+    margin: 0px;
+}
+/* Quinta Seccion */
+.seccion-principios{
+    width: 100%;
+    max-height: 800px;
+    margin: auto;
+    padding: 20px;
+    border-top: 2px solid #0CABAE;
+    background-color: rgba(220, 220, 220, 0.2);
+}
+.seccion-principios .titulo-an{
+    margin: 10px 0;
+    padding: 20px;
+    font-family: "Oswald";
+    font-weight: bold;
+    font-size: 50px;
+    color: #02ADAE;
+    text-transform: uppercase;
+    width: 100%;
+}
+.overlay{
+    transition: all 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.overlay p{
+    margin-bottom: 0;
+    font-family: 'Oswald' !important;
+    text-transform: uppercase;
+    z-index: 1;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+.card{
+    position: relative;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    box-shadow: 5px 0px 15px black;
+}
+.card-body{
+    background-color: #2e2e2e;
+    color: white;
+}
+.card-body .card-text {
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    text-align: center;
+}
+.card:hover img{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+.card:hover .overlay{
+    opacity: 1;
+}

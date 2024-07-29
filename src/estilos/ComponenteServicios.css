@@ -1,0 +1,402 @@
+.sect-pri {
+    height: 450px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 55px black;
+}
+.sect-pri button {
+    background-color: #02ADAE;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 5px;
+    border: none;
+}
+.sect-pri a {
+    color: white;
+    text-decoration: none;
+}
+.seccionServicios::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/60.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+.sect-pri .row {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.sect-pri header {
+    font-size: 60px;
+    font-family: "Oswald";
+    font-weight: bold;
+}
+.sect-pri .texto {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 60px;
+    color: white;
+    font-family: "Red Hat Display";
+    font-size: 18px;
+    font-weight: 400;
+}
+.sect-pri p {
+    width: 100%;
+}
+.sect-pri .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sect-pri .img img {
+    width: 500px;
+    height: 350px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 10px 10px 15px black;
+}
+/* Segunda Seccion */
+.sect-sec {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 0;
+    height: auto;
+    padding-bottom: 100px;
+}
+.sect-sec header {
+    width: 100%;
+    text-align: center;
+    font-family: "Oswald";
+    font-weight: bold;
+    font-size: 60px;
+    color: #02ADAE;
+    padding: 50px 0 20px 0;
+}
+.sect-sec .row {
+    margin: 0;
+    width: 100%;
+    height: 400px;
+    
+}
+.sect-sec .texto {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px; 
+    font-family: "Red Hat Display";
+}
+.sect-sec .texto p {
+    width: 80%;
+}
+.sect-sec .texto span {
+    color: #02ADAE;
+}
+.sect-sec .img {
+    background-image: url("../images/SERVICIOS.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    box-shadow: -10px 10px 10px black;
+}
+/* Tercera Seccion */
+.sect-ter {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px !important;
+    box-shadow: none !important;
+}
+.sect-ter .titulo {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sect-ter .titulo p {
+    font-size: 18px;
+    font-family: "Red Hat Display";
+    width: 80%;
+}
+.sect-ter .titulo h2 {
+    font-size: 60px;
+    font-family: "Oswald";
+    font-weight: bold;
+    color: #02ADAE;
+}
+.sect-ter .sect-sub-ter {
+    height: 500px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+.sect-ter .sect-sub-ter .firewall, .sect-ter .sect-sub-ter .contenidoweb, .sect-ter .sect-sub-ter .aplicacionesweb, .sect-ter .sect-sub-ter .endpoint {
+    position: relative;
+    width: 48%;
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.sect-ter .sect-sub-ter h2 {
+    color: white;
+    text-align: center;
+    font-family: "Oswald";
+    font-size: 25px;
+}
+.sect-ter .sect-sub-ter .firewall::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/32.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+.sect-ter .sect-sub-ter .firewall:hover::before {
+    filter: brightness(20%);
+    -webkit-filter: brightness(20%);
+}
+.sect-ter .sect-sub-ter .contenidoweb::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/33.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1 ;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+.sect-ter .sect-sub-ter .contenidoweb:hover::before {
+    filter: brightness(20%);
+    -webkit-filter: brightness(20%);
+}
+.sect-ter .sect-sub-ter .aplicacionesweb::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/34.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+.sect-ter .sect-sub-ter .aplicacionesweb:hover::before {
+    filter: brightness(20%);
+    -webkit-filter: brightness(20%);
+}
+.sect-ter .sect-sub-ter .endpoint::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/35.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+.sect-ter .sect-sub-ter .endpoint:hover::before {
+    filter: brightness(20%);
+    -webkit-filter: brightness(20%);
+}
+.sect-ter .subfirewall {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 20px;
+}
+.sect-ter .subfirewall h2 {
+    transform: translateY(60px);
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    -o-transform: translateY(60px);
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+}
+.sect-ter .subfirewall .texto {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -ms-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+    margin-right: 7px;
+    font-size: 18px;
+    font-family: "Red Hat Display";
+}
+.sect-ter .firewall:hover .subfirewall .texto {
+    visibility: visible;
+    opacity: 1;
+}
+.sect-ter .firewall:hover .subfirewall h2 {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
+.sect-ter .contenidoweb:hover .subfirewall .texto {
+    visibility: visible;
+    opacity: 1;
+}
+.sect-ter .contenidoweb:hover .subfirewall h2 {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
+.sect-ter .aplicacionesweb:hover .subfirewall .texto {
+    visibility: visible;
+    opacity: 1;
+}
+.sect-ter .aplicacionesweb:hover .subfirewall h2 {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
+.sect-ter .endpoint:hover .subfirewall .texto {
+    visibility: visible;
+    opacity: 1;
+}
+.sect-ter .endpoint:hover .subfirewall h2 {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
+.sect-ter .subfirewall h2{
+    transform: texto;
+    -webkit-transform: texto;
+    -moz-transform: texto;
+    -ms-transform: texto;
+    -o-transform: texto;
+}
+/* Cuarta Seccion */
+.sect-cuartaa {
+    height: auto;
+    border-top: 1px solid rgba(42, 42, 42, 0.3);
+    padding: 0;
+    margin-bottom: 60px;
+}
+.sect-cuartaa .row {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+.sect-cuartaa .row .info {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    font-family: "Red Hat Display";
+}
+.sect-cuartaa .row .info h1 {
+    font-size: 50px;
+    color: #0CABAE;
+    font-family: "Oswald";
+    font-weight: bold;
+}
+.sect-cuartaa .row .imagenes {
+    padding: 0;
+}
+.sect-cuartaa .row .imagenes div:nth-child(1){
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sect-cuartaa .row .imagenes div img{
+    height: 290px;
+    width: 290px;
+
+}
+.sect-cuartaa .row .imagenes div:nth-child(2){
+    height: 50%;
+    background-image: url("../images/1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -10px 10px 15px black;
+}
