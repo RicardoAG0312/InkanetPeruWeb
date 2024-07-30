@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes, Navigate } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./App.css";
@@ -96,23 +97,23 @@ function App() {
                                 <div class="col-4 contain1">
                                     <div>
                                         <h3> NOSOTROS </h3>
-                                        <a href="./indexNosotros/nosotros.html"> Nuestra Historia </a>
-                                        <a href="./indexNosotros/nosotros.html"> Nuestro Propósito </a>
-                                        <a href="./indexNosotros/nosotros.html"> Nuestros Principios </a>
+                                        <a href="/nosotros"> Nuestra Historia </a>
+                                        <a href="/nosotros"> Nuestro Propósito </a>
+                                        <a href="/nosotros"> Nuestros Principios </a>
                                     </div>
                                     <div>
                                         <h3> SOLUCIONES </h3>
-                                        <a href="./indexSoluciones/internet/internet.html"> Internet 2.0 </a>
-                                        <a href="./indexSoluciones/ciberseguridad/ciberseguridad.html"> Ciberseguridad </a>
-                                        <a href="./indexSoluciones/telefonia/telefonia.html"> Telefonía IP </a>
+                                        <a href="/soluciones/internet"> Internet 2.0 </a>
+                                        <a href="/soluciones/ciberseguridad"> Ciberseguridad </a>
+                                        <a href="/soluciones/telefonia"> Telefonía IP </a>
                                     </div>
                                 </div>
                                 <div class="col-4 contain2">
                                     <div>
                                         <h3> SOPORTE TÉCNICO </h3>
-                                        <a href="./indexServicios/servicios.html"> Beneficios </a>
-                                        <a href="./indexServicios/servicios.html"> Caracteristicas </a>
-                                        <a href="./indexServicios/servicios.html"> ¿Por qué Inkanet? </a>
+                                        <a href="/servicios"> Beneficios </a>
+                                        <a href="/servicios"> Caracteristicas </a>
+                                        <a href="/servicios"> ¿Por qué Inkanet? </a>
                                     </div>
                                     <div>
                                         <a href="https://www.linkedin.com/company/inkanet-per%C3%BA/" target="_blank" rel="noreferrer">
