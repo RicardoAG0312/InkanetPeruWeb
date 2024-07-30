@@ -1,3 +1,175 @@
+/*Seccion Principal*/
+.sect-principal {
+    width: 100%;
+    height: auto;
+    background-color: #2a2a2a;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 70px black;
+}
+.sect-principal .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sect-principal .imagen img {
+    width: 500px;
+    height: 320px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 10px 10px 15px black;
+    z-index: 2;
+}
+.sect-principal .row {
+    position: relative;
+    margin: 0;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    box-sizing: border-box;
+}
+/* Empiezo desde aqui */
+.sect-principal .row .background {
+    content: "";
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+}
+.sect-principal .row.imagen-uno .background {
+    background-image: url("../images/9.png");
+}
+.sect-principal .row.imagen-dos .background {
+    background-image: url("../images/6.png");
+}
+.sect-principal .row.imagen-tres .background {
+    background-image: url("../images/7.png");
+}
+.sect-principal .row.imagen-cuatro .background {
+    background-image: url("../images/8.png");
+}
+.sect-principal .row .caja header {
+    font-family: "Oswald";
+    font-size: 70px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 15px 0;
+    width: 100% !important;
+    text-align: left !important;
+    z-index: 2;
+}
+.sect-principal .row .caja p {
+    line-height: 30px;
+    font-size: 22px !important;
+    margin: 0;
+    padding: 15px 0;
+    width: 100% !important;
+    text-align: left !important;
+    margin-bottom: 30px;
+    font-family: "Red Hat Display";
+    line-height: 35px !important;
+    z-index: 2;
+}
+.sect-principal .row .caja a {
+    padding: 5px;
+    text-decoration: none;
+    background-color: #0CABAE;
+    color: white;
+    font-weight: normal;
+    text-transform: none;
+    border-radius: 30px !important;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    z-index: -1;
+    font-family: "Red Hat Display";
+    z-index: 2;
+}
+.sect-principal .row .color-boton-info {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #0CABAE;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.sect-principal .row .color-boton-peru {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #B20F20 !important;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.sect-principal .caja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 0;
+    padding: 0px;
+}
+.indicadores {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.circulo {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #02ADAE;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: none;
+    z-index: 1;
+}
+.seleccionado {
+    background-color: rgb(220, 220, 220);
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.header-container header {
+    margin-right: 10px;
+    font-size: 50px !important;
+    font-weight: bold;
+}
+.header-container img {
+    margin: 0;
+    width: 80px;
+    height: auto;
+}
+#titulo-imagen {
+    width: 80px;
+    height: auto;
+}
 /* Segunda Seccion */
 .contenedor-video {
     min-height: 500px;
@@ -341,171 +513,4 @@
 .sect-servicios p::selection{
     color: #02ADAE;
     background-color: #2a2a2a;
-}
-/*Seccion Principal*/
-/* Presentacion Carrusel Principal  */
-.sect-principal {
-    width: 100%;
-    height: auto;
-    background-color: #2a2a2a;
-    color: white;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    box-shadow: 3px 3px 50px black;
-}
-.sect-principal .imagen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.sect-principal .imagen img {
-    width: 500px;
-    height: 320px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    box-shadow: 10px 10px 15px black;
-}
-.sect-principal .row {
-    position: relative;
-    margin: 0;
-    padding: 0 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    box-sizing: border-box;
-}
-.sect-principal .row::before {
-    content: "";
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: 1;
-}
-.sect-principal .row.imagen-uno::before {
-    background-image: url("../images/9.png");
-}
-.sect-principal .row.imagen-dos::before {
-    background-image: url("../images/6.png");
-}
-.sect-principal .row.imagen-tres::before {
-    background-image: url("../images/7.png");
-}
-.sect-principal .row.imagen-cuatro::before {
-    background-image: url("../images/8.png");
-}
-.sect-principal .row .caja header {
-    font-family: "Oswald";
-    font-size: 70px;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 15px 0;
-    width: 100% !important;
-    text-align: left !important;
-}
-.sect-principal .row .caja p {
-    line-height: 30px;
-    font-size: 22px !important;
-    margin: 0;
-    padding: 15px 0;
-    width: 100% !important;
-    text-align: left !important;
-    margin-bottom: 30px;
-    font-family: "Red Hat Display";
-    line-height: 35px !important;
-}
-.sect-principal .row .caja a {
-    padding: 5px;
-    text-decoration: none;
-    background-color: #0CABAE;
-    color: white;
-    font-weight: normal;
-    text-transform: none;
-    border-radius: 30px !important;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    z-index: -1;
-    font-family: "Red Hat Display";
-}
-.sect-principal .row .color-boton-info {
-    padding: 10px;
-    text-decoration: none;
-    background-color: #0CABAE;
-    color: white;
-    font-weight: bolder;
-    text-transform: uppercase;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.sect-principal .row .color-boton-peru {
-    padding: 10px;
-    text-decoration: none;
-    background-color: #B20F20 !important;
-    color: white;
-    font-weight: bolder;
-    text-transform: uppercase;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.sect-principal .caja {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    margin: 0;
-    padding: 0px;
-}
-.indicadores {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.circulo {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #02ADAE;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-    z-index: 1;
-}
-.seleccionado {
-    background-color: rgb(220, 220, 220);
-}
-.header-container {
-    display: flex;
-    align-items: center;
-}
-.header-container header {
-    margin-right: 10px;
-    font-size: 50px !important;
-    font-weight: bold;
-}
-.header-container img {
-    margin: 0;
-    width: 80px;
-    height: auto;
-}
-#titulo-imagen {
-    width: 80px;
-    height: auto;
 }

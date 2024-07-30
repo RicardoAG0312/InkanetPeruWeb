@@ -32,7 +32,7 @@ const secciones = [
         colorBoton: "color-boton-info",
         tituloImagen: null,
         tituloImagenAlt: null,
-        href: "./Presentación_INKANET_2023[1].pdf",
+        href: "../../public/Presentación_INKANET_2023[1].pdf",
         isDownload: true
         },
         {
@@ -45,7 +45,7 @@ const secciones = [
         colorBoton: "color-boton-info",
         tituloImagen: null,
         tituloImagenAlt: null,
-        href: "./Presentación_INKANET_2023[1].pdf",
+        href: "../../public/Presentación_INKANET_2023[1].pdf",
         isDownload: true
         },
         {
@@ -58,7 +58,7 @@ const secciones = [
         colorBoton: "color-boton-info",
         tituloImagen: null,
         tituloImagenAlt: null,
-        href: "./Presentación_INKANET_2023[1].pdf",
+        href: "../../public/Presentación_INKANET_2023[1].pdf",
         isDownload: true
         }
     ];
@@ -96,6 +96,7 @@ function Carrusel(){
     return(
         <section className="container-fluid sect-principal">
             <div className={`row ${seccion.fondo}`}>
+            <div className="background"></div>
                 <div className="col-12 col-sm-12 col-xl-6 caja">
                     <div className="header-container">
                         <header>
