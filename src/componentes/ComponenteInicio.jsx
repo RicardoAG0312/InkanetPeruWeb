@@ -65,7 +65,7 @@ const secciones = [
 
 function ComponentesServiciosInicio ({clase, titulo, texto, imagen, alt, href}) {
     return (
-        <div className={`col-12 col-md-4 col-xl-4 ${clase}`}>
+        <div className={`col-12 col-md-4 ${clase}`}>
             <div className="icono">
                 <img src={require(`../images/${imagen}.png`)} alt={alt} />
             </div>
@@ -97,7 +97,7 @@ function Carrusel(){
         <section className="container-fluid sect-principal">
             <div className={`row ${seccion.fondo}`}>
             <div className="background"></div>
-                <div className="col-12 col-sm-12 col-xl-6 caja">
+                <div className="col-12 col-sm-6 caja">
                     <div className="header-container">
                         <header>
                             {seccion.titulo}
@@ -117,7 +117,7 @@ function Carrusel(){
                         </a>
                     )}
                 </div>
-                <div className="col-12 col-sm-0 col-xl-6 imagen">
+                <div className="col-12 col-sm-6 imagen">
                     <img src={seccion.imagen} alt={seccion.alt} className="img-fluid" />
                 </div>
                 <div className="col-12 indicadores">

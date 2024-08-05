@@ -9,7 +9,7 @@ export function ComponenteModalPrincipalFondo ({titulo, texto, enlace, imagenPri
                 <div className="col-6 texto">
                     <div className="header-container">
                         <header> {titulo} </header>
-                        <img id="titulo-imagen" src={require(`../images/24.png`)} alt="Imagen" class="img-titulo" />
+                        <img id="titulo-imagen" src={require(`../images/24.png`)} alt="Imagen" className="img-titulo" />
                     </div>
                     <p>
                         {texto}
@@ -41,14 +41,14 @@ function ComponenteEstadisticas ({icono, texto}) {
 
 function ComponentePrincipios ({titulo, texto, imagen}) {
     return (
-        <div class="card m-2">
-            <img src={require(`../images/${imagen}.png`)} class="card-img-top" alt="Imagen" />
-            <div class="card-body">
-                <p class="card-text">
+        <div className="card m-2">
+            <img src={require(`../images/${imagen}.png`)} className="card-img-top" alt="Imagen" />
+            <div className="card-body">
+                <p className="card-text">
                     {texto}
                 </p>
             </div>
-            <div class="overlay">
+            <div className="overlay">
                 <p> {titulo} </p>
             </div>
         </div>
@@ -102,8 +102,8 @@ export function ComponenteNosotros() {
                     </div>
                 </div>
             </section>
-            <section class="container-fluid sect-es">
-                <div class="row sect-firts">
+            <section className="container-fluid sect-es">
+                <div className="row sect-firts">
                     <ComponenteEstadisticas 
                         icono = "bi-people-fill"
                         texto = "Taza Global de Clientes: 100"
@@ -118,11 +118,11 @@ export function ComponenteNosotros() {
                     />
                 </div>
             </section>
-            <section class="container-fluid seccion-principios">
-                <header class="titulo-an">
+            <section className="container-fluid seccion-principios">
+                <header className="titulo-an">
                     Nuestros Principios 
                 </header>
-                <div class="container-fluid caja d-flex justify-content-around align-content-center align-items-center">
+                <div className="container-fluid caja d-flex justify-content-around align-content-center align-items-center">
                     <ComponentePrincipios 
                         titulo = "CONFIDENCIALIDAD"
                         texto = "La confidencialidad es esencial para nosotros. Protegemos su información con sistemas de seguridad de vanguardia."

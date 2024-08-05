@@ -514,3 +514,711 @@
     color: #02ADAE;
     background-color: #2a2a2a;
 }
+
+
+
+/* Responsive */
+/* Primera Seccion */
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .sect-principal .row .caja p {
+        font-size: 14px !important;
+        margin: 0;
+        padding: 15px 0;
+        width: 100% !important;
+        text-align: left !important;
+        margin-bottom: 15px;
+        font-family: "Red Hat Display";
+        line-height: 28px !important;
+        z-index: 2;
+    }
+}
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .sect-principal .row {
+        position: relative;
+        margin: 0;
+        padding: 0 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        box-sizing: border-box;
+    }
+    .sect-principal .row .caja header {
+        font-family: "Oswald";
+        font-size: 30px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 15px 0;
+        width: 100% !important;
+        text-align: left !important;
+        z-index: 2;
+    }
+    .sect-principal .row .caja p {
+        font-size: 14px !important;
+        margin: 0;
+        padding: 15px 0;
+        width: 100% !important;
+        text-align: left !important;
+        margin-bottom: 15px;
+        font-family: "Red Hat Display";
+        line-height: 28px !important;
+        z-index: 2;
+    }
+    .sect-principal .row .caja a {
+        padding: 5px;
+        text-decoration: none;
+        background-color: #0CABAE;
+        color: white;
+        font-weight: normal;
+        text-transform: none;
+        border-radius: 30px !important;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        z-index: -1;
+        font-family: "Red Hat Display";
+        z-index: 2;
+        font-size: 14px;
+    }
+    .sect-principal .row .color-boton-info {
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #0CABAE;
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .sect-principal .row .color-boton-peru {
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #B20F20 !important;
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .sect-principal .caja {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 0;
+        padding: 0px;
+    }
+
+    .header-container header {
+        margin-right: 10px;
+        font-size: 45px !important;
+        font-weight: bold;
+    }
+    .header-container img {
+        margin: 0;
+        width: 50px;
+        height: auto;
+    }
+    #titulo-imagen {
+        width: 50px;
+        height: auto;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .sect-principal .imagen {
+        display: none;
+    }
+    .sect-principal .row {
+        position: relative;
+        margin: 0;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        box-sizing: border-box;
+    }
+    .sect-principal .row .caja header {
+        font-family: "Oswald";
+        font-size: 30px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 15px 0;
+        width: 100% !important;
+        text-align: left !important;
+        z-index: 2;
+    }
+    .sect-principal .row .caja p {
+        font-size: 16px !important;
+        margin: 0;
+        padding: 15px 0;
+        width: 100% !important;
+        text-align: left !important;
+        margin-bottom: 15px;
+        font-family: "Red Hat Display";
+        line-height: 28px !important;
+        z-index: 2;
+    }
+    .sect-principal .row .caja a {
+        padding: 5px;
+        text-decoration: none;
+        background-color: #0CABAE;
+        color: white;
+        font-weight: normal;
+        text-transform: none;
+        border-radius: 30px !important;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        z-index: -1;
+        font-family: "Red Hat Display";
+        z-index: 2;
+        font-size: 14px;
+    }
+    .sect-principal .row .color-boton-info {
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #0CABAE;
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .sect-principal .row .color-boton-peru {
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #B20F20 !important;
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .sect-principal .caja {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 0;
+        padding: 0px;
+    }
+
+    .header-container header {
+        margin-right: 10px;
+        font-size: 30px !important;
+        font-weight: bold;
+    }
+    .header-container img {
+        margin: 0;
+        width: 45px;
+        height: auto;
+    }
+    #titulo-imagen {
+        width: 45px;
+        height: auto;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .sect-principal .imagen {
+        display: none;
+    }
+    .sect-principal .row {
+        position: relative;
+        margin: 0;
+        padding: 0 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        box-sizing: border-box;
+    }
+    .sect-principal .row .caja header {
+        font-family: "Oswald";
+        font-size: 30px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 15px 0;
+        width: 100% !important;
+        text-align: left !important;
+        z-index: 2;
+    }
+    .sect-principal .row .caja p {
+        font-size: 16px !important;
+        margin: 0;
+        padding: 15px 0;
+        width: 100% !important;
+        text-align: left !important;
+        margin-bottom: 15px;
+        font-family: "Red Hat Display";
+        line-height: 28px !important;
+        z-index: 2;
+    }
+    .sect-principal .row .caja a {
+        padding: 5px;
+        text-decoration: none;
+        background-color: #0CABAE;
+        color: white;
+        font-weight: normal;
+        text-transform: none;
+        border-radius: 30px !important;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        z-index: -1;
+        font-family: "Red Hat Display";
+        z-index: 2;
+        font-size: 14px;
+    }
+    .sect-principal .row .color-boton-info {
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #0CABAE;
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .sect-principal .row .color-boton-peru {
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #B20F20 !important;
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .sect-principal .caja {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 0;
+        padding: 0px;
+    }
+
+    .header-container header {
+        margin-right: 10px;
+        font-size: 35px !important;
+        font-weight: bold;
+    }
+    .header-container img {
+        margin: 0;
+        width: 45px;
+        height: auto;
+    }
+    #titulo-imagen {
+        width: 45px;
+        height: auto;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .sect-principal {
+        width: 100%;
+        height: auto;
+        background-color: #2a2a2a;
+        color: white;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        box-shadow: 3px 3px 70px black;
+    }
+    .sect-principal .imagen {
+        display: none;
+    }
+
+    .sect-principal .row {
+        position: relative;
+        margin: 0;
+        padding: 0 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        box-sizing: border-box;
+    }
+    .sect-principal .row .caja header {
+        font-family: "Oswald";
+        font-size: 30px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 15px 0;
+        width: 100% !important;
+        text-align: left !important;
+        z-index: 2;
+    }
+    .sect-principal .row .caja p {
+        font-size: 14px !important;
+        margin: 0;
+        padding: 15px 0;
+        width: 100% !important;
+        text-align: left !important;
+        margin-bottom: 15px;
+        font-family: "Red Hat Display";
+        line-height: 28px !important;
+        z-index: 2;
+    }
+    .sect-principal .row .caja a {
+        padding: 5px;
+        text-decoration: none;
+        background-color: #0CABAE;
+        color: white;
+        font-weight: normal;
+        text-transform: none;
+        border-radius: 30px !important;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        z-index: -1;
+        font-family: "Red Hat Display";
+        z-index: 2;
+        font-size: 14px;
+    }
+    .sect-principal .row .color-boton-info {
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #0CABAE;
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .sect-principal .row .color-boton-peru {
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #B20F20 !important;
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .sect-principal .caja {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 0;
+        padding: 0px;
+    }
+    .indicadores {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .circulo {
+        height: 10px;
+        width: 10px;
+        margin: 0 5px;
+        background-color: #02ADAE;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: none;
+        z-index: 1;
+    }
+    .seleccionado {
+        background-color: rgb(220, 220, 220);
+    }
+    .header-container {
+        display: flex;
+        align-items: center;
+    }
+    .header-container header {
+        margin-right: 10px;
+        font-size: 30px !important;
+        font-weight: bold;
+    }
+    .header-container img {
+        margin: 0;
+        width: 45px;
+        height: auto;
+    }
+    #titulo-imagen {
+        width: 45px;
+        height: auto;
+    }
+}
+/* Seccion Video */
+/* Extra grande (para pantallas grandes) */
+@media only screen and (min-width: 1201px) {
+}
+/* Grande (para ordenadores de escritorio grandes) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+}
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+}
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .contenedor-video {
+        min-height: auto;
+        padding: 20px;
+        padding-top: 30px;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .contenedor-video {
+        min-height: auto;
+        padding: 20px;
+        padding-top: 30px;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .contenedor-video {
+        min-height: auto;
+        padding: 20px;
+        padding-top: 30px;
+    }
+}
+
+
+/* Seccion Servicios */
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .tituloServicos {
+        height: auto;
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tituloServicos h4 {
+        font-size: 35px;
+    }
+    .tituloServicos p {
+        font-size: 14px;
+        width: 80%;
+    }
+    .sect-servicios{
+        height: auto;
+        margin: 0;
+    }
+    .sect-servicios .row{
+        gap: 10px;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    }
+    .sect-servicios a{
+        color: white;
+        text-decoration: none;
+    }
+    .sect-servicios .internet{
+        width: 32%;
+        margin: 0;
+    }
+    .sect-servicios .internet h3 {
+        font-size: 25px !important;
+    }
+    .sect-servicios .texto {
+        font-size: 12px !important;
+    }
+    .sect-servicios .ciberseguridad{
+        width: 32%;
+        margin: 0;
+    }
+    .sect-servicios .ciberseguridad h3 {
+        font-size: 25px !important;
+    }
+    .sect-servicios .telefonia{
+        width: 32%;
+        margin: 0;
+    }
+    .sect-servicios .telefonia h3 {
+        font-size: 25px !important;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .tituloServicos {
+        height: auto;
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tituloServicos h4 {
+        font-size: 35px;
+    }
+    .tituloServicos p {
+        font-size: 14px;
+        width: 80%;
+    }
+    .sect-servicios{
+        height: auto;
+        margin: 0;
+    }
+    .sect-servicios .row{
+        gap: 12px;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    }
+    .sect-servicios a{
+        color: white;
+        text-decoration: none;
+    }
+    .sect-servicios .internet{
+        width: 48%;
+        margin: 0;
+    }
+    .sect-servicios .internet h3 {
+        font-size: 25px !important;
+    }
+    .sect-servicios .texto {
+        font-size: 12px !important;
+    }
+    .sect-servicios .ciberseguridad{
+        width: 48%;
+        margin: 0;
+    }
+    .sect-servicios .ciberseguridad h3 {
+        font-size: 25px !important;
+    }
+    .sect-servicios .telefonia{
+        width: 50%;
+        margin: 0;
+    }
+    .sect-servicios .telefonia h3 {
+        font-size: 25px !important;
+    }
+    
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .tituloServicos {
+        height: auto;
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tituloServicos h4 {
+        font-size: 35px;
+    }
+    .tituloServicos p {
+        font-size: 14px;
+        width: 80%;
+    }
+    .sect-servicios{
+        height: auto;
+        margin: 0;
+    }
+    .sect-servicios .row{
+        gap: 12px;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+    }
+    .sect-servicios a{
+        color: white;
+        text-decoration: none;
+    }
+    .sect-servicios .internet{
+        width: 48%;
+        margin: 0;
+    }
+    .sect-servicios .internet h3 {
+        font-size: 22px !important;
+    }
+    .sect-servicios .texto {
+        font-size: 12px !important;
+    }
+    .sect-servicios .ciberseguridad{
+        width: 48%;
+        margin: 0;
+    }
+    .sect-servicios .ciberseguridad h3 {
+        font-size: 22px !important;
+    }
+    .sect-servicios .telefonia{
+        width: 50%;
+        margin: 0;
+    }
+    .sect-servicios .telefonia h3 {
+        font-size: 22px !important;
+    }
+    
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .tituloServicos {
+        height: auto;
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tituloServicos h4 {
+        font-size: 24px;
+    }
+    .tituloServicos p {
+        font-size: 12px;
+        width: 80%;
+    }
+    .sect-servicios{
+        height: auto;
+    }
+    .sect-servicios .row{
+        gap: 20px;
+    }
+    .sect-servicios a{
+        color: white;
+        text-decoration: none;
+    }
+    .sect-servicios .internet{
+        width: 100%;
+    }
+    .sect-servicios .ciberseguridad{
+        width: 100%;
+    }
+    .sect-servicios .telefonia{
+        width: 100%;
+    }
+    
+}

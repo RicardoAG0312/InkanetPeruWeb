@@ -6,10 +6,10 @@ import {ComponenteModalPrincipalFondo} from './ComponenteNosotros';
 
 function ComponenteViñetasServicios ({clase, titulo, texto}) {
     return (
-        <div class={clase}>
-            <div class="subfirewall">
+        <div className={clase}>
+            <div className="subfirewall">
                 <h2> {titulo} </h2>
-                <p class="texto"> {texto} </p>
+                <p className="texto"> {texto} </p>
             </div>
         </div>
     )
@@ -25,10 +25,10 @@ function ComponenteServicios() {
                 enlace = "#Servicio"
                 imagenPrincipal = "60"
             />
-            <section class="container-fluid sect-sec" id="Servicio">
+            <section className="container-fluid sect-sec" id="Servicio">
             <header> BENEFICIOS DE NUESTRO SERVICIO </header>
-            <div class="row">
-                <div class="col-7 texto">
+            <div className="row">
+                <div className="col-7 texto">
                     <p>
                         <span> En nuestra empresa, nos especializamos en proporcionar soluciones de ciberseguridad de vanguardia </span> Nuestros servicios están diseñados para proteger su infraestructura digital de manera integral. Ofrecemos soluciones personalizadas que incluyen la identificación y mitigación de vulnerabilidades, monitoreo en tiempo real, respuesta a incidentes y recuperación ante desastres.
                     </p>
@@ -36,17 +36,17 @@ function ComponenteServicios() {
                         Nos enfocamos en implementar estrategia proactiva para anticipar y contrarrestar amenazas, asegurando la integridad, confidencialidad y disponibilidad de sus datos e información crítica. Con nosotros, su ciberseguridad está en manos expertas.
                     </p>
                 </div>
-                <div class="col-5 img">
+                <div className="col-5 img">
                     
                 </div>
             </div>
             </section>
-            <section class="container-fluid sect-ter">
-                <div class="titulo">
+            <section className="container-fluid sect-ter">
+                <div className="titulo">
                     <h2> CARACTERÍSTICAS DEL SERVICIO </h2>
                     <p> En Inkanet Perú, nos dedicamos a ofrecer soluciones de ciberseguridad de última generación para proteger a las empresas contra amenazas cibernéticas en constante evolución. Nuestro producto ha sido diseñado específicamente para ofrecer el más alto nivel de seguridad posible a su dispositivo. </p>
                 </div>
-                <div class="container sect-sub-ter">
+                <div className="container sect-sub-ter">
                     <ComponenteViñetasServicios 
                         clase = "firewall"
                         titulo = "FIREWALL DE PRÓXIMA GENERACIÓN (NGFW)"
@@ -69,9 +69,9 @@ function ComponenteServicios() {
                     />
                 </div>
             </section>
-            <section class="container-fluid sect-cuartaa">
-                <div class="row">
-                    <div class="col-8 info">
+            <section className="container-fluid sect-cuartaa">
+                <div className="row">
+                    <div className="col-8 info">
                         <h1> ¿POR QUÉ INKANET? </h1>
                         <p> Inkanet es una empresa líder en el campo de las telecomunicaciones en Perú, dedicada a proporcionar soluciones de fibra óptica de alta calidad para garantizar una conexión estable y segura. Nos enorgullece ofrecer una gama de servicios avanzados, desde Internet de alta velocidad hasta soluciones de ciberseguridad y telefonía IP.</p>
                         <p>Nuestro compromiso con la excelencia y la satisfacción del cliente nos distingue en el campo de las telecomunicaciones. Al elegir Inkanet, está eligiendo un servicio confiable, eficiente y dedicado a satisfacer sus necesidades de telecomunicaciones.</p>
@@ -80,7 +80,7 @@ function ComponenteServicios() {
                         <p>Además, ofrecemos servicios de telefonía IP, proporcionando una solución de comunicación flexible y rentable que puede adaptarse a las necesidades de su negocio. En Inkanet, entendemos que cada negocio es único, y por eso ofrecemos soluciones personalizadas que se adaptan a sus necesidades específicas.</p>
                         <p>Trabajamos con usted para entender su negocio y su industria, permitiéndonos proporcionar un servicio que se ajusta a sus necesidades. Con Inkanet, puede estar seguro de que está en buenas manos. Nuestro equipo de expertos está dedicado a proporcionar un servicio excepcional, y estamos aquí para apoyarlo en cada paso del camino. Elija Inkanet para sus necesidades de telecomunicaciones, y descubra la diferencia que puede hacer un servicio de calidad.</p>
                     </div>
-                    <div class="col-4 imagenes">
+                    <div className="col-4 imagenes">
                         <div>
                             <img src={LogoInkanet} alt="Imagen" />
                         </div>

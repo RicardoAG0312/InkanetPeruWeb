@@ -396,3 +396,33 @@ h1 {
     margin-bottom: 100px;
     box-shadow: -10px 10px 15px black;
 }
+
+
+/* Responsive */
+/* Seccion Partners */
+@media screen and (max-width: 768px) {
+    .carousel{
+        height: auto;
+        padding: 10px;
+        margin: 1rem 0;
+    }
+    .contenedor-carusel img{
+        width: 80%;
+    }
+    .sect-ter .titulo h1 {
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .carousel{
+        height: auto;
+        padding: 10px;
+        margin: 1rem 0;
+    }
+    .contenedor-carusel img{
+        width: 80%;
+    }
+    .sect-ter .titulo h1 {
+        font-size: 30px;
+    }
+}

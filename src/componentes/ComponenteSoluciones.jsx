@@ -30,7 +30,7 @@ export function ComponentePartners() {
     return (
         <section className="container-fluid sect-ter">
             <div className="titulo">
-            <h1> TRABAJAMOS CON: </h1>
+            <h1> NUESTROS ALIADOS: </h1>
             </div>
             <div id="carouselExample" className="carousel slide container-fluid" data-bs-ride="carousel">
             <div className="carousel-inner" id="Partners">
@@ -60,15 +60,15 @@ function ComponenteListadoSoluciones ({clase, titulo, textos, id}) {
     return (
         <section className={`container-fluid ${clase}`} id={id}>
             <header> {titulo} </header>
-            <div class="row">
-                <div class="col-8 texto">
+            <div className="row">
+                <div className="col-8 texto">
                     <ul>
                         {textos.map((texto, index) => 
                             <li key={index}> {texto} </li>
                         )}
                     </ul>
                 </div>
-                <div class="col-4 img">
+                <div className="col-4 img">
                     
                 </div>
             </div>
@@ -101,14 +101,14 @@ export function ComponenteSolucionesInternet() {
                     "Educar a los empleados y usuarios sobre los riesgos cibernéticos asociados con el uso de aplicaciones basadas en web."
                 ]}
             />
-            <section class="container-fluid sect-ter">
+            <section className="container-fluid sect-ter">
                 <div>
-                    <h1 class="titulo"> VENTAJAS </h1>
-                    <div class="row contenedorInfo">
-                        <div class="col-5 img">
+                    <h1 className="titulo"> VENTAJAS </h1>
+                    <div className="row contenedorInfo">
+                        <div className="col-5 img">
                             <h2> VENTAJAS DE INTERNET 2.0: </h2>
                         </div>
-                        <div class="col-7 texto">
+                        <div className="col-7 texto">
                             <ul>
                                 <li> Contacto directo con el SOC 24 x 7. </li>
                                 <li> Monitoreo constante de las soluciones y de la red. Capacitaciones constantes al personal de la administración de los equipos. </li>

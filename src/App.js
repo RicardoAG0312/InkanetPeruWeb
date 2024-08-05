@@ -87,58 +87,58 @@ function App() {
                         <Route path='/soluciones/telefonia' element={<ComponenteSolucionesTelefonia />}/>
                         <Route path='/contacto' element={<ComponenteContacto />}/>
                     </Routes>
-                    <footer class="container-fluid">
-                        <div class="row">
-                            <div class="col-4 imagen">
-                                <img class="footer-logo" src={LogoInkanetPie} alt="Logo Inkanet Perú" />
-                            </div>
-                            <div class="col-8 contenedorPie">
-                                <div class="row">
-                                    <div class="col-4 contain1">
-                                        <div>
-                                            <h3> NOSOTROS </h3>
-                                            <Link to="/nosotros"> Nuestra Historia </Link>
-                                            <Link to="/nosotros"> Nuestro Propósito </Link>
-                                            <Link to="/nosotros"> Nuestros Principios </Link>
-                                        </div>
-                                        <div>
-                                            <h3> SOLUCIONES </h3>
-                                            <Link to="/soluciones/internet"> Internet 2.0 </Link>
-                                            <Link to="/soluciones/ciberseguridad"> Ciberseguridad </Link>
-                                            <Link to="/soluciones/telefonia"> Telefonía IP </Link>
-                                        </div>
+                </Router>
+                <footer class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-4 imagen">
+                            <img class="footer-logo" src={LogoInkanetPie} alt="Logo Inkanet Perú" />
+                        </div>
+                        <div class="col-12 col-md-8 contenedorPie">
+                            <div class="row">
+                                <div class="col-12 col-md-4 contain1">
+                                    <div>
+                                        <h3> NOSOTROS </h3>
+                                        <a href="/nosotros"> Nuestra Historia </a>
+                                        <a href="/nosotros"> Nuestro Propósito </a>
+                                        <a href="/nosotros"> Nuestros Principios </a>
                                     </div>
-                                    <div class="col-4 contain2">
-                                        <div>
-                                            <h3> SOPORTE TÉCNICO </h3>
-                                            <Link to="/servicios"> Beneficios </Link>
-                                            <Link to="/servicios"> Caracteristicas </Link>
-                                            <Link to="/servicios"> ¿Por qué Inkanet? </Link>
-                                        </div>
-                                        <div>
-                                            <a href="https://www.linkedin.com/company/inkanet-per%C3%BA/" target="_blank" rel="noreferrer">
-                                                <img src={require("./images/13.png")} alt="Imagen Linkdln" />
-                                            </a>
-                                            <a href="https://wa.me/51908827506" target="_blank" rel="noreferrer">
-                                                <img src={require("./images/14.png")} alt="Imagen whatsapp" />
-                                            </a>
-                                            <a href="mailto: ventas@inkanetperu.com" target="_blank" rel="noreferrer">
-                                                <img src={require("./images/15.png")} alt="Imagen correo" />
-                                            </a>
-                                        </div>
+                                    <div>
+                                        <h3> SOLUCIONES </h3>
+                                        <a href="/soluciones/internet"> Internet 2.0 </a>
+                                        <a href="/soluciones/ciberseguridad"> Ciberseguridad </a>
+                                        <a href="/soluciones/telefonia"> Telefonía IP </a>
                                     </div>
-                                    <div class="col-4 contain3">
-                                        <p class="m-0">
-                                            «Somos una empresa peruana dedicada al rubro de las telecomunicaciones,
-                                            enfocada en ofrecer fibra óptica a las distintas corporaciones del país,
-                                            brindándoles un servicio estable de conexión»
-                                        </p>
+                                </div>
+                                <div class="col-12 col-md-4 contain2">
+                                    <div>
+                                        <h3> SOPORTE TÉCNICO </h3>
+                                        <a href="/servicios"> Beneficios </a>
+                                        <a href="/servicios"> Caracteristicas </a>
+                                        <a href="/servicios"> ¿Por qué Inkanet? </a>
                                     </div>
+                                    <div>
+                                        <a href="https://www.linkedin.com/company/inkanet-per%C3%BA/" target="_blank" rel="noreferrer">
+                                            <img src={require("./images/13.png")} alt="Imagen Linkdln" />
+                                        </a>
+                                        <a href="https://wa.me/51908827506" target="_blank" rel="noreferrer">
+                                            <img src={require("./images/14.png")} alt="Imagen whatsapp" />
+                                        </a>
+                                        <a href="mailto: ventas@inkanetperu.com" target="_blank" rel="noreferrer">
+                                            <img src={require("./images/15.png")} alt="Imagen correo" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 contain3">
+                                    <p class="m-0">
+                                        «Somos una empresa peruana dedicada al rubro de las telecomunicaciones,
+                                        enfocada en ofrecer fibra óptica a las distintas corporaciones del país,
+                                        brindándoles un servicio estable de conexión»
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </footer>
-                </Router>
+                    </div>
+                </footer>
             </div>
         </div>
     );
