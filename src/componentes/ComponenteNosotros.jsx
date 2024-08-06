@@ -6,7 +6,7 @@ export function ComponenteModalPrincipalFondo ({titulo, texto, enlace, imagenPri
     return (
         <section className={`container-fluid sect-pri ${clase}`}>
             <div className="row m-0">
-                <div className="col-6 texto">
+                <div className="col-12 col-sm-6 texto">
                     <div className="header-container">
                         <header> {titulo} </header>
                         <img id="titulo-imagen" src={require(`../images/24.png`)} alt="Imagen" className="img-titulo" />
@@ -18,7 +18,7 @@ export function ComponenteModalPrincipalFondo ({titulo, texto, enlace, imagenPri
                         <a href={enlace}> Información </a>
                     </button>
                 </div>
-                <div className="col img">
+                <div className="col-12 col-sm-6 img">
                     <img src={require(`../images/${imagenPrincipal}.png`)} alt="Imagen" />
                 </div>
             </div>
@@ -28,11 +28,11 @@ export function ComponenteModalPrincipalFondo ({titulo, texto, enlace, imagenPri
 
 function ComponenteEstadisticas ({icono, texto}) {
     return (
-        <div className="col-10 col-xl-4 sect-col-firts">
-            <div className="col-4 icono">
+        <div className="col-12 col-sm-4 sect-col-firts">
+            <div className="col-3 icono">
                 <i className={`bi ${icono}`}></i>
             </div>
-            <div className="col-8 texto">
+            <div className="col-9 texto">
                 {texto}
             </div>
         </div>
@@ -71,20 +71,20 @@ export function ComponenteNosotros() {
                     <img id="titulo-imagen" src={require("../images/24.png")} alt="" className="img-titulo" />
                 </div>
                 <div className="row" id="Historia">
-                    <div className="col-6 info">
+                    <div className="col-12 col-sm-6 info">
                         <p>Inkanet Perú S.A.C. es una empresa 100% de capital peruano, actualmente es una empresa de ciberseguridad con reconocimiento de las mejores marcas y personal calificado para la atención de las mismas.</p>
                         <p>Inkanet Perú viene brindando servicios para diferentes entidades de gobierno y privado a nivel nacional, teniendo así una gran cartera de clientes y experiencia en despliegues masivos de las soluciones de protección al usuario final.</p>
                         <p>Es ahí donde encuentra la necesidad de no solo ser una empresa que da servicios de ciberseguridad, sino también de ofrecer servicios personalizados y acordes a la necesidad del cliente. Seguro y de rápida respuesta ante cualquier incidente.</p>
                         <p>Actualmente, Inkanet Perú cuenta ya con clientes que han confiado en esta nueva era de ciberseguridad, donde no solo será una venta sino una experiencia en servicio y atención, donde el cliente tendrá toda la asesoría y seguimiento de sus puntos críticos en ciberseguridad.</p>
                     </div>
-                    <div className="col-6 imagenes">
+                    <div className="col-12 col-sm-6 imagenes">
 
                     </div>
                 </div>
             </section>
             <section className="container-fluid sect-quinta">
                 <div className="row">
-                    <div className="col-4 imagenes">
+                    <div className="col-12 col-sm-4 imagenes">
                         <div>
                 
                         </div>
@@ -92,7 +92,7 @@ export function ComponenteNosotros() {
                             <img src={LogoInkanet} alt="Imagen" />
                         </div>
                     </div>
-                    <div className="col-8 info">
+                    <div className="col-12 col-sm-8 info">
                         <h1> NUESTRO PROPÓSITO </h1>
                         <p>Nuestro propósito es empoderar a las organizaciones para que prosperen en la era digital con total confianza y resiliencia. Nos dedicamos a crear un entorno cibernético, seguro y protegido, donde las empresas pueden aprovechar al máximo las oportunidades tecnológicas sin temor a las amenazas. Nuestra meta es ser un aliado confiable en ciberseguridad, proporcionando soluciones de vanguardia que se adaptan a las necesidades cambiantes del panorama digital.</p>
                         <h3> Misión: </h3>

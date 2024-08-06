@@ -271,6 +271,7 @@
     -ms-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
     box-shadow: 5px 0px 15px black;
+    min-height: 500px;
 }
 .card-body{
     background-color: #2e2e2e;
@@ -287,4 +288,531 @@
 }
 .card:hover .overlay{
     opacity: 1;
+}
+
+/* Responsive */
+/* Encabezado Nosotros Primera Seccion */
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .sect-pri .img img {
+        width: 380px !important;
+        height: auto;
+    }
+}
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .sect-pri header {
+        font-size: 35px !important;
+    }
+    .sect-pri p {
+        font-size: 16px;
+    }
+    .sect-pri .img img {
+        width: 300px !important;
+        height: auto;
+    }
+    .sect-pri button {
+        font-size: 16px !important;
+    }
+    #titulo-imagen {
+        width: 45px; 
+        height: auto;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .sect-pri {
+        height: 450px;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        box-shadow: 0 0 55px black;
+    }
+    .sect-pri header {
+        font-size: 65px;
+    }
+    .sect-pri .texto {
+        gap: 30px;
+        padding-left: 0px !important;
+        font-size: 16px !important;
+        display: flex !important;
+        flex-direction: column !important; 
+        justify-content: center !important;
+        align-items: center !important;
+        margin-left: 10px !important;
+        margin-top: 30px !important;
+        width: 100% !important;
+    }
+    .sect-pri p {
+        width: 80% !important;
+        font-size: 14px;
+    }
+    .sect-pri .img {
+        display: none;
+    }
+    .sect-pri .img img {
+        display: none;
+    }
+    #titulo-imagen {
+        width: 45px; 
+        height: auto;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .sect-pri {
+        height: 450px;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        box-shadow: 0 0 55px black;
+    }
+    .sect-pri header {
+        font-size: 65px;
+    }
+    .sect-pri .texto {
+        gap: 30px;
+        padding-left: 0px !important;
+        font-size: 16px !important;
+        display: flex !important;
+        flex-direction: column !important; 
+        justify-content: center !important;
+        align-items: center !important;
+        margin-left: 0px !important;
+        margin-top: 30px !important;
+    }
+    .sect-pri p {
+        width: 80% !important;
+        font-size: 14px;
+    }
+    .sect-pri .img {
+        display: none;
+    }
+    .sect-pri .img img {
+        display: none;
+    }
+    #titulo-imagen {
+        width: 45px; 
+        height: auto;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .sect-pri {
+        height: 450px;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        box-shadow: 0 0 55px black;
+    }
+    .sect-pri header {
+        font-size: 65px;
+    }
+    .sect-pri .texto {
+        gap: 30px;
+        padding-left: 0px !important;
+        font-size: 16px !important;
+        display: flex !important;
+        flex-direction: column !important; 
+        justify-content: center !important;
+        align-items: center !important;
+        margin-left: 10px !important;
+        margin-top: 30px !important;
+    }
+    .sect-pri p {
+        width: 80% !important;
+        font-size: 14px;
+    }
+    .sect-pri .img {
+        display: none;
+    }
+    .sect-pri .img img {
+        display: none;
+    }
+    #titulo-imagen {
+        width: 45px; 
+        height: auto;
+    }
+}
+
+/* Segunda Seccion */
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sect-cuarta h1 {
+        padding: 0;
+    }
+    #titulo-imagen {
+        width: 65px; 
+        height: auto;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .sect-cuarta .row .info {
+        font-size: 16px;
+        width: 100%;
+    }
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sect-cuarta h1 {
+        font-size: 45px;
+        padding: 0;
+    }
+    .sect-cuarta .row .imagenes {
+        display: none;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .sect-cuarta .row .info {
+        font-size: 16px;
+    }
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sect-cuarta h1 {
+        font-size: 40px;
+        padding: 0;
+    }
+    .sect-cuarta .row .imagenes {
+        display: none;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .sect-cuarta .row .info {
+        font-size: 16px;
+    }
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sect-cuarta h1 {
+        font-size: 30px;
+        padding: 0;
+    }
+    .sect-cuarta .row .imagenes {
+        display: none;
+    }
+}
+
+/* Tercera Seccion */
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .sect-quinta .row .imagenes div:nth-child(2){
+        width: 250px;
+        margin-left: 15px;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .sect-quinta {
+        margin-top: 0px;
+    }
+    .sect-quinta h3 {
+        font-size: 24px;
+    }
+    .sect-quinta .row {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .sect-quinta .row .info {
+        font-size: 16px;
+        width: 100%;
+    }
+    .sect-quinta .row .info h1 {
+        font-size: 45px;
+    }
+    .sect-quinta .row .imagenes {
+        display: none;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .sect-quinta {
+        margin-top: 0px;
+    }
+    .sect-quinta h3 {
+        font-size: 22px;
+    }
+    .sect-quinta .row {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .sect-quinta .row .info {
+        font-size: 16px;
+    }
+    .sect-quinta .row .info h1 {
+        font-size: 25px;
+    }
+    .sect-quinta .row .imagenes {
+        display: none;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .sect-quinta {
+        margin-top: 0px;
+    }
+    .sect-quinta h3 {
+        font-size: 22px;
+    }
+    .sect-quinta .row {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .sect-quinta .row .info {
+        font-size: 16px;
+    }
+    .sect-quinta .row .info h1 {
+        font-size: 25px;
+    }
+    .sect-quinta .row .imagenes {
+        display: none;
+    }
+}
+
+/* Cuarta Seccion */
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .sect-col-firts, .sect-col-sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .sect-es .icono{
+        font-size: 40px;
+    }
+    .sect-es .icono:hover{
+        font-size: 65px;
+    }
+    .sect-es .texto{
+        font-size: 12px;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .sect-col-firts, .sect-col-sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .sect-es .icono{
+        font-size: 50px;
+    }
+    .sect-es .icono:hover{
+        font-size: 60px;
+    }
+    .sect-es .texto{
+        font-size: 16px;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .sect-col-firts, .sect-col-sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .sect-es .icono{
+        font-size: 30px;
+    }
+    .sect-es .icono:hover{
+        font-size: 40px;
+    }
+    .sect-es .texto{
+        font-size: 12px;
+    }
+}
+
+/* Quinta Seccion */
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .overlay{
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -160%);
+        -webkit-transform: translate(-50%, -160%);
+        -moz-transform: translate(-50%, -160%);
+        -ms-transform: translate(-50%, -160%);
+        -o-transform: translate(-50%, -160%);
+    }
+    .overlay p{
+        font-size: 22px;
+    }
+    .card {
+        min-height: 420px;
+    }
+}
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .overlay{
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -200%);
+        -webkit-transform: translate(-50%, -200%);
+        -moz-transform: translate(-50%, -200%);
+        -ms-transform: translate(-50%, -200%);
+        -o-transform: translate(-50%, -200%);
+}
+    .overlay p{
+        font-size: 16px;
+    }
+    .card {
+        min-height: 400px;
+    }
+    .card-body .card-text {
+        font-size: 14px;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .seccion-principios{
+        width: 100%;
+        min-height: 100% !important;
+        padding: 20px;
+        border-top: 2px solid #0CABAE;
+        background-color: rgba(220, 220, 220, 0.2);
+        margin-bottom: 200px;
+    }
+    .seccion-principios .caja {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+    .seccion-principios .titulo-an{
+        font-size: 35px;
+    }
+    .overlay{
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -150%);
+        -webkit-transform: translate(-50%, -150%);
+        -moz-transform: translate(-50%, -150%);
+        -ms-transform: translate(-50%, -150%);
+        -o-transform: translate(-50%, -150%);
+    }
+    .overlay p{
+        font-size: 20px;
+    }
+    .card{
+        width: 46% !important;
+        height: 400px;
+    }
+    .card-body{
+        background-color: #2e2e2e;
+        color: white;
+        width: 100% !important;
+    }
+    .card-body .card-text {
+        font-size: 14px;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .seccion-principios{
+        width: 100%;
+        min-height: 100% !important;
+        padding: 20px;
+        border-top: 2px solid #0CABAE;
+        background-color: rgba(220, 220, 220, 0.2);
+        margin-bottom: 200px;
+    }
+    .seccion-principios .caja {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+    .seccion-principios .titulo-an{
+        font-size: 25px;
+    }
+    .overlay{
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -200%);
+        -webkit-transform: translate(-50%, -200%);
+        -moz-transform: translate(-50%, -200%);
+        -ms-transform: translate(-50%, -200%);
+        -o-transform: translate(-50%, -200%);
+}
+    .overlay p{
+        font-size: 20px;
+    }
+    .card{
+        width: 46% !important;
+        height: 400px;
+    }
+    .card-body{
+        background-color: #2e2e2e;
+        color: white;
+        width: 100% !important;
+    }
+    .card-body .card-text {
+        font-size: 14px;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .seccion-principios{
+        width: 100%;
+        min-height: 100% !important;
+        padding: 20px;
+        border-top: 2px solid #0CABAE;
+        background-color: rgba(220, 220, 220, 0.2);
+        margin-bottom: 1000px;
+    }
+    .seccion-principios .caja {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .seccion-principios .titulo-an{
+        font-size: 25px;
+    }
+    .overlay{
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .overlay p{
+        font-size: 28px;
+    }
+    .card{
+        width: 100% !important;
+    }
+    .card-body{
+        background-color: #2e2e2e;
+        color: white;
+        width: 100% !important;
+    }
+    .card-body .card-text {
+        font-size: 16px;
+    }
 }

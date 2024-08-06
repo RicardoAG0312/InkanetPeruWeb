@@ -974,6 +974,7 @@
         height: auto;
     }
 }
+
 /* Seccion Video */
 /* Extra grande (para pantallas grandes) */
 @media only screen and (min-width: 1201px) {
