@@ -61,7 +61,7 @@ function ComponenteListadoSoluciones ({clase, titulo, textos, id}) {
         <section className={`container-fluid ${clase}`} id={id}>
             <header> {titulo} </header>
             <div className="row">
-                <div className="col-8 texto">
+                <div className="col-12 col-sm-7 texto">
                     <ul>
                         {textos.map((texto, index) => 
                             <li key={index}> {texto} </li>
@@ -108,7 +108,7 @@ export function ComponenteSolucionesInternet() {
                         <div className="col-5 img">
                             <h2> VENTAJAS DE INTERNET 2.0: </h2>
                         </div>
-                        <div className="col-7 texto">
+                        <div className="col-12 col-sm-6 texto">
                             <ul>
                                 <li> Contacto directo con el SOC 24 x 7. </li>
                                 <li> Monitoreo constante de las soluciones y de la red. Capacitaciones constantes al personal de la administración de los equipos. </li>

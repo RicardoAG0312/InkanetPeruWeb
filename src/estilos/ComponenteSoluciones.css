@@ -426,3 +426,407 @@ h1 {
         font-size: 30px;
     }
 }
+/* Extra grande (para pantallas grandes) */
+@media only screen and (min-width: 1201px) {
+    /* Apartado Internet */
+    .sect-pri header{
+        font-size: 40px !important; /*50px*/
+    }
+    .sect-pri p{
+        font-size: 17px;
+    }
+    .sect-secc header{
+        font-size: 50px;
+    }
+    .sect-secc .row{
+        margin-top: 60px;
+    }
+    .sect-ter .contenedorInfo{
+        margin-bottom: 100px;
+    }
+    .sect-ter .carousel{
+        margin: 0;
+        padding: 0;
+    }
+    /* Apartado Ciberseguridad */
+    .sectt-sec header{
+        font-size: 60px !important;
+    }
+    .sectt-sec .row{
+        margin-top: 40px;
+    }
+    .sectt-sec .row .texto li{
+        font-size: 19px;
+    }
+}
+
+/* Grande (para ordenadores de escritorio grandes) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    /* Apartado Internet */
+    .sect-pri header{
+        font-size: 40px !important; /*50px*/
+    }
+    .sect-pri p{
+        font-size: 17px;
+    }
+    .sect-secc header{
+        font-size: 50px;
+    }
+    .sect-secc .row{
+        margin-top: 60px;
+    }
+    .sect-ter .contenedorInfo{
+        margin-bottom: 100px;
+    }
+    .sect-ter .carousel{
+        margin: 0;
+        padding: 0;
+    }
+    /* Apartado Ciberseguridad */
+    .sectt-sec header{
+        font-size: 60px !important;
+    }
+    .sectt-sec .row{
+        margin-top: 40px;
+    }
+    .sectt-sec .row .texto li{
+        font-size: 18px;
+    }
+    /* Apartado Telefonia */
+    .ssect-sec .row{
+        margin-top: 40px;
+    }
+}
+
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* Apartado Internet */
+    .sect-pri header{
+        font-size: 40px !important; /*50px*/
+    }
+    .sect-pri p{
+        font-size: 17px;
+    }
+    .sect-secc header{
+        font-size: 50px;
+    }
+    .sect-secc .row{
+        margin-top: 60px;
+    }
+    .sect-ter .contenedorInfo{
+        margin-bottom: 100px;
+    }
+    .sect-ter .carousel{
+        margin: 0;
+        padding: 0;
+    }
+    /* Apartado Ciberseguridad */
+    .sectt-sec header{
+        font-size: 50px !important;
+    }
+    .sectt-sec .row{
+        margin-top: 40px;
+    }
+    .sectt-sec .row .texto li{
+        font-size: 15px;
+    }
+    /* Apartado Telefonia */
+    .ssect-sec header{
+        font-size: 50px !important;
+    }
+    .ssect-sec .row{
+        margin-top: 40px;
+    }
+    .ssect-sec .row .texto li{
+        font-size: 15px;
+    }
+}
+
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    /* Apartado Internet */
+    .sect-pri header{
+        font-size: 40px !important; /*50px*/
+    }
+    .sect-pri p{
+        font-size: 15px !important;
+    }
+    .sect-secc header{
+        font-size: 45px;
+    }
+    .sect-secc .row{
+        margin-top: 80px;
+    }
+    .sect-ter .contenedorInfo{
+        margin-bottom: 200px;
+    }
+    .sect-ter .carousel{
+        margin: 0;
+        padding: 0;
+    }
+    /* Apartado Ciberseguridad */
+    .sectt-sec header{
+        font-size: 45px !important;
+    }
+    .sectt-sec .row{
+        margin-top: 30px;
+    }
+    .sectt-sec .row .texto li{
+        font-size: 14px;
+    }
+    /* Apartado Telefonia */
+    .ssect-sec header{
+        font-size: 50px !important;
+    }
+    .ssect-sec .row{
+        margin-top: 40px;
+    }
+    .ssect-sec .row .texto li{
+        font-size: 15px;
+    }
+}
+
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    /* Apartado Internet */
+    .sect-pri header{
+        font-size: 40px !important; /*50px*/
+    }
+    .sect-pri p{
+        font-size: 20px !important;
+    }
+    .sect-secc header{
+        font-size: 40px;
+    }
+    .sect-secc .row{
+        margin-top: 100px;
+    }
+    .sect-secc .texto{
+        flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
+        max-width: 100%;
+    }
+    .sect-secc .img{
+        display: none;
+    }
+    .sect-secc .row li{
+        font-size: 18px;
+    }
+    .sect-ter .img h2{
+        display: none;
+    }
+    .sect-ter .contenedorInfo{
+        margin-bottom: 100px;
+    }
+    .sect-ter .carousel{
+        margin: 0;
+        padding: 0;
+    }
+    /* Apartado Ciberseguridad */
+    .sectt-sec header{
+        font-size: 45px !important;
+    }
+    .sectt-sec .row{
+        margin-top: 30px;
+    }
+    .sectt-sec .texto{
+        flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
+        max-width: 100%;
+    }
+    .sectt-sec .img{
+        display: none;
+    }
+    .sectt-sec .row .texto li{
+        font-size: 15px;
+    }
+    .sectt-sec .row{
+        margin-bottom: 20px;
+    }
+    /* Apartado Telefonia */
+    .ssect-sec header{
+        font-size: 50px !important;
+    }
+    .ssect-sec .row{
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    .ssect-sec .texto{
+        flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
+        max-width: 100%;
+    }
+    .ssect-sec .img{
+        display: none;
+    }
+    .ssect-sec .row .texto li{
+        font-size: 16px;
+    }
+}
+
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    /* Apartado Internet */
+    .sect-pri header{
+        font-size: 35px !important; /*50px*/
+    }
+    .sect-pri p{
+        text-align: justify;
+        font-size: 15px !important;
+    }
+    .sect-secc header{
+        font-size: 35px;
+    }
+    .sect-secc .row{
+        margin-top: 50px;
+    }
+    .sect-secc .texto{
+        flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
+        max-width: 100%;
+    }
+    .sect-secc .img{
+        display: none;
+    }
+    .sect-secc .row li{
+        font-size: 15px;
+    }
+    .sect-ter .img h2{
+        display: none;
+    }
+    .sect-ter .titulo{
+        font-size: 45px;
+    }
+    .sect-ter .contenedorInfo li{
+        font-size: 15px
+    }
+    .sect-ter .contenedorInfo{
+        margin-bottom: none;
+    }
+    .sect-ter .carousel{
+        margin: 0;
+        padding: 0;
+    }
+    /* Apartado Ciberseguridad */
+    .sectt-sec header{
+        font-size: 30px !important;
+    }
+    .sectt-sec .row{
+        margin-top: 80px;
+    }
+    .sectt-sec .texto{
+        flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
+        max-width: 100%;
+    }
+    .sectt-sec .img{
+        display: none;
+    }
+    .sectt-sec .row .texto li{
+        font-size: 15px;
+    }
+    .sectt-sec .row{
+        margin-bottom: 20px;
+    }
+    /* Apartado Telefonia */
+    .ssect-sec header{
+        font-size: 40px !important;
+    }
+    .ssect-sec .row{
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    .ssect-sec .texto{
+        flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
+        max-width: 100%;
+    }
+    .ssect-sec .img{
+        display: none;
+    }
+    .ssect-sec .row .texto li{
+        font-size: 14px;
+    }
+}
+
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px){
+    /* Apartado Internet */
+    .sect-pri header{
+        font-size: 35px !important;
+    }
+    .sect-pri p{
+        text-align: justify;
+        font-size: 15px !important;
+    }
+    .sect-secc header{
+        font-size: 30px;
+    }
+    .sect-secc .row{
+        margin-top: 80px;
+    }
+    .sect-secc .texto{
+        flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
+        max-width: 100%;
+    }
+    .sect-secc .img{
+        display: none;
+    }
+    .sect-secc .row li{
+        font-size: 12px;
+    }
+    .sect-ter .img h2{
+        display: none;
+    }
+    .sect-ter .titulo{
+        font-size: 40px;
+    }
+    .sect-ter .contenedorInfo li{
+        font-size: 13px
+    }
+    .sect-ter .contenedorInfo{
+        margin-bottom: none;
+    }
+    .sect-ter .carousel{
+        margin: 0;
+        padding: 0;
+    }
+    /* Apartado Ciberseguridad */
+    .seccionCiberseguridad header{
+        font-size: 25px !important;
+    }
+    .seccionCiberseguridad p{
+        font-size: 14px !important;
+    }
+    .sectt-sec header{
+        font-size: 28px !important;
+    }
+    .sectt-sec .row{
+        margin-top: 90px;
+    }
+    .sectt-sec .texto{
+        flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
+        max-width: 100%;
+    }
+    .sectt-sec .img{
+        display: none;
+    }
+    .sectt-sec .row .texto li{
+        font-size: 13px;
+    }
+    .sectt-sec .row{
+        margin-bottom: 20px;
+    }
+    /* Apartado Telefonia */
+    .ssect-sec header{
+        font-size: 28px !important;
+    }
+    .ssect-sec .row{
+        margin-top: 70px;
+        margin-bottom: 10px;
+    }
+    .ssect-sec .texto{
+        flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
+        max-width: 100%;
+    }
+    .ssect-sec .img{
+        display: none;
+    }
+    .ssect-sec .row .texto li{
+        font-size: 13px;
+    }
+}
