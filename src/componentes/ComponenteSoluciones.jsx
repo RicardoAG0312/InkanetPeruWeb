@@ -68,7 +68,7 @@ function ComponenteListadoSoluciones ({clase, titulo, textos, id}) {
                         )}
                     </ul>
                 </div>
-                <div className="col-4 img">
+                <div className="col-12 col-sm-4 img">
                     
                 </div>
             </div>

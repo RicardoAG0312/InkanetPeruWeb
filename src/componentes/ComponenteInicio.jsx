@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
 import "../estilos/ComponenteInicio.css";
 import videoSrc from '../images/InkaPresentacion.mp4';
 import {ComponentePartners} from "./ComponenteSoluciones";

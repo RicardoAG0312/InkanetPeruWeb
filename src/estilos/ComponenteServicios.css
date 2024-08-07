@@ -407,6 +407,9 @@
 /* Segunda Seccion */
 /* Medio (para retratos de tabletas y teléfonos móviles grandes) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
+    .sect-pri header {
+        font-size: 31px !important;
+    }
     #Servicio header {
         font-size: 35px;
     }
@@ -453,6 +456,9 @@
 }
 /* Extra pequeño (para teléfonos móviles muy pequeños) */
 @media only screen and (max-width: 320px) {
+    .seccionServicios  header {
+        font-size: 33px !important;
+    }
     #Servicio {
         padding-bottom: 20px;
     }

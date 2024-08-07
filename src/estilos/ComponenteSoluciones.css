@@ -448,6 +448,9 @@ h1 {
         margin: 0;
         padding: 0;
     }
+    .sect-secc .row .img {
+        margin-left: 100px;
+    }
     /* Apartado Ciberseguridad */
     .sectt-sec header{
         font-size: 60px !important;
@@ -457,6 +460,13 @@ h1 {
     }
     .sectt-sec .row .texto li{
         font-size: 19px;
+    }
+    .sectt-sec .row .img {
+        margin-left: 105px;
+    }
+    /* Apartado Telefonio */
+    .ssect-sec .row .img {
+        margin-left: 96px;
     }
 }
 
@@ -482,6 +492,9 @@ h1 {
         margin: 0;
         padding: 0;
     }
+    .sect-secc .row .img {
+        margin-left: 100px;
+    }
     /* Apartado Ciberseguridad */
     .sectt-sec header{
         font-size: 60px !important;
@@ -492,9 +505,15 @@ h1 {
     .sectt-sec .row .texto li{
         font-size: 18px;
     }
+    .sectt-sec .row .img {
+        margin-left: 100px;
+    }
     /* Apartado Telefonia */
     .ssect-sec .row{
         margin-top: 40px;
+    }
+    .ssect-sec .row .img {
+        margin-left: 96px;
     }
 }
 
@@ -513,6 +532,9 @@ h1 {
     .sect-secc .row{
         margin-top: 60px;
     }
+    .sect-secc .row .img {
+        margin-left: 80px;
+    }
     .sect-ter .contenedorInfo{
         margin-bottom: 100px;
     }
@@ -527,6 +549,9 @@ h1 {
     .sectt-sec .row{
         margin-top: 40px;
     }
+    .sectt-sec .row .img {
+        margin-left: 82px;
+    }
     .sectt-sec .row .texto li{
         font-size: 15px;
     }
@@ -537,6 +562,9 @@ h1 {
     .ssect-sec .row{
         margin-top: 40px;
     }
+    .ssect-sec .row .img {
+        margin-left: 82px;
+    }
     .ssect-sec .row .texto li{
         font-size: 15px;
     }
@@ -545,6 +573,9 @@ h1 {
 /* Medio (para retratos de tabletas y teléfonos móviles grandes) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
     /* Apartado Internet */
+    .sect-secc .row {
+        height: 600px;
+    }
     .sect-pri header{
         font-size: 40px !important; /*50px*/
     }
@@ -553,9 +584,13 @@ h1 {
     }
     .sect-secc header{
         font-size: 45px;
+        margin-bottom: 10px;
     }
     .sect-secc .row{
         margin-top: 80px;
+    }
+    .sect-secc .row .img {
+        margin-left: 60px;
     }
     .sect-ter .contenedorInfo{
         margin-bottom: 200px;
@@ -571,6 +606,9 @@ h1 {
     .sectt-sec .row{
         margin-top: 30px;
     }
+    .sectt-sec .row .img {
+        margin-left: 64px;
+    }
     .sectt-sec .row .texto li{
         font-size: 14px;
     }
@@ -580,6 +618,9 @@ h1 {
     }
     .ssect-sec .row{
         margin-top: 40px;
+    }
+    .ssect-sec .row .img {
+        margin-left: 64px;
     }
     .ssect-sec .row .texto li{
         font-size: 15px;
@@ -600,10 +641,12 @@ h1 {
     }
     .sect-secc .row{
         margin-top: 100px;
+        height: auto;
     }
     .sect-secc .texto{
         flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
         max-width: 100%;
+        padding: 20px;
     }
     .sect-secc .img{
         display: none;
@@ -622,6 +665,9 @@ h1 {
         padding: 0;
     }
     /* Apartado Ciberseguridad */
+    .sect-pri p {
+        font-size: 18px !important;
+    }
     .sectt-sec header{
         font-size: 45px !important;
     }
@@ -631,6 +677,7 @@ h1 {
     .sectt-sec .texto{
         flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
         max-width: 100%;
+        padding: 20px;
     }
     .sectt-sec .img{
         display: none;
@@ -652,6 +699,7 @@ h1 {
     .ssect-sec .texto{
         flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
         max-width: 100%;
+        padding: 20px;
     }
     .ssect-sec .img{
         display: none;
@@ -680,8 +728,12 @@ h1 {
     .sect-secc .texto{
         flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
         max-width: 100%;
+        padding: 20px;
     }
     .sect-secc .img{
+        display: none;
+    }
+    .sect-ter .contenedorInfo .img {
         display: none;
     }
     .sect-secc .row li{
@@ -713,6 +765,7 @@ h1 {
     .sectt-sec .texto{
         flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
         max-width: 100%;
+        padding: 20px;
     }
     .sectt-sec .img{
         display: none;
@@ -734,6 +787,7 @@ h1 {
     .ssect-sec .texto{
         flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
         max-width: 100%;
+        padding: 20px;
     }
     .ssect-sec .img{
         display: none;
@@ -751,7 +805,7 @@ h1 {
     }
     .sect-pri p{
         text-align: justify;
-        font-size: 15px !important;
+        font-size: 14px !important;
     }
     .sect-secc header{
         font-size: 30px;
@@ -762,6 +816,7 @@ h1 {
     .sect-secc .texto{
         flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
         max-width: 100%;
+        padding: 20px;
     }
     .sect-secc .img{
         display: none;
@@ -801,6 +856,7 @@ h1 {
     .sectt-sec .texto{
         flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
         max-width: 100%;
+        padding: 20px;
     }
     .sectt-sec .img{
         display: none;
@@ -822,6 +878,7 @@ h1 {
     .ssect-sec .texto{
         flex: 0 0 100%; /* La columna de texto ocupará todo el ancho */
         max-width: 100%;
+        padding: 20px;
     }
     .ssect-sec .img{
         display: none;

@@ -696,7 +696,7 @@
         padding: 20px;
         border-top: 2px solid #0CABAE;
         background-color: rgba(220, 220, 220, 0.2);
-        margin-bottom: 200px;
+        margin-bottom: 400px;
     }
     .seccion-principios .caja {
         height: auto;
@@ -741,7 +741,7 @@
         padding: 20px;
         border-top: 2px solid #0CABAE;
         background-color: rgba(220, 220, 220, 0.2);
-        margin-bottom: 200px;
+        margin-bottom: 400px;
     }
     .seccion-principios .caja {
         height: auto;
@@ -782,14 +782,14 @@
 @media only screen and (max-width: 320px) {
     .seccion-principios{
         width: 100%;
-        min-height: 100% !important;
+        height: 100% !important;
         padding: 20px;
         border-top: 2px solid #0CABAE;
         background-color: rgba(220, 220, 220, 0.2);
-        margin-bottom: 1000px;
+        margin-bottom: 1400px;
     }
     .seccion-principios .caja {
-        height: auto;
+        height: auto !important;
         display: flex;
         flex-direction: column;
     }
