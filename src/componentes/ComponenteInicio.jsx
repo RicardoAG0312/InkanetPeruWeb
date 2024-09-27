@@ -19,7 +19,7 @@ const secciones = [
         colorBoton: "color-boton-peru",
         tituloImagen: TituloImagen,
         tituloImagenAlt: "Bandera de Perú",
-        href: "./Presentación_INKANET_2023[1].pdf",
+        href: "../../public/Presentación_INKANET_2023[1].pdf",
         isDownload: true
         },
         {
