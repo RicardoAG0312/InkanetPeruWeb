@@ -19,7 +19,7 @@ const secciones = [
         colorBoton: "color-boton-peru",
         tituloImagen: TituloImagen,
         tituloImagenAlt: "Bandera de Perú",
-        href: "../../public/Presentación_INKANET_2023[1].pdf",
+        href: "../../public/Datasheet_Inkanet.pdf",
         isDownload: true
         },
         {
@@ -32,7 +32,7 @@ const secciones = [
         colorBoton: "color-boton-info",
         tituloImagen: null,
         tituloImagenAlt: null,
-        href: "../../public/Presentación_INKANET_2023[1].pdf",
+        href: "../../public/Datasheet_Inkanet.pdf",
         isDownload: true
         },
         {
@@ -45,7 +45,7 @@ const secciones = [
         colorBoton: "color-boton-info",
         tituloImagen: null,
         tituloImagenAlt: null,
-        href: "../../public/Presentación_INKANET_2023[1].pdf",
+        href: "../../public/Datasheet_Inkanet.pdf",
         isDownload: true
         },
         {
@@ -58,7 +58,7 @@ const secciones = [
         colorBoton: "color-boton-info",
         tituloImagen: null,
         tituloImagenAlt: null,
-        href: "../../public/Presentación_INKANET_2023[1].pdf",
+        href: "../../public/Datasheet_Inkanet.pdf",
         isDownload: true
         }
     ];
@@ -108,7 +108,7 @@ function Carrusel(){
                     </div>
                     <p>{seccion.texto}</p>
                     {seccion.isDownload ? (
-                        <a href={seccion.href} download="Presentación-Inkanet.pdf" className={seccion.colorBoton} style={{ display: 'inline-block', zIndex: 10 }}>
+                        <a href={seccion.href} download="Datasheet_Inkanet.pdf" className={seccion.colorBoton} style={{ display: 'inline-block', zIndex: 10 }}>
                             {seccion.textoBoton}
                         </a>
                     ) : (
