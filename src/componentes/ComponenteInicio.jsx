@@ -19,7 +19,7 @@ const secciones = [
         colorBoton: "color-boton-peru",
         tituloImagen: TituloImagen,
         tituloImagenAlt: "Bandera de Perú",
-        href: "../../public/Datasheet_Inkanet.pdf",
+        href: process.env.PUBLIC_URL + "/Datasheet_Inkanet.pdf",
         isDownload: true
         },
         {
@@ -32,7 +32,7 @@ const secciones = [
         colorBoton: "color-boton-info",
         tituloImagen: null,
         tituloImagenAlt: null,
-        href: "../../public/Datasheet_Inkanet.pdf",
+        href: process.env.PUBLIC_URL + "/Datasheet_Inkanet.pdf",
         isDownload: true
         },
         {
@@ -45,7 +45,7 @@ const secciones = [
         colorBoton: "color-boton-info",
         tituloImagen: null,
         tituloImagenAlt: null,
-        href: "../../public/Datasheet_Inkanet.pdf",
+        href: process.env.PUBLIC_URL + "/Datasheet_Inkanet.pdf",
         isDownload: true
         },
         {
@@ -58,7 +58,7 @@ const secciones = [
         colorBoton: "color-boton-info",
         tituloImagen: null,
         tituloImagenAlt: null,
-        href: "../../public/Datasheet_Inkanet.pdf",
+        href: process.env.PUBLIC_URL + "/Datasheet_Inkanet.pdf",
         isDownload: true
         }
     ];
