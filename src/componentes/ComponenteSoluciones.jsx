@@ -129,7 +129,7 @@ export function ComponenteSolucionesInternet() {
         </>
     )
 }
-
+// hola
 export function ComponenteSolucionesCiberseguridad() {
     return (
         <>
