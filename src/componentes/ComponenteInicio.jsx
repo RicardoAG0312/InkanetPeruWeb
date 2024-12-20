@@ -2,27 +2,31 @@ import React, {useState, useEffect} from 'react';
 import "../estilos/ComponenteInicio.css";
 import videoSrc from '../images/InkaPresentacion.mp4';
 import {ComponentePartners} from "./ComponenteSoluciones";
-import Imagen66 from "../images/66.png";
+import Imagen66 from "../images/navidad.png";
 import Imagen6 from "../images/6.png";
 import Imagen7 from "../images/7.png";
 import Imagen8 from "../images/8.png";
-import TituloImagen from "../images/24.png";
-//import { Carousel } from 'react-bootstrap';
+import { NieveComponente } from "./NieveComponente";
+
 const secciones = [
     {
-        titulo: "FELICES FIESTAS PATRIAS ",
-        texto: "Inkanet desea en este mes de julio felices fiestas Patrias a nuestros valiosos colaboradores y partners, así como a nuestros apreciados clientes. Agradecemos su continuo apoyo y confianza en nuestros servicios.",
+        titulo: [
+            "LES DESEAMOS UNA ",
+            <span key="navidad"> <h1 style={{color: "#FF4444"}}> TEMPORADA NAVIDEÑA </h1></span>,
+            " LLENA DE PAZ, AMOR"
+        ],
+        texto: null,
         imagen: Imagen66,
-        alt: "Imagen",
-        fondo: 'imagen-uno',
-        textoBoton: "¡Viva el Perú!",
-        colorBoton: "color-boton-peru",
-        tituloImagen: TituloImagen,
-        tituloImagenAlt: "Bandera de Perú",
+        alt: "Imagen Navidad",
+        fondo: 'imagen-navidad', // Clase personalizada para el fondo navideño
+        textoBoton: "Más Info",
+        colorBoton: "color-boton-navidad",
+        tituloImagen: null,
+        tituloImagenAlt: null,
         href: process.env.PUBLIC_URL + "/Datasheet_Inkanet.pdf",
         isDownload: true
-        },
-        {
+    },
+    {
         titulo: "SEGURIDAD GESTIONADA",
         texto: "Nuestro servicio de soporte ofrece todas las capacidades y experiencia de resolución de incidentes con una operación 24 x 7 x 365, a través de niveles de atención y especialización.",
         imagen: Imagen6,
@@ -34,8 +38,8 @@ const secciones = [
         tituloImagenAlt: null,
         href: process.env.PUBLIC_URL + "/Datasheet_Inkanet.pdf",
         isDownload: true
-        },
-        {
+    },
+    {
         titulo: "TRANSPORTE DE DATOS",
         texto: "Planificar y ejecutar proyectos de soluciones en Ciberseguridad, Redes y Comunicaciones y Data Center, usando estándares internacionales como PMI, ITIL, cumpliendo las expectativas de los clientes.",
         imagen: Imagen7,
@@ -47,8 +51,8 @@ const secciones = [
         tituloImagenAlt: null,
         href: process.env.PUBLIC_URL + "/Datasheet_Inkanet.pdf",
         isDownload: true
-        },
-        {
+    },
+    {
         titulo: "INTERNET EMPRESARIAL",
         texto: "Brindamos servicio gestionado de diversas soluciones de nuestro portafolio con la capacidad de operación y soporte con el propósito de atender las diferentes necesidades de administración y gestión de todos los recursos.",
         imagen: Imagen8,
@@ -60,8 +64,8 @@ const secciones = [
         tituloImagenAlt: null,
         href: process.env.PUBLIC_URL + "/Datasheet_Inkanet.pdf",
         isDownload: true
-        }
-    ];
+    }
+];
 
 function ComponentesServiciosInicio ({clase, titulo, texto, imagen, alt, href}) {
     return (
@@ -80,23 +84,22 @@ function ComponentesServiciosInicio ({clase, titulo, texto, imagen, alt, href}) 
     )
 }
 
-
-function Carrusel(){
+function Carrusel() {
     const [contador, setContador] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
-        setContador(prevContador => (prevContador + 1) % secciones.length);
+            setContador(prevContador => (prevContador + 1) % secciones.length);
         }, 2500);
         return () => clearInterval(interval);
     }, []);
 
     const seccion = secciones[contador];
-    
-    return(
+
+    return (
         <section className="container-fluid sect-principal">
             <div className={`row ${seccion.fondo}`}>
-            <div className="background"></div>
+                <div className="background"></div>
                 <div className="col-12 col-sm-6 caja">
                     <div className="header-container">
                         <header>
@@ -133,12 +136,15 @@ function Carrusel(){
     );
 }
 
+
 function ComponenteInicio() {
     return (
         <>     
             <section >
                 <Carrusel/>
             </section>
+            <NieveComponente />
+
             <section className="container contenedor-video">
                 <video src={videoSrc} type="video/mp4" controls />
             </section>
@@ -149,6 +155,7 @@ function ComponenteInicio() {
                 </p>
             </header>
             <section className="container-fluid sect-servicios">
+                
                 <div className="row d-flex justify-content-center align-items-center">
                     <ComponentesServiciosInicio 
                         clase = "internet"

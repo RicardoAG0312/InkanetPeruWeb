@@ -9,6 +9,9 @@
     font-family: "Red Hat Display";
     font-weight: 400;
 }
+body {
+    overflow-x: hidden !important; /* Elimina cualquier barra de desplazamiento horizontal */
+}
 /* Loading */
 #loading-screen {
     background-color: #2a2a2a;
@@ -238,6 +241,11 @@ footer .contenedorPie {
     color: white;
     margin: 0;
     font-family: "Red Hat Display";
+}
+
+canvas {
+    display: block; /* Elimina el espacio debajo del canvas (no se comporta como un elemento inline) */
+    overflow-x: hidden !important; /* Elimina cualquier barra de desplazamiento horizontal */
 }
 
 

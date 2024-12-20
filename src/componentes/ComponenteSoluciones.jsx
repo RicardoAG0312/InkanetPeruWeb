@@ -14,6 +14,8 @@ import Nessus from '../images/Nessus.png';
 import NetWorks from '../images/NetWorks.png';
 import PaloAlto from '../images/PaloAlto.png';
 import Sophos from '../images/Sophos.png';
+import { NieveComponente } from "./NieveComponente";
+
 
 const imagenes = [
     Barracuda, CheckPoint, Cisco, Dell, ForcePoint, Fortinet, GFISoftware, Hillstone, Kaspersky, Nessus, NetWorks, PaloAlto, Sophos
@@ -81,6 +83,8 @@ function ComponenteListadoSoluciones ({clase, titulo, textos, id}) {
 export function ComponenteSolucionesInternet() {
     return (
         <>
+            <NieveComponente />
+
             <ComponenteModalPrincipalFondo 
                 clase = "seccionInternet"
                 titulo = "INTERNET 2.0"
@@ -133,6 +137,8 @@ export function ComponenteSolucionesInternet() {
 export function ComponenteSolucionesCiberseguridad() {
     return (
         <>
+            <NieveComponente />
+
             <ComponenteModalPrincipalFondo 
                 clase = "seccionCiberseguridad"
                 titulo = "CIBERSEGURIDAD"
@@ -161,6 +167,8 @@ export function ComponenteSolucionesCiberseguridad() {
 export function ComponenteSolucionesTelefonia() {
     return (
         <>
+            <NieveComponente />
+
             <ComponenteModalPrincipalFondo 
                 clase = "seccionTelefonia"
                 titulo = "TELEFONÍA IP"

@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import "../estilos/ComponenteContacto.css";
+import { NieveComponente } from "./NieveComponente";
+
 
 function ComponenteContacto() {
     const formRef = useRef();
@@ -25,7 +27,10 @@ function ComponenteContacto() {
     };
 
     return (
+        
         <section className="container-fluid p-0">
+            <NieveComponente />
+
             <div className="row">
                 <div className="col-12 col-lg-4">
                     <form onSubmit={handleSubmit} ref={formRef}>

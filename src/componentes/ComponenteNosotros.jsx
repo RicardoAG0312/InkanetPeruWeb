@@ -1,6 +1,8 @@
 import React from 'react'
 import LogoInkanet from "../images/Recurso3.svg";
 import "../estilos/ComponenteNosotros.css";
+import { NieveComponente } from "./NieveComponente";
+
 
 export function ComponenteModalPrincipalFondo ({titulo, texto, enlace, imagenPrincipal, clase}) {
     return (
@@ -9,7 +11,7 @@ export function ComponenteModalPrincipalFondo ({titulo, texto, enlace, imagenPri
                 <div className="col-12 col-sm-6 texto">
                     <div className="header-container">
                         <header> {titulo} </header>
-                        <img id="titulo-imagen" src={require(`../images/24.png`)} alt="Imagen" className="img-titulo" />
+                        {/* <img id="titulo-imagen" src={require(`../images/24.png`)} alt="Imagen" className="img-titulo" /> */}
                     </div>
                     <p>
                         {texto}
@@ -58,6 +60,7 @@ function ComponentePrincipios ({titulo, texto, imagen}) {
 export function ComponenteNosotros() {
     return (
         <>
+            <NieveComponente />
             <ComponenteModalPrincipalFondo 
                 clase = "seccionNosotros"
                 titulo = "SOMOS INKANET"

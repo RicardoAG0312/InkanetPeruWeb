@@ -10,6 +10,7 @@ import LogoInkanet from "./images/pruebas de logotipo.svg"
 import LogoInkanetPie from "./images/Recurso 2.svg";
 import {ComponenteInicio, ComponenteNosotros, ComponenteServicios, ComponenteSolucionesInternet, ComponenteSolucionesCiberseguridad, ComponenteSolucionesTelefonia, ComponenteContacto} from "./routers/routers";
 
+
 //hola
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(function() {

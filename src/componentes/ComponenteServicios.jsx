@@ -2,6 +2,8 @@ import React from 'react'
 import "../estilos/ComponenteServicios.css";
 import LogoInkanet from "../images/Recurso3.svg";
 import {ComponenteModalPrincipalFondo} from './ComponenteNosotros';
+import { NieveComponente } from "./NieveComponente";
+
 
 
 function ComponenteViñetasServicios ({clase, titulo, texto}) {
@@ -18,6 +20,7 @@ function ComponenteViñetasServicios ({clase, titulo, texto}) {
 function ComponenteServicios() {
     return (
         <>  
+            <NieveComponente />
             <ComponenteModalPrincipalFondo 
                 clase = "seccionServicios"
                 titulo = "SERVICIO TÉCNICO"
