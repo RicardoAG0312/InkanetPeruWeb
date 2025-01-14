@@ -9,23 +9,23 @@ import Imagen8 from "../images/8.png";
 import { NieveComponente } from "./NieveComponente";
 
 const secciones = [
-    {
-        titulo: [
-            "LES DESEAMOS UNA ",
-            <span key="navidad"> <h1 style={{color: "#FF4444"}}> TEMPORADA NAVIDEÑA </h1></span>,
-            " LLENA DE PAZ, AMOR"
-        ],
-        texto: null,
-        imagen: Imagen66,
-        alt: "Imagen Navidad",
-        fondo: 'imagen-navidad', // Clase personalizada para el fondo navideño
-        textoBoton: "Más Info",
-        colorBoton: "color-boton-navidad",
-        tituloImagen: null,
-        tituloImagenAlt: null,
-        href: process.env.PUBLIC_URL + "/Datasheet_Inkanet.pdf",
-        isDownload: true
-    },
+    // {
+    //     titulo: [
+    //         "LES DESEAMOS UNA ",
+    //         <span key="navidad"> <h1 style={{color: "#FF4444"}}> TEMPORADA NAVIDEÑA </h1></span>,
+    //         " LLENA DE PAZ, AMOR"
+    //     ],
+    //     texto: null,
+    //     imagen: Imagen66,
+    //     alt: "Imagen Navidad",
+    //     fondo: 'imagen-navidad', // Clase personalizada para el fondo navideño
+    //     textoBoton: "Más Info",
+    //     colorBoton: "color-boton-navidad",
+    //     tituloImagen: null,
+    //     tituloImagenAlt: null,
+    //     href: process.env.PUBLIC_URL + "/Datasheet_Inkanet.pdf",
+    //     isDownload: true
+    // },
     {
         titulo: "SEGURIDAD GESTIONADA",
         texto: "Nuestro servicio de soporte ofrece todas las capacidades y experiencia de resolución de incidentes con una operación 24 x 7 x 365, a través de niveles de atención y especialización.",

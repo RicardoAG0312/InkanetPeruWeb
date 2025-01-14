@@ -72,7 +72,7 @@ export const NieveEffect = ({canvasRef}) => {
       ctx.fill();
     }
 
-    requestAnimationFrame(snow);
+    // requestAnimationFrame(snow);
   };
 
   const init = () => {
@@ -96,7 +96,7 @@ export const NieveEffect = ({canvasRef}) => {
       });
     }
 
-    snow();
+    // snow();
   };
 
   useEffect(() => {
@@ -126,6 +126,6 @@ export const NieveEffect = ({canvasRef}) => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} />;
+//   return <canvas ref={canvasRef} />;
 };
 
