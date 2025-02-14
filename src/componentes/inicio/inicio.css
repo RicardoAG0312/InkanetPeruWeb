@@ -23,3 +23,59 @@
 .carousel .carousel-indicators .active {
     background-color: #05AEAF !important;
 }
+
+
+.contenedorPartners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    height: auto;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* 3 columnas */
+    grid-template-rows: repeat(4, auto); /* 4 filas */
+    row-gap: 20px;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita que la imagen sobresalga */
+    border-radius: 8px;
+    width: auto; /* Tamaño fijo del contenedor */
+    height: 220px; /* Para evitar que se deforme */
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta la imagen sin deformarla */
+    border-radius: 8px;
+    filter: brightness(0) invert(1) contrast(100%) saturate(100%); /* Convierte la imagen a blanco puro */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    padding: 10px 5px;
+  }
+  
+  .grid-item:hover img {
+    filter: brightness(1) invert(0) contrast(100%) saturate(100%); /* Regresa al color original */
+    transform: scale(1.10) translate3d(10px, 10px, 3em);
+    -webkit-transform: scale(1.10) translate3d(10px, 10px, 3em);
+    -moz-transform: scale(1.10) translate3d(10px, 10px, 3em);
+    -ms-transform: scale(1.10) translate3d(10px, 10px, 3em);
+    -o-transform: scale(1.10) translate3d(10px, 10px, 3em);
+  }
+  
+  .float-fluid {
+    transition: transform 0.5s ease-in-out !important;
+  }
+  
+  .float-fluid:hover {
+    transform: scale(1.10) translate3d(10px, 10px, 3em) !important;
+  }
+  
