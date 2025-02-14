@@ -67,7 +67,7 @@ body {
 #navbar{
     height: 100px;
     padding: 20px;
-    background-color: #F3F3F4;
+    background-color: transparent;
     border-bottom: 1px solid #0CABAE;
     height: 80px;
 }
@@ -82,7 +82,6 @@ body {
     -moz-transition: all ease-in-out 0.2s;
     -ms-transition: all ease-in-out 0.2s;
     -o-transition: all ease-in-out 0.2s;
-    color: black;
 }
 .navbar{
     margin-top: 0;
@@ -95,7 +94,7 @@ body {
     -moz-transition: top 0.5s ease;
     -ms-transition: top 0.5s ease;
     -o-transition: top 0.5s ease;
-    z-index: 9999;
+    z-index: 5;
 }
 .dropdown-menu.show {
     background-color: #2a2a2a;

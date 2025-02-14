@@ -1,0 +1,25 @@
+.contenedorPrincipal {
+    background-color: transparent;
+    height: 100vh;
+    position: relative;
+}
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.carousel video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.carousel .carousel-indicators [data-bs-target] {
+    background-color: #FAFAFA !important;
+}
+
+.carousel .carousel-indicators .active {
+    background-color: #05AEAF !important;
+}
