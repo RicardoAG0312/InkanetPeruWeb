@@ -1,0 +1,108 @@
+/* ESTILO BASE DEL BOTÓN */
+.boton-animado {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    border-radius: 40px;
+    border: 1px solid white;
+    padding: 0 10px;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease, background 0.3s ease;
+    -webkit-transition: color 0.3s ease, background 0.3s ease;
+    -moz-transition: color 0.3s ease, background 0.3s ease;
+    -ms-transition: color 0.3s ease, background 0.3s ease;
+    -o-transition: color 0.3s ease, background 0.3s ease;
+}
+
+/* Fondo animado */
+.boton-animado .hover-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: white;
+    transition: width 0.3s ease;
+    z-index: 1;
+}
+
+/* Ícono */
+.boton-animado i {
+    font-size: 40px;
+    color: white;
+    position: relative;
+    left: -11.5px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    z-index: 2;
+}
+
+/* Texto */
+.boton-animado span {
+    position: relative;
+    z-index: 2;
+    padding-left: 10px;
+}
+
+/* Estado HOVER (Solo si NO está activo) */
+.boton-animado:not(.activo):hover .hover-bg {
+    width: 100%;
+}
+
+.boton-animado:not(.activo):hover {
+    color: black;
+}
+
+.boton-animado:not(.activo):hover i {
+    color: #1FB3AE;
+    transform: rotate(90deg);
+}
+
+/* Estado ACTIVO (cuando se presiona) */
+.boton-animado.activo {
+    color: black;
+}
+
+.boton-animado.activo .hover-bg {
+    width: 100%;
+}
+
+.boton-animado.activo i {
+    color: #1FB3AE;
+    transform: rotate(90deg);
+}
+
+/* ANIMACIÓN DEL TEXTO OCULTO */
+.parrafo-oculto {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.parrafo-oculto.visible {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.lideres {
+    min-height: 500px;
+    position: relative;
+}
+
+.lideres::before {
+    content: "";
+    background-image: url("../../../images/diseño10.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}

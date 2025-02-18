@@ -7,7 +7,7 @@ import VideoPortada1 from "../../images/Portada 1.mp4"
 import VideoPortada2 from "../../images/Portada 2.mp4"
 import VideoPortada3 from "../../images/Portada 3.mp4"
 import VideoPortada4 from "../../images/Portada 5.mp4"
-import BotonAnimado from "./ui/BotonAnimado";
+import BotonAnimado from "../ui/BotonAnimado";
 
 export default function ComponenteInicio() {
 

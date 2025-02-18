@@ -7,16 +7,17 @@
 }
 /* Red Hat Display */
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-weight: 400;
+    font-weight: 400 ;
     font-family: "MiFuente";
 }
 h1, h2, header, span {
     font-family: "Red Hat Display" !important;
 }
+
 body {
     overflow-x: hidden !important; /* Elimina cualquier barra de desplazamiento horizontal */
 }

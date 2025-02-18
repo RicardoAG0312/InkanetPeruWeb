@@ -1,0 +1,17 @@
+.seguridad-section {
+    position: relative;
+    height: 100vh;
+}
+.seguridad-section::before {
+    content: "";
+    background-image: url("../../../images/diseño12.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
