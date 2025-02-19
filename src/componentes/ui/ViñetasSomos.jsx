@@ -1,7 +1,7 @@
 import React from 'react'
 import { BiCheckDouble } from "react-icons/bi";
 
-function ViñetasSomos({ texto }) {
+function ViñetasSomos({ texto, fondo, fondoIcono, colorIcono, colorLetra }) {
     return (
         <div className="d-flex align-items-center justify-content-start" style={{
             border: "1px solid #1FB3AE", 
@@ -9,12 +9,13 @@ function ViñetasSomos({ texto }) {
             borderRadius: "50px", 
             gap: "20px", 
             padding: "10px", 
-            width: "100%",
-            maxWidth: "100%"
+            width: "500px",
+            maxWidth: "100%",
+            backgroundColor: fondo
         }}>
             <div style={{
-                color: "white",
-                backgroundColor: "#1FB3AE",
+                color: colorIcono,
+                backgroundColor: fondoIcono,
                 borderRadius: "50%",
                 width: "50px",
                 height: "50px",
@@ -25,7 +26,9 @@ function ViñetasSomos({ texto }) {
             }}>
                 <BiCheckDouble />
             </div>
-            <p className="m-0 text-white" style={{ fontSize: ".8rem", maxWidth: "90%" }}>{texto}</p>
+            <p className={`m-0 text-${colorLetra}`} style={{ fontSize: "1rem", maxWidth: "80%" }}>
+                {texto}
+            </p>
         </div>
     );
 }

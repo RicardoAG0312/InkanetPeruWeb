@@ -1,8 +1,11 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
-function BotonAnimado({colorIconoBase, colorLetraBase, colorBordeBase, colorIconoPress, fondoTextoPress, colorLetraPress}) {
+function BotonAnimado({colorIconoBase, colorLetraBase, colorBordeBase, colorIconoPress, fondoTextoPress, colorLetraPress, nav}) {
+    const navigate = useNavigate();
+
     return (
-        <div style={{ position: "relative", display: "flex", alignItems: "center", height: "40px", width: "auto", borderRadius: "40px", border: `1px solid ${colorBordeBase}`, paddingRight: "10px", paddingLeft: "10px", overflow: "hidden" }} 
+        <div style={{ position: "relative", display: "flex", alignItems: "center", height: "40px", maxWidth: "180px", borderRadius: "40px", border: `1px solid ${colorBordeBase}`, paddingRight: "10px", paddingLeft: "10px", overflow: "hidden" }} 
         onMouseEnter={(e) => { 
             e.currentTarget.querySelector(".hover-bg").style.width = "100%"; 
             e.currentTarget.style.color = colorLetraPress;  
@@ -28,7 +31,7 @@ function BotonAnimado({colorIconoBase, colorLetraBase, colorBordeBase, colorIcon
         <i className="bi bi-plus-circle-fill" style={{ fontSize: "40px", color: "#05AFA5", position: "relative", left: "-11.5px", transition: "transform 0.3s ease, color 0.3s ease", zIndex: "2" }}></i> 
 
         {/* Texto */}
-        <span style={{ position: "relative", zIndex: "2", paddingLeft: "0px" }}>Más Información</span>
+        <span style={{ position: "relative", zIndex: "2", paddingLeft: "0px"}} onClick={() => navigate(`/${nav}`)}>Más Información</span>
         </div>
     )
 }

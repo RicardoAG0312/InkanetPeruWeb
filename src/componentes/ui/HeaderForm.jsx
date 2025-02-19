@@ -1,15 +1,16 @@
 import React from 'react'
 
-function HeaderForm({titulo, texto1, texto2}) {
+function HeaderForm({img, titulo, texto1, texto2}) {
     return (
-        <div className='row m-4 row-header'>
+        <div className='row m-4 row-header d-flex justify-content-center align-items-center'>
             <div className="p-5 col-md-6 col-12 d-flex justify-content-center align-items-start flex-column gap-3">
-                <h1 style={{fontSize: "60px", fontWeight: "bold", width: "80%", color: "white", textShadow: "2px 2px 2px black"}}> {titulo} </h1>
+                {img && <img src={require(`../../images/${img}`)} alt='' style={{ width: "300px", height: "auto" }} />}
+                <h1 style={{fontSize: "60px", fontWeight: "bold", width: "60%", color: "white", textShadow: "2px 2px 2px black"}}> {titulo} </h1>
                 <h5 className='text-white'> {texto1} </h5>
                 <p className='text-white'> {texto2} </p>
             </div>
-            <div className="col-md-6 col-12 d-flex justify-content-center align-items-center flex-column" style={{ height: "100vh"}}>
-                <div className='container headForm'>
+            <div className="content-headForm  col-md-6 col-12 d-flex justify-content-center align-items-center flex-column" style={{ height: "auto"}}>
+                <div className='container headForm h-100 '>
                     <h2> Contacta con un asesor </h2>
                     <p style={{fontSize: "12px", textAlign: "center"}}> Ingresa los datos de tu empresa RUC 20 y un asesor de negocios se comunicará contigo para ayudarte </p>
                     <div className='d-flex flex-column gap-2 w-100'>

@@ -1,6 +1,4 @@
 import React from 'react'
-import { MdOutlineSupportAgent } from "react-icons/md";
-import { CiViewList } from "react-icons/ci";
 
 function Help() {
     return (
@@ -13,11 +11,11 @@ function Help() {
                     <div className='mt-4 d-flex flex-wrap justify-content-center align-items-center gap-3'>
                         <div className='text-white d-flex justify-content-center align-items-center gap-2' 
                         style={{ background: "#05AFA5", borderRadius: "10px", width: "200px", height: "60px", cursor: "pointer" }}>
-                        <CiViewList style={{fontSize: "35px"}}/> ¿Cómo Comprar?
+                        <img src={require("../../images/diseño23.png")} alt="Diseño Comprar" style={{width: "40px", height: "auto"}}/> ¿Cómo Comprar?
                         </div>
-                        <div className='text-white d-flex justify-content-center align-items-center gap-2' 
+                        <div className='text-white d-flex justify-content-center align-items-center gap-3' 
                         style={{ background: "#8D8D8D", borderRadius: "10px", width: "200px", height: "60px", cursor: "pointer" }}>
-                        <MdOutlineSupportAgent style={{fontSize: "35px"}}/> Soporte
+                        <img src={require("../../images/diseño22.png")} alt="Diseño Comprar" style={{width: "40px", height: "auto"}}/>  Soporte
                         </div>
                     </div>
                 </div>

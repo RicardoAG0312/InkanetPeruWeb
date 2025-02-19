@@ -116,10 +116,34 @@ function ComponenteSomos() {
 
                     {/* Columna derecha */}
                     <div className="col-12 col-md-6 d-flex flex-column justify-content-between align-items-start gap-3">
-                        <ViñetasSomos texto="Certificado internacional con ISO 9001:2015, ISO/IEC 27001:2013 e ISO 22301:2019" />
-                        <ViñetasSomos texto="Más de 7,000 Km de fibra óptica propia desplegada en Lima y Callao." />
-                        <ViñetasSomos texto="Personal propio certificado para atención y soporte 24×7 los 365 días del año." />
-                        <ViñetasSomos texto="Facturación clara y transparente." />
+                        <ViñetasSomos 
+                            texto="Certificado internacional con ISO 9001:2015, ISO/IEC 27001:2013 e ISO 22301:2019"
+                            fondo="#1A1A1A"
+                            fondoIcono="#1FB3AE"
+                            colorLetra="white"
+                            colorIcono="white"
+                        />
+                        <ViñetasSomos 
+                            texto="Más de 7,000 Km de fibra óptica propia desplegada en Lima y Callao." 
+                            fondo="#1A1A1A"
+                            fondoIcono="#1FB3AE"
+                            colorLetra="white"
+                            colorIcono="white"
+                        />
+                        <ViñetasSomos 
+                            texto="Personal propio certificado para atención y soporte 24×7 los 365 días del año." 
+                            fondo="#1A1A1A"
+                            fondoIcono="#1FB3AE"
+                            colorLetra="white"
+                            colorIcono="white"
+                        />
+                        <ViñetasSomos 
+                            texto="Facturación clara y transparente." 
+                            fondo="#1A1A1A"
+                            fondoIcono="#1FB3AE"
+                            colorLetra="white"
+                            colorIcono="white"
+                        />
                     </div>
                 </div>
             </section>

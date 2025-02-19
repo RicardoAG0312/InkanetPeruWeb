@@ -5,7 +5,6 @@
 .conectividad-section::before {
     content: "";
     background-image: url("../../../images/EMPRESAS-.png");
-    background-color: red;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,9 +57,35 @@
 .headForm .botton:hover {
     background-color: #2E2E2E;
 }
+
+
 .row-header {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+
+
+.img-responsive-custom {
+    max-width:  150% !important; 
+    height: auto;     /* Mantiene la proporción de la imagen */
+}
+
+@media (min-width: 768px) { 
+    .img-responsive-custom {
+        max-width: none; /* Permite que en pantallas grandes tenga su tamaño original */
+    }
+}
+
+.texto-ajustado {
+    margin-left: -70px; /* Se pega a la izquierda en pantallas grandes */
+}
+
+@media (max-width: 768px) { 
+    .texto-ajustado {
+        margin-left: 0; /* Se ajusta al centro en pantallas pequeñas */
+    }
 }
