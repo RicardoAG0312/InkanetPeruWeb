@@ -4,6 +4,7 @@ import LogoInkanet from "../../../images/Recurso 2.svg";
 import "./componenteSomos.css";
 import BotonAnimado from "../../ui/BotonAnimado";
 import ViñetasSomos from "../../ui/ViñetasSomos";
+import Principios from "../../ui/Principios";
 
 
 function BotonAnimadoSomos({ onClick, activo }) {
@@ -113,8 +114,6 @@ function ComponenteSomos() {
                             />
                         </div>
                     </div>
-
-                    {/* Columna derecha */}
                     <div className="col-12 col-md-6 d-flex flex-column justify-content-between align-items-start gap-3">
                         <ViñetasSomos 
                             texto="Certificado internacional con ISO 9001:2015, ISO/IEC 27001:2013 e ISO 22301:2019"
@@ -143,6 +142,35 @@ function ComponenteSomos() {
                             fondoIcono="#1FB3AE"
                             colorLetra="white"
                             colorIcono="white"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section className="container-fluid seccion-principios">
+                <header className="titulo-an">
+                    Nuestros <span style={{fontWeight: "100"}}>Valores </span>
+                </header>
+                <div className="container">
+                    <div className="row">
+                        <Principios 
+                            titulo="Confidencialidad"
+                            texto="La confidencialidad es esencial para nosotros. Protegemos su información con sistemas de seguridad de vanguardia."
+                            imagen="1"
+                        />
+                        <Principios 
+                            titulo="Integridad"
+                            texto="Nos esforzamos por mantener la integridad de sus datos. Puede confiar en la precisión y fiabilidad de la información que manejamos."
+                            imagen="2"
+                        />
+                        <Principios 
+                            titulo="Disponibilidad"
+                            texto="Nuestros servicios están diseñados para estar siempre disponibles. Puede acceder a sus datos cuando los necesite."
+                            imagen="3"
+                        />
+                        <Principios 
+                            titulo="Autenticidad"
+                            texto="Nos aseguramos de que toda la información que manejamos sea auténtica y verificable. Puede confiar en la autenticidad de sus datos."
+                            imagen="4"
                         />
                     </div>
                 </div>

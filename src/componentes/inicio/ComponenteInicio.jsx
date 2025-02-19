@@ -38,7 +38,7 @@ export default function ComponenteInicio() {
                     </Carousel.Item>
                 </Carousel>    
             </section>
-            <section style={{backgroundColor: "#3A4040", height: "auto", padding: "48px 150px", paddingBottom: "130px"}} className="container-fluid">
+            <section data-aos="fade-right" style={{backgroundColor: "#3A4040", height: "auto", padding: "48px 150px", paddingBottom: "130px"}} className="container-fluid">
                 <div>
                     <h1 style={{fontSize: "80px", fontWeight: "700", color: "white"}}> Nuestros <span style={{fontWeight: "100"}}> Servicios </span> </h1>
                     <p style={{color: "white"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i> Impulsamos la innovación tecnológica a través de nuestro portafolio de soluciones para mejorar la productividad y competitividad de las empresas. </p>
@@ -116,7 +116,7 @@ export default function ComponenteInicio() {
                     </div>
                 </div>
             </section>
-            <section style={{backgroundColor: "#FAFAFA", height: "auto", padding: "60px 0"}}>
+            <section data-aos="fade-right" style={{backgroundColor: "#FAFAFA", height: "auto", padding: "60px 0"}}>
                 <div className="row p-0 m-0 h-100">
                     <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center" >
                         <Image style={{width: "500px", height: "500px"}} src={require("../../images/Diseño sin título(1).png")} rounded />
@@ -136,7 +136,7 @@ export default function ComponenteInicio() {
                     </div>
                 </div>
             </section>
-            <section style={{backgroundColor: "#3A4040", height: "auto",padding: "48px 150px",}}className="container-fluid">
+            <section data-aos="fade-right" style={{backgroundColor: "#3A4040", height: "auto",padding: "48px 150px",}}className="container-fluid">
                 <div>
                     <h1 style={{ fontSize: "80px", fontWeight: "100", color: "white" }}>
                     Nuestros <span style={{ fontWeight: "700" }}> Partners </span>

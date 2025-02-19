@@ -16,6 +16,7 @@ function ComponenteSap() {
                     titulo = ""
                     texto1 = "Tecnologías 100% OPEX al servicio de su empresaa"
                     texto2 = ""
+                    form = {true}
                 />
             </section>
             <section className="bg-white py-5">
@@ -32,7 +33,7 @@ function ComponenteSap() {
                         </p>
                     </div>
                     <div className="col-md-6 col-12 p-5 d-flex align-items-center justify-content-center">
-                        <img src={require("../../../images/38.png")} alt="Imagen" className="img-responsive-customm"/>
+                        <img src={require("../../../images/sett.png")} alt="Imagen" className="img-responsive-customm"/>
                     </div>
                     <div className="col-md-6 col-12 p-5">
                     </div>

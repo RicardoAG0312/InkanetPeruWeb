@@ -21,6 +21,52 @@ h1, h2, header, span {
 body {
     overflow-x: hidden !important; /* Elimina cualquier barra de desplazamiento horizontal */
 }
+
+/* @keyframes show {
+    from {
+        opacity: 0; scale: 10%;
+    }
+    to {
+        opacity: 1; scale: 100%;
+    }
+}
+section {
+    view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 50% cover 50%;
+} */
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+        -webkit-transform: translateX(-30px);
+        -moz-transform: translateX(-30px);
+        -ms-transform: translateX(-30px);
+        -o-transform: translateX(-30px);
+}
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+section {
+    view-timeline-name: --reveal;
+    animation-name: slideIn;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 10% cover 50%;
+    animation-play-state: running !important; 
+    will-change: opacity, transform;
+}
+
+
+
+
+
 /* Loading */
 #loading-screen {
     background-color: #2a2a2a;
@@ -126,6 +172,13 @@ body {
     margin: 0;
     padding: 0;
 }
+#contacto:hover,
+#contacto:focus,
+#contacto:active {
+    color: white;
+}
+
+
 .navbar img {
     width: 180px;
 }

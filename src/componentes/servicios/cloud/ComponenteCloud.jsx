@@ -16,6 +16,7 @@ function ComponenteCloud() {
                     titulo = "Servicios Generales Cloud"
                     texto1 = "Tecnologías 100% OPEX al servicio de su empresa"
                     texto2 = ""
+                    form = {true}
                 />
             </section>
             <Portafolio 

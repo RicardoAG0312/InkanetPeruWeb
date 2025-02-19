@@ -16,6 +16,7 @@ function ComponenteTelefonia() {
                     titulo = "Telefonía Corporativa"
                     texto1 = "Ahorro, alta disponibilidad,calidad y seguridad en una red dedicada"
                     texto2 = "Las empresas modernas necesitan canales de comunicación eficientes y seguros donde contactar con clientes, proveedores y colaboradores para estar a la altura de los desafíos actuales."
+                    form = {true}
                 />
             </section>
             <Portafolio 

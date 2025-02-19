@@ -106,3 +106,88 @@
     left: 0;
     z-index: 1;
 }
+
+
+/* Sección con fondo oscuro */
+.seccion-principios {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #3A4040;
+    padding-bottom: 40px;
+}
+
+/* Título principal de la sección */
+.seccion-principios .titulo-an {
+    font-family: "Red Hat Display" ;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Imagen de la tarjeta */
+.card-img-top {
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease-in-out;
+    -webkit-transition: filter 0.3s ease-in-out;
+    -moz-transition: filter 0.3s ease-in-out;
+    -ms-transition: filter 0.3s ease-in-out;
+    -o-transition: filter 0.3s ease-in-out;
+}
+
+/* Título centrado sobre la imagen (oculto por defecto) */
+.titulo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: none;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 100%;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el cursor */
+.card:hover .titulo-overlay {
+    opacity: 1; /* Muestra el título */
+}
+
+.card:hover .card-img-top {
+    filter: brightness(50%); /* Aplica filtro de brillo en hover */
+}
+
+/* Estilo de la tarjeta */
+.card {
+    position: relative;
+    box-shadow: 3px 0px 10px black;
+    min-height: 450px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Contenedor de texto */
+.card-body {
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+/* Texto dentro de la tarjeta */
+.card-text {
+    font-size: 16px;
+    text-align: center;
+}

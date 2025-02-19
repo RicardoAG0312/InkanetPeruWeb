@@ -14,6 +14,7 @@ function ComponenteGestionados() {
                     titulo = "Servicios Gestionados"
                     texto1 = "Convierta CAPEX en OPEX con nuestros servicios gestionados"
                     texto2 = "Invertir capital en servicios en lugar de equipos que se deprecian con el tiempo, ayuda a las empresas a sobrellevar la carga que significa comprar hardware y licencias de software."
+                    form = {true}
                 />
             </section>
             <section className="container-fluid seccion-sub-servicios" style={{backgroundColor: "#FFFFFF", height: "auto"}}>
@@ -26,19 +27,19 @@ function ComponenteGestionados() {
                             titulo="WIFI"
                             span="Gestionado"
                             texto="Renovamos y administramos los equipos de acceso inalámbrico en su empresa."
-                            direccion=""
+                            direccion="/contacto"
                         />
                         <SubSecciones 
                             titulo="Cámaras de Videovigilancia"
                             span="Gestionadas"
                             texto="Proyectos y gestión de cámaras de seguridad y video wall."
-                            direccion=""
+                            direccion="/contacto"
                         />
                         <SubSecciones 
                             titulo="LAN"
                             span="Gestionada"
                             texto="Aseguramos la continuidad de tu negocio gestionando los equipos de tu red local."
-                            direccion=""
+                            direccion="/contacto"
                         />
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import BotonAnimado from './BotonAnimado'
 
-function SubSecciones({titulo, span, texto, nav}) {
+function SubSecciones({titulo, span, texto, direccion}) {
     return (
         <div className="container text-center text-md-start mb-3 texto-ajustado">
             <h1 className="fw-bold" style={{ fontSize: "28px", maxWidth: "70%" }}>
@@ -16,7 +16,7 @@ function SubSecciones({titulo, span, texto, nav}) {
                 colorIconoPress="#05AFA5"
                 fondoTextoPress="black"
                 colorLetraPress="white"
-                nav={nav}
+                nav={direccion}
             />
         </div>
     )

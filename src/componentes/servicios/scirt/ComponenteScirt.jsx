@@ -15,6 +15,7 @@ function ComponenteScirt() {
                     titulo = "INKANET CSIRT"
                     texto1 = "Somos miembros acreditados de FIRST para brindar soluciones efectivas y oportunas a tus incidentes de ciberseguridad."
                     texto2 = ""
+                    form = {false}
                 />
             </section>
             <Help />

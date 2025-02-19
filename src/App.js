@@ -6,7 +6,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./App.css";
 import LogoInkanetPie from "./images/Recurso 2.svg";
-import {ComponenteInicio, ComponenteContactanos, ComponenteCobertura, ComponenteSomos, ComponenteTrabaja, ComponenteCloud, ComponenteConectividad, ComponenteGestionados, ComponenteSap, ComponenteScirt, ComponenteSeguridad, ComponenteTelefonia} from "./routers/routers"
+import {ComponenteInicio, ComponenteContactanos, ComponenteCobertura, ComponenteSomos, ComponenteTrabaja, ComponenteCloud, ComponenteConectividad, ComponenteGestionados, ComponenteSap, ComponenteScirt, ComponenteSeguridad, ComponenteTelefonia, ComponenteEmpresas, ComponenteRedes, ComponenteSatelital, ComponenteFibra} from "./routers/routers"
+
 
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(function() {
@@ -20,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, 5000);
 });
+
+
 
 function App() {
     return (
@@ -35,11 +38,17 @@ function App() {
                     <Routes>
                         <Route index path='/' element={<Navigate to="/inicio" />}/>
                         <Route path='/inicio' element={<ComponenteInicio />} />
-
                         <Route path='/contacto' element={<ComponenteContactanos />} />
+
+                        <Route path='/interconexion/empresas' element={<ComponenteEmpresas />} />
+                        <Route path='/interconexion/redes' element={<ComponenteRedes />} />
+                        <Route path='/interconexion/satelital' element={<ComponenteSatelital />} />
+                        <Route path='/interconexion/fibra' element={<ComponenteFibra />} />
+
                         <Route path='/conocenos/cobertura' element={<ComponenteCobertura />} />
                         <Route path='/conocenos/somos' element={<ComponenteSomos />} />
                         <Route path='/conocenos/trabaja' element={<ComponenteTrabaja />} />
+
                         <Route path='/servicios/cloud' element={<ComponenteCloud />} />
                         <Route path='/servicios/conectividad' element={<ComponenteConectividad />} />
                         <Route path='/servicios/gestionados' element={<ComponenteGestionados />} />

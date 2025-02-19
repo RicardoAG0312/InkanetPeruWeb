@@ -14,6 +14,7 @@ function ComponenteSeguridad() {
                     titulo = "Ciberseguridad para empresas"
                     texto1 = "La seguridad de la información es un deber de las empresas"
                     texto2 = "Las amenazas informáticas actuales son cada vez más sofisticadas y peligrosas al punto que pueden atentar contra la continuidad del negocio sino estamos preparados."
+                    form = {true}
                 />
             </section>
             <Portafolio 

@@ -21,3 +21,8 @@ export {default as ComponenteScirt} from "../componentes/servicios/scirt/Compone
 export {default as ComponenteSeguridad} from "../componentes/servicios/seguridad/ComponenteSeguridad.jsx";
 export {default as ComponenteTelefonia} from "../componentes/servicios/telefonia/ComponenteTelefonia.jsx";
 
+// Exportaciones seccion interconexión
+export {default as ComponenteEmpresas} from "../componentes/interconexion/empresas/ComponenteEmpresas.jsx";
+export {default as ComponenteFibra} from "../componentes/interconexion/fibra/ComponenteFibra.jsx";
+export {default as ComponenteRedes} from "../componentes/interconexion/redes/ComponenteRedes.jsx";
+export {default as ComponenteSatelital} from "../componentes/interconexion/satelital/ComponenteSatelital.jsx";

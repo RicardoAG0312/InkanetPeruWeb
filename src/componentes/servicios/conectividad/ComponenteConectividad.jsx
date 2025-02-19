@@ -17,6 +17,7 @@ function ComponenteConectividad() {
                     titulo = "Conectividad para Empresas"
                     texto1 = "Alta velocidad, dedicado, simétrico y seguro con la mejor experiencia del cliente"
                     texto2 = "Las empresas requieren canales de comunicación de alta velocidad, eficientes y seguros, para estar a la altura de los desafíos actuales."
+                    form = {true}
                 />
             </section>
             <Portafolio 
@@ -33,25 +34,25 @@ function ComponenteConectividad() {
                             titulo="Interconexión de"
                             span="Sedes por Fibra Oscura"
                             texto="Interconecte sus sedes críticas mediante un enlace físicamente dedicado con el máximo estándar de seguridad."
-                            direccion=""
+                            direccion="/interconexion/fibra"
                         />
                         <SubSecciones 
                             titulo="Internet dedicado"
                             span="para empresas"
                             texto="Potencie a su empresa con un Internet 100% fibra óptica con simetría 1:1."
-                            direccion=""
+                            direccion="/interconexion/empresas"
                         />
                         <SubSecciones 
                             titulo="Interconexión de"
                             span="Sedes por Redes Privadas"
                             texto="Interconecte las sedes de su negocio de manera segura y confiable a través de redes privadas robustas."
-                            direccion=""
+                            direccion="/interconexion/redes"
                         />
                         <SubSecciones 
                             titulo="Internet"
                             span="Satelital"
                             texto="Conecta tus equipos y sedes desde cualquier lugar remoto del país."
-                            direccion=""
+                            direccion="/interconexion/satelital"
                         />
                     </div>
                 </div>
