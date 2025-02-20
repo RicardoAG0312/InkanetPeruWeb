@@ -34,8 +34,8 @@ function ComponenteSomos() {
                 <ComponenteBarraNavegacion />
                 <div className="row p-0 m-0">
                     {/* Sección de texto */}
-                    <div className="col-12 col-md-6 d-flex justify-content-center align-items-center flex-column text-center text-md-start min-vh-90">
-                        <div className="d-flex flex-column align-items-md-start align-items-center justify-content-center w-75 w-md-75 gap-1 mb-5">
+                    <div className="col-12 col-md-6 d-flex justify-content-center align-items-center flex-column text-center text-md-start min-vh-100">
+                        <div className="d-flex flex-column align-items-md-start align-items-center justify-content-center w-75 w-md-75 gap-1 mb-5 ">
                             <h1 className="text-white fw-bold display-4" style={{ width: "60%" }}>
                                 ¿Quiénes <span className="fw-light"> Somos?</span>
                             </h1>
@@ -56,7 +56,7 @@ function ComponenteSomos() {
                     </div>
 
                     {/* Sección de imagen */}
-                    <div className="col-12 col-md-6 d-flex justify-content-center align-items-center flex-column min-vh-90">
+                    <div className="mt-5 col-12 col-md-6 d-flex justify-content-center align-items-center flex-column min-vh-100">
                         <img src={LogoInkanet} alt="Imagen Logo Inkanet" className="img-fluid w-75 w-md-auto h-auto"/>
                     </div>
                 </div>
