@@ -13,28 +13,106 @@ export default function ComponenteInicio() {
 
     return (
         <>
-            <section className='contenedorPrincipal'>
+            {/* <section className='contenedorPrincipal'>
                 <ComponenteBarraNavegacion />
                 <Carousel className='carousel' data-bs-theme="dark" >
                     <Carousel.Item interval={2500}>
-                        <video className="d-block w-100" autoPlay loop muted >
+
+                        <video className="d-block w-100 video1" autoPlay loop muted >
                             <source src={VideoPortada1} type="video/mp4" />
+                            <h1> 1 texto </h1>
                         </video>
                     </Carousel.Item>
                     <Carousel.Item interval={2500}>
-                        <video className="d-block w-100" autoPlay loop muted >
+                        <video className="d-block w-100 video2" autoPlay loop muted >
                             <source src={VideoPortada2} type="video/mp4" />
+                            <h1> 2 texto </h1>
                         </video>
                     </Carousel.Item>
                     <Carousel.Item interval={2500}>
-                        <video className="d-block w-100" autoPlay loop muted >
+                        <video className="d-block w-100 video3" autoPlay loop muted >
                             <source src={VideoPortada3} type="video/mp4" />
+                            <h1> 3 texto </h1>
                         </video>
                     </Carousel.Item>
                     <Carousel.Item interval={2500}>
-                        <video className="d-block w-100" autoPlay loop muted >
+                        <video className="d-block w-100 video4" autoPlay loop muted >
+                            <source src={VideoPortada4} type="video/mp4" />
+                            <h1> 4 texto </h1>
+                        </video>
+                    </Carousel.Item>
+                </Carousel>    
+            </section> */}
+            <section className='contenedorPrincipal'>
+                <ComponenteBarraNavegacion />
+                <Carousel className='carousel' data-bs-theme="dark"  controls={false}>
+                    <Carousel.Item interval={2500}>
+                        <div className="video-container">
+                            <video className="d-block w-100" autoPlay loop muted>
+                                <source src={VideoPortada1} type="video/mp4" />
+                            </video>
+                            <h1 className="video-texto1" style={{fontWeight: "100"}}> Conectamos <span style={{fontWeight: "bold"}}> Proyectos </span></h1>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item interval={2500}>
+                        <div className="video-container">
+                            <video className="d-block w-100" autoPlay loop muted>
+                                <source src={VideoPortada2} type="video/mp4" />
+                            </video>    
+                            <div className="video-texto2 d-flex flex-column justify-content-start align-items-start">
+                                <h1 style={{fontWeight: "bold", fontSize: "30px"}}> ¡Somos la única Telco en Perú <span style={{fontWeight: "100"}}> que integra alta disponibilidad en Internet & Cyberseguridad! </span></h1>
+                                <p className='m-0 mt-2 mb-4'> Ofrecemos soluciones integrales que combinan conectividad de alta disponibilidad y ciberseguridad avanzada, garantizando la continuidad y protección de tu negocio. </p>
+                                <BotonAnimado 
+                                colorIconoBase = "#05AFA5"
+                                colorLetraBase= "white"
+                                colorBordeBase = "white"
+                                colorIconoPress = "#14B4AA"
+                                fondoTextoPress = "white"
+                                colorLetraPress = "black"
+                                nav="/contacto"
+                            />
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item interval={2500}>
+                        <div className="video-container">
+                            <video className="d-block w-100 " autoPlay loop muted>
+                                <source src={VideoPortada3} type="video/mp4" />
+                            </video>
+                            <div className="video-texto3 d-flex flex-column justify-content-start align-items-start">
+                                <h1 style={{fontWeight: "bold", fontSize: "60px"}}> Descubre <span style={{fontWeight: "100"}}> Nuestros Servicios </span></h1>
+                                <p className='m-0 mt-2 mb-4'> Descubre nuestras soluciones diseñadas para optimizar y potenciar el crecimiento de tu empresa con servicios de alta calidad. </p>
+                                <BotonAnimado 
+                                colorIconoBase = "white"
+                                colorLetraBase= "white"
+                                colorBordeBase = "white"
+                                colorIconoPress = "#14B4AA"
+                                fondoTextoPress = "white"
+                                colorLetraPress = "black"
+                                nav="/contacto"
+                            />
+                            </div>
+                        </div>
+                    </Carousel.Item>
+                    <Carousel.Item interval={2500}>
+                    <div className="video-container">
+                        <video className="d-block w-100 " autoPlay loop muted>
                             <source src={VideoPortada4} type="video/mp4" />
                         </video>
+                        <div className="video-texto4 d-flex flex-column justify-content-start align-items-start">
+                                <h1 style={{fontWeight: "100", fontSize: "50px"}}> Contamos con <span style={{fontWeight: "bold"}}> SOC & NOC </span> <span style={{fontWeight: "100"}}> propios </span></h1>
+                                <p className='m-0 mt-2 mb-4'> Garantizamos monitoreo proactivo y soporte especializado 24/7 con personal certificado, tecnología avanzada y procesos eficientes para asegurar la continuidad y seguridad de tus operaciones. </p>
+                                <BotonAnimado 
+                                colorIconoBase = "white"
+                                colorLetraBase= "white"
+                                colorBordeBase = "white"
+                                colorIconoPress = "#14B4AA"
+                                fondoTextoPress = "white"
+                                colorLetraPress = "black"
+                                nav="/contacto"
+                            />
+                        </div>
+                    </div>
                     </Carousel.Item>
                 </Carousel>    
             </section>
@@ -132,6 +210,7 @@ export default function ComponenteInicio() {
                             colorIconoPress = "white"
                             fondoTextoPress = "black"
                             colorLetraPress = "white"
+                            nav="/contacto"
                         />
                     </div>
                 </div>
@@ -165,7 +244,7 @@ export default function ComponenteInicio() {
                         require("../../images/32.png"),
                     ].map((src, index) => (
                         <div key={index} className="grid-item">
-                        <img src={src} alt={`Imagen ${index + 1}`} className="float-fluid" />
+                            <img src={src} alt={`Imagen ${index + 1}`} className="float-fluid" />
                         </div>
                     ))}
                     </div>

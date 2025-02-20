@@ -22,21 +22,7 @@ body {
     overflow-x: hidden !important; /* Elimina cualquier barra de desplazamiento horizontal */
 }
 
-/* @keyframes show {
-    from {
-        opacity: 0; scale: 10%;
-    }
-    to {
-        opacity: 1; scale: 100%;
-    }
-}
-section {
-    view-timeline-name: --reveal;
-    animation-name: show;
-    animation-fill-mode: both;
-    animation-timeline: --reveal;
-    animation-range: entry 50% cover 50%;
-} */
+
 
 @keyframes slideIn {
     from {
@@ -92,32 +78,6 @@ section {
     width: 3rem;
     height: 3rem;
 }
-/* Boton Whatsapp */
-.boton-whatsapp {
-    width: 30px;
-    height: 30px;
-    background-color: #25D366;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    padding: 25px;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    z-index: 9999;
-}
-.boton-whatsapp a {
-    text-decoration: none;
-    color: white;
-}
-.boton-whatsapp i {
-    font-size: 35px;
-}
 /* Barra de navegacion */
 #navbar{
     height: 100px;
@@ -140,7 +100,7 @@ section {
 .navbar{
     margin-top: 0;
     padding: 0;
-    position: sticky;
+    position: fixed;
     top: 0px;
     height: 100px;
     transition: top 0.5s ease;
@@ -149,6 +109,7 @@ section {
     -ms-transition: top 0.5s ease;
     -o-transition: top 0.5s ease;
     z-index: 5;
+    width: 100%;
 }
 .dropdown-menu.show {
     background-color: white;

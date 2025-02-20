@@ -79,3 +79,119 @@
     transform: scale(1.10) translate3d(10px, 10px, 3em) !important;
   }
   
+
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.video-texto1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    padding: 10px 20px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    animation: fadeIn .9s ease-in-out .9s forwards;
+    -webkit-animation: fadeIn .9s ease-in-out .9s forwards;
+    -webkit-transform: translate(-50%, -50%) scale(0.9);
+    -moz-transform: translate(-50%, -50%) scale(0.9);
+    -ms-transform: translate(-50%, -50%) scale(0.9);
+    -o-transform: translate(-50%, -50%) scale(0.9);
+}
+
+
+.video-texto2 {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    padding: 10px 20px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    animation: fadeIn .9s ease-in-out .9s forwards;
+    -webkit-animation: fadeIn .9s ease-in-out .9s forwards;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+    text-align: start;
+}
+
+.video-texto3 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    padding: 10px 20px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    animation: fadeIn .9s ease-in-out .9s forwards;
+    -webkit-animation: fadeIn .9s ease-in-out .9s forwards;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    max-width: 550px;
+    height: auto;
+    text-align: start;
+}
+
+.video-texto4 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    padding: 10px 20px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    animation: fadeIn .9s ease-in-out .9s forwards;
+    -webkit-animation: fadeIn .9s ease-in-out .9s forwards;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+    text-align: start;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

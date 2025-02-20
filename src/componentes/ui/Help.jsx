@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Help() {
+    const navigate = useNavigate();
+
     return (
         <section className="container-fluid p-0" style={{ backgroundColor: "#3A4040", height: "auto"}}>
             <div className="row p-0 m-0 d-flex justify-content-center align-items-center text-center text-md-start">
@@ -9,13 +12,13 @@ function Help() {
                         ¿Cómo puedo <span style={{ color: "#05AFA5", fontWeight: "bold" }}>ayudarte?</span>
                     </h1>
                     <div className='mt-4 d-flex flex-wrap justify-content-center align-items-center gap-3'>
-                        <div className='text-white d-flex justify-content-center align-items-center gap-2' 
+                        <div onClick={() => navigate("/contacto")} className='text-white d-flex justify-content-center align-items-center gap-2' 
                         style={{ background: "#05AFA5", borderRadius: "10px", width: "200px", height: "60px", cursor: "pointer" }}>
-                        <img src={require("../../images/diseño23.png")} alt="Diseño Comprar" style={{width: "40px", height: "auto"}}/> ¿Cómo Comprar?
+                        <img src={require("../../images/diseño23.png")} alt="Diseño Comprar" style={{width: "40px", height: "auto"}}/> ¿Cómo comprar?
                         </div>
-                        <div className='text-white d-flex justify-content-center align-items-center gap-3' 
+                        <div onClick={() => navigate("/contacto")} className='text-white d-flex justify-content-center align-items-center gap-3' 
                         style={{ background: "#8D8D8D", borderRadius: "10px", width: "200px", height: "60px", cursor: "pointer" }}>
-                        <img src={require("../../images/diseño22.png")} alt="Diseño Comprar" style={{width: "40px", height: "auto"}}/>  Soporte
+                        <img src={require("../../images/diseño22.png")} alt="Diseño Comprar" style={{width: "40px", height: "auto"}}/> Soporte 
                         </div>
                     </div>
                 </div>

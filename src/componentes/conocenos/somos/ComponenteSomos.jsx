@@ -111,6 +111,7 @@ function ComponenteSomos() {
                                 colorIconoPress="#1FB3AE"
                                 fondoTextoPress="white"
                                 colorLetraPress="black"
+                                nav="/contacto"
                             />
                         </div>
                     </div>
