@@ -2,6 +2,7 @@ import React from 'react'
 import HeaderForm from '../../ui/HeaderForm';
 import Cartas from '../../ui/Cartas';
 import CartasNumeros from '../../ui/CartasNumeros';
+import Informacion from '../../ui/Informacion';
 import {ComponenteBarraNavegacion} from "../../../routers/routers";
 import "./redes.css"
 
@@ -17,6 +18,18 @@ function ComponenteRedes() {
                     texto1 = "Interconecte sus sucursales con enlaces dedicados privados 100% fibra óptica."
                     texto2 = ""
                     form = {true}
+                />
+            </section>
+            <section className='text-black container-fluid p-5 h-auto bg-white'> 
+                <Informacion 
+                    titulo1 = "¿Qué es la"
+                    span1 = "Interconexión de Sedes por Redes Privadas?"
+                    texto1 = "El servicio de interconexión de sedes del cliente se brinda a través de enlaces dedicados de fibra óptica desde el nodo de acceso de la red Backbone de WIN Empresas hasta las sedes del cliente.Permite la transferencia de información entre las sucursales sin discriminar el tipo de aplicaciones, útiles para el acceso rápido a servicios ubicados en las sedes principales, centralizar la salida a Internet y compartir otros recursos de red perimetral."
+                    texto2 = ""
+                    titulo2 = "¿Cómo contribuye este servicio con la "
+                    span2 = "continuidad de operaciones de tu empresa?"
+                    texto3 = "Las empresas actuales requieren eliminar las distancias geográficas entre su sede principal y sus sucursales debido a la necesidad de compartir información en tiempo real de una manera segura."
+                    texto4 = "Estas interconexiones se pueden brindar a través de la red de WIN Empresas, dedicada 100% a tráfico corporativo de altas velocidades."
                 />
             </section>
             <section className='text-white container-fluid p-5' style={{backgroundColor: "#3A4040", height: "auto"}}>

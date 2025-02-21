@@ -2,6 +2,7 @@ import React from 'react'
 import HeaderForm from '../../ui/HeaderForm';
 import Cartas from '../../ui/Cartas';
 import CartasNumeros from '../../ui/CartasNumeros';
+import Informacion from '../../ui/Informacion';
 import {ComponenteBarraNavegacion} from "../../../routers/routers";
 import "./fibra.css"
 
@@ -19,9 +20,18 @@ function ComponenteFibra() {
                     form = {true}
                 />
             </section>
-            {/* <section className='text-black container-fluid p-5 h-auto bg-white'> 
-                hola
-            </section> */}
+            <section className='text-black container-fluid p-5 h-auto bg-white'> 
+                <Informacion 
+                    titulo1 = "¿Qué es la"
+                    span1 = "Fibra Oscura?"
+                    texto1 = "Es un enlace dedicado única y exclusivamente para la transmisión de grandes cantidades de datos mediante uno o más hilos de fibra óptica."
+                    texto2 = "Permite a empresas de verticales como bancos o administraciones públicas enviar y recibir enormes cantidades de datos a altas velocidades de transmisión, sin riesgo de pérdida de paquetes o robo de información."
+                    titulo2 = "Necesidades especiales"
+                    span2 = "en el envío y transmisión de datos."
+                    texto3 = "Actualmente las redes de telecomunicaciones habituales tienen un límite establecido que en muchos casos no cumplen con las necesidades."
+                    texto4 = "La fibra oscura resuelve este inconveniente permitiendo un ancho de banda virtualmente ilimitado y 100% seguro."
+                />
+            </section>
             <section className='text-white container-fluid p-5' style={{backgroundColor: "#3A4040", height: "auto"}}>
                 <h1 className='fw-bold ms-4'> BENEFICIOS </h1>
                 <div className="container">
