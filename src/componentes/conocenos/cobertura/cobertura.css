@@ -2,6 +2,9 @@
     position: relative;
     height: 100vh;
 }
+.cobertura-section h1 {
+    width: 90% !important;
+}
 .cobertura-section::before {
     content: "";
     background-image: url("../../../images/portada.png");
@@ -17,7 +20,7 @@
 }
 .mapaperu{
     width: auto;
-    height: 500px;
+    max-height: 500px;
 }
 .filaFigura{
     padding-top: 100px !important;
@@ -34,17 +37,15 @@
     border-left: 2px solid #09AEAF; /* Borde izquierdo */  
     border-right: 2px solid #09AEAF; /* Borde derecho */  
     border-bottom: none;
+    padding: 20px;
 }
 .figuraGeo h1{
-    font-size: 60px;
-}
-.figuraGeo p{
-    font-size: 22px;
+    font-size: 50px;
 }
 .imagenVineta{
-    padding-top: 50px;
+    padding-top: 30px;
 }
 .imagenVineta img{
-    height: 250px;
+    max-height: 250px;
     width: auto;
 }
