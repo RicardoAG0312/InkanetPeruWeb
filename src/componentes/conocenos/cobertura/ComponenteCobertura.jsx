@@ -48,6 +48,35 @@ function ComponenteCobertura() {
                     </div>
                 </div>
             </section>
+            <section className="container">
+                <div className="formulario">
+                    <h1>Contacta a un experto</h1>
+                    <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i>Llena tus datos y nos comunicaremos contigo.</p>
+                    <form>
+                        <div className="row mb-3">
+                            <div className="col-md-6">
+                                <input type="text" className="form-control form-control-lg" placeholder='Nombres' id="nombres" />
+                            </div>
+                            <div className="col-md-6">
+                                <input type="text" className="form-control form-control-lg" placeholder='Apellidos' id="apellidos" />
+                            </div>
+                        </div>
+                        <div className="row mb-3">
+                            <div className="col-md-6">
+                                <input type="text" className="form-control form-control-lg" placeholder='RUC' id="ruc" />
+                            </div>
+                            <div className="col-md-6">
+                                <input type="text" className="form-control form-control-lg" placeholder='Telefono/Celular' id="telefono" />
+                            </div>
+                        </div>
+                        <div className="row mb-3">
+                            <div className="col-md-6">
+                                <input type="email" className="form-control form-control-lg" placeholder='Email' id="email" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </>
     )
 }
