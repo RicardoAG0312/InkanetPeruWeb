@@ -54,12 +54,12 @@
 
 
 .img-responsive-customm {
-    max-width: 100%;  /* La imagen no se desborda */
+    max-width: 65%;  /* La imagen no se desborda */
     height: auto;     /* Mantiene la proporción */
 }
 
 @media (min-width: 992px) { 
     .img-responsive-custom {
-        max-width: 75%;  /* En pantallas grandes, usa solo el 75% del contenedor */
+        max-width: 45%;  /* En pantallas grandes, usa solo el 75% del contenedor */
     }
 }

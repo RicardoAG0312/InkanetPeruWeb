@@ -37,7 +37,8 @@ function ComponenteSap() {
                     <div className="col-md-6 col-12 p-5 d-flex align-items-center justify-content-center">
                         <img src={require("../../../images/sett.png")} alt="Imagen" className="img-responsive-customm"/>
                     </div>
-                    <div className="col-md-6 col-12 p-5">
+                    <div className="col-md-6 col-12 p-5 d-flex align-items-center justify-content-center">
+                        <img src={require("../../../images/errrr.png")} alt="Imagen" className="img-responsive-customm"/>
                     </div>
                     <div className="col-md-6 col-12 p-5">
                         <h1 className="fw-bold"> Proyectos </h1>

@@ -230,7 +230,7 @@ export default function ComponenteInicio() {
                     <div className="grid-container">
                     {[
                         require("../../images/8.png"),
-                        require("../../images/12.png"),
+                        require("../../images/133.png"),
                         require("../../images/24.png"),
                         require("../../images/10.png"),
                         require("../../images/Fortinet.png"),
@@ -240,8 +240,11 @@ export default function ComponenteInicio() {
                         require("../../images/20.png"),
                         require("../../images/22.png"),
                         require("../../images/28.png"),
-                        require("../../images/30.png"),
+                        require("../../images/135.png"),
                         require("../../images/32.png"),
+
+                        require("../../images/137.png"),
+                        require("../../images/138.png"),
                     ].map((src, index) => (
                         <div key={index} className="grid-item">
                             <img src={src} alt={`Imagen ${index + 1}`} className="float-fluid" />

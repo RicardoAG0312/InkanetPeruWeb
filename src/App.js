@@ -67,25 +67,16 @@ function App() {
                             <div class="row">
                                 <div class="col-12 col-md-4 contain1">
                                     <div>
-                                        <h3> NOSOTROS </h3>
-                                        <a href="/nosotros"> Nuestra Historia </a>
-                                        <a href="/nosotros"> Nuestro Propósito </a>
-                                        <a href="/nosotros"> Nuestros Principios </a>
+                                        <h3> CONÓCENOS </h3>
+                                        <a href="/conocenos/somos"> ¿Quiénes Somos? </a>
+                                        <a href="/conocenos/cobertura"> Cobertura en Perú </a>
+                                        <a href="/conocenos/trabaja"> Trabaja con nosotros </a>
                                     </div>
                                     <div>
-                                        <h3> SOLUCIONES </h3>
-                                        <a href="/soluciones/internet"> Internet 2.0 </a>
-                                        <a href="/soluciones/ciberseguridad"> Ciberseguridad </a>
-                                        <a href="/soluciones/telefonia"> Telefonía IP </a>
+                                        <h3> NUESTROS SERVICIOS </h3>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-4 contain2">
-                                    <div>
-                                        <h3> SOPORTE TÉCNICO </h3>
-                                        <a href="/servicios"> Beneficios </a>
-                                        <a href="/servicios"> Caracteristicas </a>
-                                        <a href="/servicios"> ¿Por qué Inkanet? </a>
-                                    </div>
                                     <div>
                                         <a href="https://www.linkedin.com/company/inkanet-per%C3%BA/" target="_blank" rel="noreferrer">
                                             <img src={require("./images/13.png")} alt="Imagen Linkdln" />
@@ -100,9 +91,7 @@ function App() {
                                 </div>
                                 <div class="col-12 col-md-4 contain3">
                                     <p class="m-0">
-                                        «Somos una empresa peruana dedicada al rubro de las telecomunicaciones,
-                                        enfocada en ofrecer fibra óptica a las distintas corporaciones del país,
-                                        brindándoles un servicio estable de conexión»
+                                        «Somos una empresa peruana dedicada al rubro de las telecomunicaciones, enfocada en ofrecer fibra óptica a las distintas corporaciones del país, brindándoles un servicio estable de conexión»
                                     </p>
                                 </div>
                             </div>
