@@ -4,6 +4,8 @@ import HeaderForm from '../../ui/HeaderForm';
 import "./sap.css"
 import Help from '../../ui/Help';
 import ServiciosSAP from '../../ui/ServiciosSAP';
+import Rombo from "../../../images/Grupo 121.svg";
+
 
 
 function ComponenteSap() {
@@ -49,7 +51,7 @@ function ComponenteSap() {
                     Portafolio de <span style={{ color: "#09AEAF" }}> Servicios </span>
                 </h1>
                 <div className="row p-0 m-0">
-                    <div className="col-md-6 col-12 px-5 pe-0">
+                    <div className="col-md-6 col-12 px-5 pe-0 d-flex justify-content-center align-items-center flex-column">
                         <ServiciosSAP 
                             img="75"
                             titulo="Actividades"
@@ -59,6 +61,8 @@ function ComponenteSap() {
                             colorIcono="black"
                             colorLetra="black"
                         />
+                        <img src={Rombo} alt="img" className="img-fluid"/>
+
                         <ServiciosSAP 
                             texto="Administración de Transporte"
                             fondo="#09AEAF"
@@ -66,6 +70,8 @@ function ComponenteSap() {
                             colorIcono="black"
                             colorLetra="black"
                         />
+                        <img src={Rombo} alt="img" className="img-fluid"/>
+
                         <ServiciosSAP 
                             texto="Gestión de Seguridad"
                             fondo="#09AEAF"
@@ -73,6 +79,8 @@ function ComponenteSap() {
                             colorIcono="black"
                             colorLetra="black"
                         />
+                        <img src={Rombo} alt="img" className="img-fluid"/>
+
                         <ServiciosSAP 
                             texto="Administración y soporte SAP BASIS"
                             fondo="#09AEAF"
@@ -80,6 +88,8 @@ function ComponenteSap() {
                             colorIcono="black"
                             colorLetra="black"
                         />
+                        <img src={Rombo} alt="img" className="img-fluid"/>
+
                         <ServiciosSAP 
                             texto="Administración y monitoreo de Base de datos"
                             fondo="#09AEAF"
@@ -88,7 +98,7 @@ function ComponenteSap() {
                             colorLetra="black"
                         />
                     </div>
-                    <div className="col-md-6 col-12 px-5 ps-0">
+                    <div className="col-md-6 col-12 px-5 ps-0 d-flex justify-content-center align-items-center flex-column">
                         <ServiciosSAP 
                             img="76"
                             titulo="Servicios adaptados al cliente"
@@ -98,6 +108,7 @@ function ComponenteSap() {
                             colorIcono="white"
                             colorLetra="black"
                         />
+                        <img src={Rombo} alt="img" className="img-fluid"/>
                         <ServiciosSAP 
                             texto="SAP-ADM"
                             fondo="#09AEAF"
@@ -105,6 +116,8 @@ function ComponenteSap() {
                             colorIcono="white"
                             colorLetra="black"
                         />
+                        <img src={Rombo} alt="img" className="img-fluid"/>
+
                         <ServiciosSAP 
                             texto="SAP-SEG"
                             fondo="#09AEAF"
@@ -112,6 +125,8 @@ function ComponenteSap() {
                             colorIcono="white"
                             colorLetra="black"
                         />
+                        <img src={Rombo} alt="img" className="img-fluid"/>
+
                         <ServiciosSAP 
                             texto="SAP-ADM-BASIS"
                             fondo="#09AEAF"
@@ -119,6 +134,8 @@ function ComponenteSap() {
                             colorIcono="white"
                             colorLetra="black"
                         />
+                        <img src={Rombo} alt="img" className="img-fluid"/>
+
                         <ServiciosSAP 
                             texto="SAP-HANA-DBA"
                             fondo="#09AEAF"
