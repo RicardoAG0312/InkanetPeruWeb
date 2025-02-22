@@ -49,8 +49,8 @@ function ComponenteCobertura() {
                 </div>
             </section>
             <section className="container">
-                <div className="formulario">
-                    <h1>Contacta a un experto</h1>
+                <div className="formulario p-5">
+                    <h1 style={{fontSize: "60px"}}> Contacta a un <span style={{fontWeight: "100"}}> <br/>experto </span></h1>
                     <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i>Llena tus datos y nos comunicaremos contigo.</p>
                     <form>
                         <div className="row mb-3">
@@ -74,6 +74,33 @@ function ComponenteCobertura() {
                                 <input type="email" className="form-control form-control-lg" placeholder='Email' id="email" />
                             </div>
                         </div>
+                        <div className="mb-2">
+                            <input type="checkbox" id="info" className="me-2" />
+                            <label htmlFor="info">Deseo recibir información de ofertas y promociones</label>
+                        </div>
+                        <div className="mb-4">
+                            <input type="checkbox" id="politica" className="me-2" />
+                            <label htmlFor="politica">
+                                Acepto la <a href="/" style={{ color: "#05AFA5", textDecoration: "none" }}>Política de protección de datos</a>
+                            </label>
+                        </div>
+                        <button
+                        type=""
+                        className="btn "
+                        style={{
+                            backgroundColor: "black",
+                            color: "white",
+                            padding: "10px",
+                            borderRadius: "20px",
+                            border: "none",
+                            transition: "background-color 0.3s",
+                            width: "200px"
+                        }}
+                        onMouseOver={(e) => e.target.style.backgroundColor = "#05AFA5"}
+                        onMouseOut={(e) => e.target.style.backgroundColor = "black"}
+                        >
+                        Aceptar
+                        </button>
                     </form>
                 </div>
             </section>
