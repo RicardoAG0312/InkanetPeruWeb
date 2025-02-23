@@ -8,9 +8,13 @@ const ServiceColumn = ({ image, title, description }) => {
                     <div className="circle-image">
                         <img src={require(`../../images/${image}`)} alt={title} className="img-fluid rounded-circle" />
                     </div>
-                    <h2 className="card-title mt-3 mb-3">{title}</h2>
+                    <div className='mt-3 mb-auto'>
+                    <h2 className="card-title ">{title}</h2>
+                    </div>
+                    
                     <p className="card-text text-start mb-5">{description}</p>
                     {/* <a href="#" className="btn btn-info">Información</a> */}
+                    <div className="mt-auto mb-5">
                     <BotonAnimado
                         colorIconoBase="#05AFA5"
                         colorLetraBase="white"
@@ -20,6 +24,7 @@ const ServiceColumn = ({ image, title, description }) => {
                         colorLetraPress="white"
                         // nav={direccion}
                     />
+                    </div>
                 </div>
             </div>
         </div>
