@@ -1,6 +1,7 @@
 import React from 'react'
 import {ComponenteBarraNavegacion} from "../../../routers/routers";
 import HeaderForm from '../../ui/HeaderForm';
+import As from "../../../images/as.png";
 import "./scirt.css"
 import Help from '../../ui/Help';
 
@@ -35,7 +36,8 @@ function ComponenteScirt() {
                             <span className="text-primary">Recuperación ágil,</span> apoyamos a la recuperación de tus operaciones de manera oportuna permitiéndote lograr tus metas empresariales en seguridad de la información y continuidad de negocio.
                         </p>
                     </div>
-                    <div className="p-4 col-md-6 col-12">
+                    <div className="p-4 col-md-6 col-12 imagen-as">
+                        <img src={As} alt = "images" className="img-fluid ascender" />
                     </div>
                 </div>
             </section>

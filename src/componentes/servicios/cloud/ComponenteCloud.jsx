@@ -2,6 +2,7 @@ import React from 'react'
 import {ComponenteBarraNavegacion} from "../../../routers/routers";
 import HeaderForm from '../../ui/HeaderForm';
 import Portafolio from '../../ui/Portafolio';
+import DoorDesign from '../../ui/DoorDesign';
 import Help from '../../ui/Help';
 
 
@@ -23,6 +24,25 @@ function ComponenteCloud() {
                 subtitulo = "Servicios Cloud"
                 texto = "Contamos con servicios altamente especializados en tecnologías cloud que funcionan como catalizadores en la transformación digital de su empresa."
             />
+            <section className="container">
+                <div className="row justify-content-center mt-5 mb-5 seccion-puerta-seg">
+                    <DoorDesign
+                        image="67.png" 
+                        title="Backup como servicio" 
+                        description="Transferencia de datos ilimitada" 
+                    />
+                    <DoorDesign
+                        image="68.png" 
+                        title="Infraestructura como servicio" 
+                        description="Latencia menor a 10ms." 
+                    />
+                    <DoorDesign
+                        image="69.png" 
+                        title="Servicio de nube pública" 
+                        description="Asesoria constante de optimización de recursos" 
+                    />
+                </div>
+            </section>
             <Help />
         </>
         

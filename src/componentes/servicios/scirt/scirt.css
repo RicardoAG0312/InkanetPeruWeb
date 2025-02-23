@@ -40,3 +40,9 @@
 .text-primary {
     color: #05AFA5 !important;
 }
+.imagen-as{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-left: 150px;
+}

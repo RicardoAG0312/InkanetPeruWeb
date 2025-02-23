@@ -55,23 +55,23 @@ function ComponenteCobertura() {
                     <form>
                         <div className="row mb-3">
                             <div className="col-md-6">
-                                <input type="text" className="form-control form-control-lg" placeholder='Nombres' id="nombres" />
+                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Nombres' id="nombres" />
                             </div>
                             <div className="col-md-6">
-                                <input type="text" className="form-control form-control-lg" placeholder='Apellidos' id="apellidos" />
-                            </div>
-                        </div>
-                        <div className="row mb-3">
-                            <div className="col-md-6">
-                                <input type="text" className="form-control form-control-lg" placeholder='RUC' id="ruc" />
-                            </div>
-                            <div className="col-md-6">
-                                <input type="text" className="form-control form-control-lg" placeholder='Telefono/Celular' id="telefono" />
+                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Apellidos' id="apellidos" />
                             </div>
                         </div>
                         <div className="row mb-3">
                             <div className="col-md-6">
-                                <input type="email" className="form-control form-control-lg" placeholder='Email' id="email" />
+                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='RUC' id="ruc" />
+                            </div>
+                            <div className="col-md-6">
+                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Telefono/Celular' id="telefono" />
+                            </div>
+                        </div>
+                        <div className="row mb-3">
+                            <div className="col-md-6">
+                                <input type="email" className="form-control form-control-lg input-personalizado" placeholder='Email' id="email" />
                             </div>
                         </div>
                         <div className="mb-2">
