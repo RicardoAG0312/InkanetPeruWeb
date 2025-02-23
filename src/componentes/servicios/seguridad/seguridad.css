@@ -23,5 +23,6 @@
     border-top-left-radius: 400px;
     border-top-right-radius: 400px;
     color: white;
-    min-height: 700px;
+    min-height: 600px;
+    text-align: center;
 }

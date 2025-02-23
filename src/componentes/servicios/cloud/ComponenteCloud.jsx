@@ -39,7 +39,7 @@ function ComponenteCloud() {
                     <DoorDesign
                         image="69.png" 
                         title="Servicio de nube pública" 
-                        description="Asesoria constante de optimización de recursos" 
+                        description="Asesoria constante" 
                     />
                 </div>
             </section>

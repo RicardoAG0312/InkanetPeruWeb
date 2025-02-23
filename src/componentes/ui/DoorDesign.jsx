@@ -4,7 +4,7 @@ const ServiceColumn = ({ image, title, description }) => {
     return (
         <div className="col-md-4">
             <div className="disenio">
-                <div className="design card-body flex-column">
+                <div className="design card-body d-flex flex-column  align-items-center">
                     <div className="circle-image">
                         <img src={require(`../../images/${image}`)} alt={title} className="img-fluid rounded-circle" />
                     </div>
@@ -22,18 +22,6 @@ const ServiceColumn = ({ image, title, description }) => {
                     />
                 </div>
             </div>
-            {/* 
-            <div className="card text-center">
-                <div className="card-body">
-                    <div className="circle-image">
-                        <img src={require(`../../images/${image}`)} alt={title} className="img-fluid rounded-circle" />
-                    </div>
-                    <h5 className="card-title mt-3">{title}</h5>
-                    <p className="card-text">{description}</p>
-                    <a href="#" className="btn btn-info">Información</a>
-                </div>
-            </div>
-            */}
         </div>
     );
 };

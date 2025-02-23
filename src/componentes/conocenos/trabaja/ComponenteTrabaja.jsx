@@ -25,16 +25,16 @@ function ComponenteTrabaja() {
                             <li>Exigente</li>
                         </ul>
                     </div>
-                    <div className="col-md-6 align-item-center d-flex">
+                    <div className="col-md-6 d-flex align-item-center justify-content-center">
                         <img src={Group} alt="Descripción de la imagen" className="img-fluid" style={{width:"", height:"400px"}}/>
                     </div>
                 </div>
             </section>
             <section className='container-fluid seccion-cv p-5'>
-                <div className='row'>
+                <div className='row w-100'>
                     <div className="col-md-6 p-5" style={{marginLeft: "50px", color: "white"}}>
                         <h1 style={{textShadow: "-5px 5px 5px rgba(0, 0, 0, 0.5)"}}>Si estás interesado en integrarte a Inkanet, envíanos tu CV al e-mail:</h1>
-                        <button className="btn btn-light mt-3 mb-3" style={{borderRadius: "50px", width: "100%"}}><h3 style={{color: "#09AEAF"}}>administración@inkanetperu.com</h3></button>
+                        <button className="btn btn-light mt-3 mb-3" style={{borderRadius: "50px", minWidth: "100%"}}><h3 style={{color: "#09AEAF", margin: "0px"}}>administración@inkanetperu.com</h3></button>
                         <div>
                             <p style={{fontSize: "18px"}}>En el asunto indícanos las áreas de tu interés, o completa el formulario a continuación. Apenas dispongamos de una vacante acorde a lo que buscas te contactaremos. Para mayor información sobre ofertas laborales visita nuestro perfil.</p>
                         </div>
@@ -46,11 +46,11 @@ function ComponenteTrabaja() {
             </section>
             <section className='container p-5'>
                 <div className='ms-5'>
-                <h1 style={{fontSize: "60px"}}> Contacta a un <span style={{fontWeight: "100"}}> <br/>experto </span></h1>
+                <h1 style={{fontSize: "60px", fontWeight: "bold"}}> Contacta a un <span style={{fontWeight: "100"}}> <br/>experto </span></h1>
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-md-6 col-12"  style={{backgroundColor: "#FFFFFF", color: "black"}}>
-                        <div className='mb-3 mt-3'>
+                        <div className='mb-5 mt-3'>
                             <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i> Llena tus datos y nos comunicaremos contigo. </p>
                         </div>
                         <div className="alex" style={{maxWidth: "400px"}}>
@@ -100,8 +100,8 @@ function ComponenteTrabaja() {
                             </form>
                         </div>
                     </div>
-                    <div className="col-md-6" style={{backgroundColor: "#1FB3AE", borderRadius: "50px", maxWidth: "400px"}}>
-                        <div className='' style={{color: "white", paddingTop: "50px", paddingBottom: "50px", paddingLeft: "20px", paddingRight: "20px"}}>
+                    <div className="col-md-6 d-flex" style={{backgroundColor: "#1FB3AE", borderRadius: "50px", maxWidth: "400px"}}>
+                        <div className='d-flex flex-column justify-content-center align-items-start ' style={{color: "white", paddingTop: "50px", paddingBottom: "0px", paddingLeft: "20px", paddingRight: "20px"}}>
                             <h1 style={{color:"#000", fontSize:"50px"}}><span style={{fontWeight: "bold"}}>¡Te estamos</span> buscando!</h1>
                             <h2 style={{fontSize:"20px"}}>No solo conectamos cables, conectamos personas.</h2>
                             <p className='mt-3 mb-3'>En Win Empresas ayudamos a las empresas en su evolución digital, para ello necesitamos talentos como tú.</p>
