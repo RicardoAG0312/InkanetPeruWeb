@@ -4,14 +4,14 @@ const ServiceColumn = ({ image, title, description, boton }) => {
     return (
         <div className="col-md-4">
             <div className="disenio">
-                <div className="design card-body d-flex flex-column  align-items-center">
+                <div className="design card-body d-flex flex-column justif align-items-center">
                     <div className="circle-image">
                         <img src={require(`../../images/${image}`)} alt={title} className="img-fluid rounded-circle" />
                     </div>
                     <div className='mt-3 mb-auto'>
-                    <h2 className="card-title ">{title}</h2>
+                        <h2 className="card-title text-center">{title}</h2>
                     </div>
-                    <p className="card-text text-start mb-5">{description}</p>
+                    <p className="card-text text-center">{description}</p>
                     {/* <a href="#" className="btn btn-info">Información</a> */}
                     {boton !== "none" && (
                         <div className="mt-auto mb-5">
