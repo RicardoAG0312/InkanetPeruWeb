@@ -25,7 +25,14 @@ function ComponenteCloud() {
                 texto = "Contamos con servicios altamente especializados en tecnologías cloud que funcionan como catalizadores en la transformación digital de su empresa."
             />
             <section className="container">
-                <div className="row justify-content-center mt-5 mb-5 seccion-puerta-seg">
+                <div className="row mt-5 mb-5 flex-nowrap overflow-auto seccion-puerta-seg"
+                    style={{
+                        scrollSnapType: "x mandatory",
+                        WebkitOverflowScrolling: "touch",
+                        scrollbarWidth: "thin",
+                        paddingBottom: "10px"
+                    }}
+                >
                     <DoorDesign
                         image="67.png" 
                         title="Backup como servicio" 
@@ -39,7 +46,22 @@ function ComponenteCloud() {
                     <DoorDesign
                         image="69.png" 
                         title="Servicio de nube pública" 
-                        description="Asesoria constante" 
+                        description="Asesoria constante de optimización de recursos" 
+                    />
+                    <DoorDesign
+                        image="70.png" 
+                        title="Antispam de nube" 
+                        description="Mas información"
+                    />
+                    <DoorDesign
+                        image="71.png" 
+                        title="Análisis de Malware Avanzado" 
+                        description="Mas información"
+                    />
+                    <DoorDesign
+                        image="71.png" 
+                        title="Ethical Hacking" 
+                        description="Mas información"
                     />
                 </div>
             </section>

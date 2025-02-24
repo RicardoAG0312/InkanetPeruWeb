@@ -23,7 +23,14 @@ function ComponenteSeguridad() {
                 texto = "Contamos con un portafolio de servicios enfocados en la optimización de las comunicaciones corporativas."
             />
             <section className="container">
-                <div className="row justify-content-center mt-5 mb-5 seccion-puerta-seg">
+                <div className="row mt-5 mb-5 flex-nowrap overflow-auto seccion-puerta-seg"
+                    style={{
+                        scrollSnapType: "x mandatory",
+                        WebkitOverflowScrolling: "touch",
+                        scrollbarWidth: "thin",
+                        paddingBottom: "10px"
+                    }}
+                >
                     <DoorDesign
                         image="56.png" 
                         title="Internet Seguro Enterprise" 
@@ -38,6 +45,46 @@ function ComponenteSeguridad() {
                         image="58.png" 
                         title="Secure SD-WAN" 
                         description="Usa de manera óptima y segura sus enlaces de Internet empresarial." 
+                    />
+                    <DoorDesign
+                        image="59.png" 
+                        title="Internet Seguro" 
+                        description="Velocidad, seguridad y estabilidad en una sola red." 
+                    />
+                    <DoorDesign
+                        image="60.png" 
+                        title="Internet Seguro Avanzado" 
+                        description="Conectividad, seguridad, productividad y visibilidad en una sola red." 
+                    />
+                    <DoorDesign
+                        image="61.png" 
+                        title="WAF Seguro" 
+                        description="Proteje las aplicaciones web de manera integral." 
+                    />
+                    <DoorDesign
+                        image="62.png" 
+                        title="Cliente Seguro" 
+                        description="Protección centralizada para endpoints." 
+                    />
+                    <DoorDesign
+                        image="63.png" 
+                        title="EDR Cloud" 
+                        description="Protección avanzada para dispositivos finales." 
+                    />
+                    <DoorDesign
+                        image="64.png" 
+                        title="Sandboxing Cloud" 
+                        description="Protección avanzada contra ataques sofisticados." 
+                    />
+                    <DoorDesign
+                        image="65.png" 
+                        title="Correo Seguro" 
+                        description="Protección avanzada para correos corporativos." 
+                    />
+                    <DoorDesign
+                        image="66.png" 
+                        title="Protección Anti DDos" 
+                        description="Protección para su empresa contra ataques volúmetricos." 
                     />
                 </div>
             </section>

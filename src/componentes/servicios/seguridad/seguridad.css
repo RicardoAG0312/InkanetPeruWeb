@@ -17,6 +17,7 @@
 }
 .seccion-puerta-seg .col-md-4{
     width: 325px;
+    margin-left: 50px;
 }
 .seccion-puerta-seg .design{
     background-color: #3A4040;
@@ -24,5 +25,5 @@
     border-top-right-radius: 400px;
     color: white;
     min-height: 650px;
-    text-align: center;
+    text-align: start !important;
 }

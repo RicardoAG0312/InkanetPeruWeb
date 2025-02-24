@@ -25,7 +25,14 @@ function ComponenteTelefonia() {
                 texto = "Contamos con un portafolio de servicios enfocados en la optimización de las comunicaciones corporativas."
             />
             <section className="container">
-                <div className="row justify-content-center mt-5 mb-5 seccion-puerta">
+                <div className="row  mt-5 mb-5 flex-nowrap overflow-auto seccion-puerta"
+                    style={{
+                        scrollSnapType: "x mandatory",
+                        WebkitOverflowScrolling: "touch",
+                        scrollbarWidth: "thin",
+                        paddingBottom: "10px"
+                    }}
+                >
                     <DoorDesign
                         image="50.png" 
                         title="Colaboración y videoconferencia" 
@@ -40,6 +47,21 @@ function ComponenteTelefonia() {
                         image="52.png" 
                         title="SIP Trunk Corporativo" 
                         description="Brindamos líneas troncales (Sip Trunks) a la medida de las empresas mediante enlaces." 
+                    />
+                    <DoorDesign
+                        image="53.png" 
+                        title="SIP Trunk Call Center" 
+                        description="Brindamos líneas troncales optimizadas para empresas con Call Center de alta demanda." 
+                    />
+                    <DoorDesign
+                        image="54.png" 
+                        title="Equipamiento Telfónico IP-PBX" 
+                        description="Contamos con Centrales telefónicos y terminales telefónicas" 
+                    />
+                    <DoorDesign
+                        image="55.png" 
+                        title="Contact Center en la Nube" 
+                        description="Solución de reportes avanzadas para centrales físicas." 
                     />
                 </div>
             </section>
