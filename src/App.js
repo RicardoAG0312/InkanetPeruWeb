@@ -1,5 +1,7 @@
 // Importaciones de bibliotecas
 import React from 'react';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -22,6 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 5000);
 });
 
+const ScrollToTop = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+};
+
 
 
 function App() {
@@ -35,6 +47,7 @@ function App() {
             </div>
             <div id="content"> 
                 <Router>
+                    <ScrollToTop/>
                     <Routes>
                         <Route index path='/' element={<Navigate to="/inicio" />}/>
                         <Route path='/inicio' element={<ComponenteInicio />} />
