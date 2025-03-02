@@ -59,7 +59,7 @@ function ComponenteCloud() {
                         description="Mas información"
                     />
                     <DoorDesign
-                        image="71.png" 
+                        image="72.png" 
                         title="Ethical Hacking" 
                         description="Mas información"
                     />

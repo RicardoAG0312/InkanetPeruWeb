@@ -24,8 +24,8 @@ function ComponenteBarraNavegacion() {
                     <NavDropdown.Item as={Link} to="/servicios/telefonia" id="drop-item"> Telefonía y CCUU </NavDropdown.Item>
                     <NavDropdown.Item as={Link} to="/servicios/seguridad" id="drop-item"> Seguridad Gestionada </NavDropdown.Item>
                     <NavDropdown.Item as={Link} to="/servicios/cloud" id="drop-item"> Servicios Cloud </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/servicios/sap" id="drop-item"> Servicios Sap </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/servicios/scirt" id="drop-item"> SCIRT </NavDropdown.Item>
+                    {/* <NavDropdown.Item as={Link} to="/servicios/sap" id="drop-item"> Servicios Sap </NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/servicios/scirt" id="drop-item"> SCIRT </NavDropdown.Item> */}
                 </NavDropdown>
                 <Nav.Link as={Link} to="/contacto" id="contacto">Contáctanos</Nav.Link>
             </Nav>

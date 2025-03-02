@@ -34,7 +34,7 @@ function ComponenteTrabaja() {
                 <div className='row w-100'>
                     <div className="col-md-6 p-5" style={{marginLeft: "50px", color: "white"}}>
                         <h1 style={{textShadow: "-5px 5px 5px rgba(0, 0, 0, 0.5)"}}>Si estás interesado en integrarte a Inkanet, envíanos tu CV al e-mail:</h1>
-                        <button className="btn btn-light mt-3 mb-3" style={{borderRadius: "50px", minWidth: "100%"}}><h3 style={{color: "#09AEAF", margin: "0px"}}>administración@inkanetperu.com</h3></button>
+                        <button className="btn btn-light mt-3 mb-3" style={{borderRadius: "50px", minWidth: "100%"}}><h3 style={{color: "#09AEAF", margin: "0px"}}>administracion@inkanetperu.com</h3></button>
                         <div>
                             <p style={{fontSize: "18px"}}>En el asunto indícanos las áreas de tu interés, o completa el formulario a continuación. Apenas dispongamos de una vacante acorde a lo que buscas te contactaremos. Para mayor información sobre ofertas laborales visita nuestro perfil.</p>
                         </div>
@@ -104,7 +104,7 @@ function ComponenteTrabaja() {
                         <div className='d-flex flex-column justify-content-center align-items-start ' style={{color: "white", paddingTop: "50px", paddingBottom: "0px", paddingLeft: "20px", paddingRight: "20px"}}>
                             <h1 style={{color:"#000", fontSize:"50px"}}><span style={{fontWeight: "bold"}}>¡Te estamos</span> buscando!</h1>
                             <h2 style={{fontSize:"20px"}}>No solo conectamos cables, conectamos personas.</h2>
-                            <p className='mt-3 mb-3'>En Win Empresas ayudamos a las empresas en su evolución digital, para ello necesitamos talentos como tú.</p>
+                            <p className='mt-3 mb-3'>En Inkanet ayudamos a las empresas en su evolución digital, para ello necesitamos talentos como tú.</p>
                             <h3>Conoce nuestras vacantes en el siguiente portal</h3>
                             <div className='d-flex align-items-end mt-5'>
                                 <p className=''>¡Te estamos esperando!</p>
