@@ -66,7 +66,7 @@ function ComponenteCloud() {
                         direccion="/contacto"
                     />
                     <DoorDesign
-                        image="61.png" 
+                        image="72.png" 
                         title="Ethical Hacking" 
                         description="Encuentra vulnerabilidades antes que los hackers"
                         direccion="/contacto"

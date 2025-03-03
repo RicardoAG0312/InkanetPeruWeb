@@ -1,7 +1,7 @@
 import React from 'react'
 import {ComponenteBarraNavegacion} from "../../../routers/routers"
 import HeaderForm from '../../ui/HeaderForm'
-import Group from "../../../images/diseñ80.png";
+import Group from "./../../../images/diseñ80.png";
 import "./trabaja.css";
 
 function ComponenteTrabaja() {
@@ -34,7 +34,7 @@ function ComponenteTrabaja() {
                 <div className='row w-100'>
                     <div className="col-md-6 p-5" style={{marginLeft: "50px", color: "white"}}>
                         <h1 style={{textShadow: "-5px 5px 5px rgba(0, 0, 0, 0.5)"}}>Si estás interesado en integrarte a Inkanet, envíanos tu CV al e-mail:</h1>
-                        <button className="btn btn-light mt-3 mb-3" style={{borderRadius: "50px", minWidth: "100%"}}><h3 style={{color: "#09AEAF", margin: "0px"}}>administración@inkanetperu.com</h3></button>
+                        <button className="btn btn-light mt-3 mb-3" style={{borderRadius: "50px", minWidth: "100%"}}><h3 style={{color: "#09AEAF", margin: "0px"}}>administracion@inkanetperu.com</h3></button>
                         <div>
                             <p style={{fontSize: "18px"}}>En el asunto indícanos las áreas de tu interés, o completa el formulario a continuación. Apenas dispongamos de una vacante acorde a lo que buscas te contactaremos. Para mayor información sobre ofertas laborales visita nuestro perfil.</p>
                         </div>
