@@ -29,39 +29,47 @@ function ComponenteCloud() {
                     style={{
                         scrollSnapType: "x mandatory",
                         WebkitOverflowScrolling: "touch",
-                        scrollbarWidth: "thin",
-                        paddingBottom: "10px"
+                        scrollbarWidth: "none", // Oculta en Firefox
+                        paddingBottom: "10px",
+                        overflowX: "scroll", // Asegura que el scroll funcione
+                        msOverflowStyle: "none" // Oculta scrollbar en IE y Edge
                     }}
                 >
                     <DoorDesign
                         image="67.png" 
                         title="Backup como servicio" 
                         description="Transferencia de datos ilimitada" 
+                        direccion="/contacto"
                     />
                     <DoorDesign
                         image="68.png" 
                         title="Infraestructura como servicio" 
-                        description="Latencia menor a 10ms." 
+                        description="Latencia menor a 10ms."
+                        direccion="/contacto" 
                     />
                     <DoorDesign
                         image="69.png" 
                         title="Servicio de nube pública" 
                         description="Asesoria constante de optimización de recursos" 
+                        direccion="/contacto"
                     />
                     <DoorDesign
                         image="70.png" 
                         title="Antispam de nube" 
-                        description="Mas información"
+                        description="Protege tu correo de spam y amenazas"
+                        direccion="/contacto"
                     />
                     <DoorDesign
                         image="71.png" 
-                        title="Análisis de Malware Avanzado" 
-                        description="Mas información"
+                        title="Malware Avanzado" 
+                        description="Detecta y elimina amenazas digitales"
+                        direccion="/contacto"
                     />
                     <DoorDesign
-                        image="71.png" 
+                        image="61.png" 
                         title="Ethical Hacking" 
-                        description="Mas información"
+                        description="Encuentra vulnerabilidades antes que los hackers"
+                        direccion="/contacto"
                     />
                 </div>
             </section>

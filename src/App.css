@@ -110,6 +110,7 @@ section {
     -o-transition: top 0.5s ease;
     z-index: 5;
     width: 100%;
+
 }
 .dropdown-menu.show {
     background-color: white;
@@ -132,13 +133,14 @@ section {
     justify-content: end;
     margin: 0;
     padding: 0;
-    
 }
+
 #contacto:hover,
 #contacto:focus,
 #contacto:active {
     color: white;
 }
+
 
 
 .navbar img {
@@ -260,7 +262,7 @@ footer .contenedorPie {
 }
 .contenedorPie .contain2 div:nth-child(1) img {
     width: 65px;
-    height: 45px;
+    height: 40px;
     margin: 0;
 }
 .contenedorPie .contain3 {

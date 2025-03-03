@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./inicio.css"
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
@@ -9,40 +10,69 @@ import VideoPortada3 from "../../images/Portada 3.mp4"
 import VideoPortada4 from "../../images/Portada 5.mp4"
 import BotonAnimado from "../ui/BotonAnimado";
 
+// import Cisco from '../../images/8.png';
+// import Dell from '../../images/10.png';
+// import GFI from '../../images/16.png';
+// import Hillstone from '../../images/18.png';
+// import Karpesky from '../../images/20.png';
+// import Nessus from '../../images/22.png';
+// import Juniper from '../../images/24.png';
+// import Paloalto from '../../images/26.png';
+// import Sophos from '../../images/28.png';
+// import Checkpoint from '../../images/32.png';
+// import Onap from '../../images/133.png';
+// import Sangfor from '../../images/135.png';
+// import Arista from '../../images/137.png';
+// import Hewlett from '../../images/138.png';
+// import Fortinet from '../../images/Fortinet.png';
+
+
+// const imagenes = [
+//     Cisco, Dell, GFI, Hillstone, Karpesky, Nessus, Juniper, Hillstone, Paloalto, Sophos, Checkpoint, Onap, Sangfor, Arista, Hewlett, Fortinet
+// ];
+
+// export function ComponentePartners() {
+//     const [indice, setIndice] = useState(0);
+//         useEffect(() => {
+//         const interval = setInterval(() => {
+//             setIndice((indice + 1) % (imagenes.length - 3));
+//         }, 3000);
+//         return () => clearInterval(interval);
+//     }, [indice]);
+//     return (
+//         <section style={{backgroundColor: "#3A4040", height: "auto",padding: "48px 150px"}} className="container-fluid">
+//             <div className="titulo">
+//                 <h1> NUESTROS ALIADOS: </h1>
+//             </div>
+//             <div id="carouselExample" className="carousel slide container-fluid" data-bs-ride="carousel">
+//             <div className="carousel-inner" id="Partners">
+//                 <div className="carousel-item active">
+//                     <div className="row contenedor-carusel" id="carusel">
+//                         {imagenes.slice(indice, indice + 4).map((imagen, index) => (
+//                             <div key={index} className="col col-carusel">
+//                                 <img src={imagen} className="d-inline-block" alt="Partner" />
+//                             </div>
+//                         ))}
+//                     </div>
+//                 </div>
+//             </div>
+//             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" onClick={() => setIndice((indice - 1 + (imagenes.length - 3)) % (imagenes.length - 3))}>
+//                 <span className="carousel-control-prev-icon" aria-hidden="true" id="flecha-izq"></span>
+//             </button>
+//             <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" onClick={() => setIndice((indice + 1) % (imagenes.length - 3))}>
+//                 <span className="carousel-control-next-icon" aria-hidden="true" id="flecha-der"></span>
+//             </button>
+//             </div>
+//         </section>
+//     );
+// }
+
+
 export default function ComponenteInicio() {
+    const navigate = useNavigate();
 
     return (
         <>
-            {/* <section className='contenedorPrincipal'>
-                <ComponenteBarraNavegacion />
-                <Carousel className='carousel' data-bs-theme="dark" >
-                    <Carousel.Item interval={2500}>
-
-                        <video className="d-block w-100 video1" autoPlay loop muted >
-                            <source src={VideoPortada1} type="video/mp4" />
-                            <h1> 1 texto </h1>
-                        </video>
-                    </Carousel.Item>
-                    <Carousel.Item interval={2500}>
-                        <video className="d-block w-100 video2" autoPlay loop muted >
-                            <source src={VideoPortada2} type="video/mp4" />
-                            <h1> 2 texto </h1>
-                        </video>
-                    </Carousel.Item>
-                    <Carousel.Item interval={2500}>
-                        <video className="d-block w-100 video3" autoPlay loop muted >
-                            <source src={VideoPortada3} type="video/mp4" />
-                            <h1> 3 texto </h1>
-                        </video>
-                    </Carousel.Item>
-                    <Carousel.Item interval={2500}>
-                        <video className="d-block w-100 video4" autoPlay loop muted >
-                            <source src={VideoPortada4} type="video/mp4" />
-                            <h1> 4 texto </h1>
-                        </video>
-                    </Carousel.Item>
-                </Carousel>    
-            </section> */}
             <section className='contenedorPrincipal'>
                 <ComponenteBarraNavegacion />
                 <Carousel className='carousel' data-bs-theme="dark"  controls={false}>
@@ -116,7 +146,7 @@ export default function ComponenteInicio() {
                     </Carousel.Item>
                 </Carousel>    
             </section>
-            <section data-aos="fade-right" style={{backgroundColor: "#3A4040", height: "auto", padding: "48px 150px", paddingBottom: "130px"}} className="container-fluid">
+            <section data-aos="fade-right" style={{backgroundColor: "#3A4040", height: "auto", padding: "48px 150px", paddingBottom: "130px"}} className="container-fluid segunda-seccion-inicio">
                 <div>
                     <h1 style={{fontSize: "80px", fontWeight: "700", color: "white"}}> Nuestros <span style={{fontWeight: "100"}}> Servicios </span> </h1>
                     <p style={{color: "white"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i> Impulsamos la innovación tecnológica a través de nuestro portafolio de soluciones para mejorar la productividad y competitividad de las empresas. </p>
@@ -130,10 +160,10 @@ export default function ComponenteInicio() {
                             alignItems: 'center',
                             justifyContent: 'center',
                             flexDirection: "column",
-                            gap: "6px"
+                            gap: "6px",
                         }}
                         >
-                        <Image src={require("../../images/Nuestros servicios 1.png")} roundedCircle style={{ width: '244px', height: '245px' }} />
+                        <Image onClick={() => navigate("/servicios/conectividad")} src={require("../../images/Nuestros servicios 1.png")} roundedCircle style={{ width: '244px', height: '245px',  cursor: "pointer"  }} />
                         <bold style={{color: "white"}}> <p style={{fontWeight: "700", width: "120px", textAlign: "center", fontFamily: "Red Hat Display"}}> Conectividad en empresas </p> </bold>
                         </div>
                         <div
@@ -146,7 +176,7 @@ export default function ComponenteInicio() {
                             gap: "6px"
                         }}
                         >
-                        <Image src={require("../../images/Nuestros servicios 2.png")} roundedCircle style={{ width: '244px', height: '245px' }} />
+                        <Image onClick={() => navigate("/servicios/gestionados")} src={require("../../images/Nuestros servicios 2.png")} roundedCircle style={{ width: '244px', height: '245px',  cursor: "pointer"  }} />
                         <strong style={{color: "white"}}> <p style={{fontWeight: "700", width: "120px", textAlign: "center", fontFamily: "Red Hat Display"}}> Servicios Gestionados </p> </strong>
                         </div>
                         <div
@@ -159,11 +189,11 @@ export default function ComponenteInicio() {
                             gap: "6px"
                         }}
                         >
-                        <Image src={require("../../images/Nuestros servicios 3.png")} roundedCircle style={{ width: '244px', height: '245px' }} />
+                        <Image onClick={() => navigate("/servicios/telefonia")} src={require("../../images/Nuestros servicios 3.png")} roundedCircle style={{ width: '244px', height: '245px',  cursor: "pointer" }} />
                         <strong style={{color: "white"}}> <p style={{fontWeight: "700", width: "200px", textAlign: "center", fontFamily: "Red Hat Display"}}> Telefonia Corporativa y comunicaciones unificadas </p>  </strong>
                         </div>
                     </div>
-                    <div style={{ display: 'flex', flex: 1 }}>
+                    <div className='sec' style={{ display: 'flex', flex: 1 }}>
                         <div
                         style={{
                             flex: 1,
@@ -175,7 +205,7 @@ export default function ComponenteInicio() {
                             marginRight: "180px"
                         }}
                         >
-                        <Image src={require("../../images/Nuestros servicios 4.png")} roundedCircle style={{ width: '244px', height: '245px' }} />
+                        <Image onClick={() => navigate("/servicios/seguridad")} src={require("../../images/Nuestros servicios 4.png")} roundedCircle style={{ width: '244px', height: '245px', cursor: "pointer" }} />
                         <strong style={{color: "white", paddingRight: "12px", fontFamily: "Red Hat Display"}}> Ciberseguridad en empresas </strong>
                         </div>
                         <div
@@ -188,14 +218,14 @@ export default function ComponenteInicio() {
                             gap: "6px"
                         }}
                         >
-                        <Image src={require("../../images/Nuestros servicios 5.png")} roundedCircle style={{ width: '244px', height: '245px' }} />
+                        <Image onClick={() => navigate("/servicios/cloud")} src={require("../../images/Nuestros servicios 5.png")} roundedCircle style={{ width: '244px', height: '245px',  cursor: "pointer"  }} />
                         <strong style={{color: "white", paddingLeft: "65px", fontFamily: "Red Hat Display"}} > Servicios Cloud </strong>
                         </div>
                     </div>
                 </div>
             </section>
-            <section data-aos="fade-right" style={{backgroundColor: "#FAFAFA", height: "auto", padding: "60px 0"}}>
-                <div className="row p-0 m-0 h-100">
+            <section  data-aos="fade-right" style={{backgroundColor: "#FAFAFA", height: "auto", padding: "60px 0"}}>
+                <div className="tercera-seccion-inicio row p-0 m-0 h-100">
                     <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center" >
                         <Image style={{width: "500px", height: "500px"}} src={require("../../images/Diseño sin título(1).png")} rounded />
                     </div>
@@ -215,7 +245,8 @@ export default function ComponenteInicio() {
                     </div>
                 </div>
             </section>
-            <section data-aos="fade-right" style={{backgroundColor: "#3A4040", height: "auto",padding: "48px 150px",}}className="container-fluid">
+
+            <section data-aos="fade-right" style={{backgroundColor: "#3A4040", height: "auto",padding: "48px 150px"}}className="container-fluid cuarta-seccion-inicio">
                 <div>
                     <h1 style={{ fontSize: "80px", fontWeight: "100", color: "white" }}>
                     Nuestros <span style={{ fontWeight: "700" }}> Partners </span>
@@ -253,7 +284,8 @@ export default function ComponenteInicio() {
                     </div>
                 </div>
             </section>
-
+            
+            {/* <ComponentePartners /> */}
         </>
     )
 }

@@ -14,11 +14,11 @@ function HeaderForm({img, titulo, texto1, texto2, form}) {
                     form ? 
                         <div className='container headForm h-100 '>
                             <h2> Contacta con un asesor </h2>
-                            <p style={{fontSize: "12px", textAlign: "center"}}> Ingresa los datos de tu empresa RUC 20 y un asesor de negocios se comunicará contigo para ayudarte </p>
+                            <p style={{fontSize: "12px", textAlign: "center"}}> Ingresa los datos de tu empresa RUC y un asesor de negocios se comunicará contigo para ayudarte </p>
                             <div className='d-flex flex-column gap-2 w-100'>
                                 <input type="text" name="nombres" id="nombres" placeholder='Nombres'/>
                                 <input type="text" name="apellidos" id="apellidos" placeholder='Apellidos'/>
-                                <input type="text" name="ruc" id="ruc" placeholder='Ruc 20'/>
+                                <input type="text" name="ruc" id="ruc" placeholder='Ruc'/>
                                 <input type="text" name="telefono" id="telefono" placeholder='Teléfono / Celular'/>
                                 <input type="email" name="email" id="email" placeholder='Email'/>
                             </div>

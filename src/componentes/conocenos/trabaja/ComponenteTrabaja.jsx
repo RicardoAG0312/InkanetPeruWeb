@@ -104,7 +104,7 @@ function ComponenteTrabaja() {
                         <div className='d-flex flex-column justify-content-center align-items-start ' style={{color: "white", paddingTop: "50px", paddingBottom: "0px", paddingLeft: "20px", paddingRight: "20px"}}>
                             <h1 style={{color:"#000", fontSize:"50px"}}><span style={{fontWeight: "bold"}}>¡Te estamos</span> buscando!</h1>
                             <h2 style={{fontSize:"20px"}}>No solo conectamos cables, conectamos personas.</h2>
-                            <p className='mt-3 mb-3'>En Win Empresas ayudamos a las empresas en su evolución digital, para ello necesitamos talentos como tú.</p>
+                            <p className='mt-3 mb-3'>En Inkanet ayudamos a las empresas en su evolución digital, para ello necesitamos talentos como tú.</p>
                             <h3>Conoce nuestras vacantes en el siguiente portal</h3>
                             <div className='d-flex align-items-end mt-5'>
                                 <p className=''>¡Te estamos esperando!</p>

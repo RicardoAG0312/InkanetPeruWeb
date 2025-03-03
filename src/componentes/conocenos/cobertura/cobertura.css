@@ -33,9 +33,9 @@
     border-top-left-radius: 400px; /* Ajusta el radio de la esquina superior izquierda */  
     border-top-right-radius: 400px; /* Ajusta el radio de la esquina superior derecha */  
     /* outline: 2px #09AEAF solid; */
-    border-top: 2px solid #09AEAF;  /* Borde superior */  
-    border-left: 2px solid #09AEAF; /* Borde izquierdo */  
-    border-right: 2px solid #09AEAF; /* Borde derecho */  
+    border-top: 1px solid #09AEAF;  /* Borde superior */  
+    border-left: 1px solid #09AEAF; /* Borde izquierdo */  
+    border-right: 1px solid #09AEAF; /* Borde derecho */  
     border-bottom: none;
     padding: 20px;
 }

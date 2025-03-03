@@ -103,7 +103,7 @@ function ComponenteSomos() {
                                 4,800 Clientes
                             </h1>
                             <p className="text-white" style={{ maxWidth: "60%" }}>
-                                Alcanzando un índice de renovación de contratos por encima del 95%.
+                                Alcanzando un índice de renovación de contratos por encima del 99%.
                             </p>
                             <BotonAnimado 
                                 colorIconoBase="white"
@@ -118,7 +118,7 @@ function ComponenteSomos() {
                     </div>
                     <div className="col-12 col-md-6 d-flex flex-column justify-content-between align-items-center">
                         <ViñetasSomos 
-                            texto="Certificado internacional con ISO 9001:2015, ISO/IEC 27001:2013 e ISO 22301:2019"
+                            texto="Certificados... "
                             fondo="#1A1A1A"
                             fondoIcono="#1FB3AE"
                             colorLetra="white"
@@ -126,7 +126,7 @@ function ComponenteSomos() {
                         />
                         <img src={Rombo} alt="img" className="img-fluid"/>
                         <ViñetasSomos 
-                            texto="Más de 7,000 Km de fibra óptica propia desplegada en Lima y Callao." 
+                            texto="Cobertura a todo el Perú" 
                             fondo="#1A1A1A"
                             fondoIcono="#1FB3AE"
                             colorLetra="white"

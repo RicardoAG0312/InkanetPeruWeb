@@ -1,6 +1,6 @@
 import React from 'react';
 import BotonAnimado from './BotonAnimado';
-const ServiceColumn = ({ image, title, description, boton }) => {
+const ServiceColumn = ({ image, title, description, boton, direccion }) => {
     return (
         <div className="col-md-4">
             <div className="disenio">
@@ -22,7 +22,7 @@ const ServiceColumn = ({ image, title, description, boton }) => {
                                 colorIconoPress="white"
                                 fondoTextoPress="black"
                                 colorLetraPress="white"
-                                // nav={direccion}
+                                nav={direccion}
                             />
                         </div>
                     )}

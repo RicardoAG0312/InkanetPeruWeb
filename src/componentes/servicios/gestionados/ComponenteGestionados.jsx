@@ -24,6 +24,12 @@ function ComponenteGestionados() {
                     </div>
                     <div className="col-md-5 col-12 d-flex flex-column justify-content-between align-items-center py-4">
                         <SubSecciones 
+                            titulo="LAN"
+                            span="Gestionada"
+                            texto="Aseguramos la continuidad de tu negocio gestionando los equipos de tu red local."
+                            direccion="/contacto"
+                        />
+                        <SubSecciones 
                             titulo="WIFI"
                             span="Gestionado"
                             texto="Renovamos y administramos los equipos de acceso inalámbrico en su empresa."
@@ -33,12 +39,6 @@ function ComponenteGestionados() {
                             titulo="Cámaras de Videovigilancia"
                             span="Gestionadas"
                             texto="Proyectos y gestión de cámaras de seguridad y video wall."
-                            direccion="/contacto"
-                        />
-                        <SubSecciones 
-                            titulo="LAN"
-                            span="Gestionada"
-                            texto="Aseguramos la continuidad de tu negocio gestionando los equipos de tu red local."
                             direccion="/contacto"
                         />
                     </div>

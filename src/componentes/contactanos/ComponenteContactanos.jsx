@@ -74,7 +74,7 @@ function ComponenteContactanos() {
                                         }}
                                         ></span>
                                         <span>
-                                        {seleccionados.includes(servicio) ? "Conectividad" : servicio}
+                                        {seleccionados.includes(servicio) ? servicio : servicio}
                                         </span>
                                     </button>
                                     </div>
