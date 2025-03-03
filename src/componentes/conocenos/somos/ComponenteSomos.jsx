@@ -80,7 +80,7 @@ function ComponenteSomos() {
                         </div>
                     </div>
                     <div className="col-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
-                        <img src={require("../../../images/diseño9.png")} alt="Imagen Logo Inkanet" className="img-fluid w-100 w-md-auto h-auto"/>
+                        <img src={require("./../../../images/diseño9.png")} alt="Imagen Logo Inkanet" className="img-fluid w-100 w-md-auto h-auto"/>
                     </div>
                 </div>
             </section>

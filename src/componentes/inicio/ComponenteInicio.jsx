@@ -197,7 +197,7 @@ export default function ComponenteInicio() {
             <section data-aos="fade-right" style={{backgroundColor: "#FAFAFA", height: "auto", padding: "60px 0"}}>
                 <div className="row p-0 m-0 h-100">
                     <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center" >
-                        <Image style={{width: "500px", height: "500px"}} src={require("../../images/Diseño sin título(1).png")} rounded />
+                        <Image style={{width: "500px", height: "500px"}} src={require("./../../images/Diseño sin título(1).png")} rounded />
                     </div>
                     <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-start">
                         <h1 style={{fontWeight: "100", width: "350px"}}> Contamos con Nuestro Propio <h1 style={{fontWeight: "bold", width: "200px"}}> Centro de Atención </h1> </h1>
