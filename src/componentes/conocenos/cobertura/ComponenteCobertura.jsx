@@ -2,9 +2,9 @@ import React from 'react';
 import {ComponenteBarraNavegacion} from "../../../routers/routers";
 import HeaderForm from '../../ui/HeaderForm';
 import Cartas from '../../ui/Cartas';
-import MapaPeru from "../../../images/mapa del peru.png";
-import CuatroTres from "../../../images/43.png";
-import CuatroCuatro from "../../../images/44.png";
+import MapaPeru from "../../../images/mapa del peru.png.png";
+import CuatroTres from "../../../images/43.png.png";
+import CuatroCuatro from "../../../images/44.png.png";
 import "./cobertura.css";
 
 function ComponenteCobertura() {

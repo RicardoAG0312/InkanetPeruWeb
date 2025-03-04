@@ -4,7 +4,7 @@
 }
 .seguridad-section::before {
     content: "";
-    background-image: url("./../../../images/diseño12.png");
+    background-image: url("./../../../images/diseño12.png.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -2,7 +2,7 @@ import React from 'react'
 import HeaderForm from '../../ui/HeaderForm';
 import {ComponenteBarraNavegacion} from "../../../routers/routers";
 import DoorDesign from '../../ui/DoorDesign';
-import TY from "../../../images/TY.png";
+import TY from "../../../images/TY.png.png";
 import "./satelital.css"
 
 function ComponenteSatelital() {

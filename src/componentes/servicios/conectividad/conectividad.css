@@ -4,7 +4,7 @@
 }
 .conectividad-section::before {
     content: "";
-    background-image: url("../../../images/EMPRESAS-.png");
+    background-image: url("../../../images/EMPRESAS-.png.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

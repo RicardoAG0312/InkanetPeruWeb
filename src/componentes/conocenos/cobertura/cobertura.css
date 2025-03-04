@@ -7,7 +7,7 @@
 }
 .cobertura-section::before {
     content: "";
-    background-image: url("../../../images/portada.png");
+    background-image: url("../../../images/portada.png.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

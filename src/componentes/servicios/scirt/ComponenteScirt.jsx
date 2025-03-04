@@ -1,7 +1,7 @@
 import React from 'react'
 import {ComponenteBarraNavegacion} from "../../../routers/routers";
 import HeaderForm from '../../ui/HeaderForm';
-import As from "../../../images/as.png";
+import As from "../../../images/as.png.png";
 import "./scirt.css"
 import Help from '../../ui/Help';
 

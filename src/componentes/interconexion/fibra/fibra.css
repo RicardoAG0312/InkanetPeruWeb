@@ -4,7 +4,7 @@
 }
 .fibra-section::before {
     content: "";
-    background-image: url("../../../images/weqwe.png");
+    background-image: url("../../../images/weqwe.png.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -4,7 +4,7 @@
 }
 .scirt-section::before {
     content: "";
-    background-image: url("../../../images/diseño20.png");
+    background-image: url("../../../images/diseño20.png.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +24,7 @@
 
 .protect::before {
     content: "";
-    background-image: url("../../../images/asdasdasd.png");
+    background-image: url("../../../images/asdasdasd.png.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 import LogoInkanet from "../../images/inkanet Blanco.svg"
 
 
-import IconConectividad from '../../images/34.png';
-import IconGestionados from '../../images/35.png';
-import IconTelefonia from '../../images/36.png';
-import IconSeguridad from '../../images/37.png';
-import IconCloud from '../../images/39.png';
-import IconSap from '../../images/40.png';
-import IconScirt from '../../images/41.png';
+import IconConectividad from '../../images/34.png.png';
+import IconGestionados from '../../images/35.png.png';
+import IconTelefonia from '../../images/36.png.png';
+import IconSeguridad from '../../images/37.png.png';
+import IconCloud from '../../images/39.png.png';
+import IconSap from '../../images/40.png.png';
+import IconScirt from '../../images/41.png.png';
 
 
 

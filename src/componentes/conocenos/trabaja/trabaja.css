@@ -7,7 +7,7 @@
 }
 .trabaja-section::before {
     content: "";
-    background-image: url("../../../images/trabaja\ con\ nosotros.png");
+    background-image: url("../../../images/trabaja\ con\ nosotros.png.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@
     height: 100%;
 }
 .seccion-cv{
-    background-image: url("../../../images/Imagenes\ Web\ Nueva\(8\).png");
+    background-image: url("../../../images/Imagenes\ Web\ Nueva\(8\).png.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

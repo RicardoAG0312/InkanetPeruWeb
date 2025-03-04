@@ -4,7 +4,7 @@
 }
 .sap-section::before {
     content: "";
-    background-image: url("../../../images/diseño15.png");
+    background-image: url("../../../images/diseño15.png.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +23,7 @@
 }
 .text-img-sap1::before {
     content: "";
-    background-image: url("../../../images/77.png");
+    background-image: url("../../../images/77.png.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,7 +38,7 @@
 }
 .text-img-sap2::before {
     content: "";
-    background-image: url("../../../images/78.png");
+    background-image: url("../../../images/78.png.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -91,13 +91,13 @@ function App() {
                                 <div class="col-12 col-md-4 contain2">
                                     <div>
                                         <a href="https://www.linkedin.com/company/inkanet-per%C3%BA/" target="_blank" rel="noreferrer">
-                                            <img src={require("./images/13.png")} alt="Imagen Linkdln" />
+                                            <img src={require("./images/13.png.png")} alt="Imagen Linkdln" />
                                         </a>
                                         <a href="https://wa.me/51908827506" target="_blank" rel="noreferrer">
-                                            <img src={require("./images/14.png")} alt="Imagen whatsapp" />
+                                            <img src={require("./images/14.png.png")} alt="Imagen whatsapp" />
                                         </a>
                                         <a href="mailto: ventas@inkanetperu.com" target="_blank" rel="noreferrer">
-                                            <img src={require("./images/15.png")} alt="Imagen correo" />
+                                            <img src={require("./images/15.png.png")} alt="Imagen correo" />
                                         </a>
                                     </div>
                                 </div>
