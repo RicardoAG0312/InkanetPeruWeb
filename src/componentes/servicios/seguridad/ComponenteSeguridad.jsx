@@ -82,7 +82,7 @@ function ComponenteSeguridad() {
                         direccion="/contacto"
                     />
                     <DoorDesign
-                        image="109.png" 
+                        image="109.png.png" 
                         title="Sandboxing Cloud" 
                         description="Protección avanzada contra ataques sofisticados." 
                         direccion="/contacto"

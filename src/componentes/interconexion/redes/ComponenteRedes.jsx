@@ -37,31 +37,31 @@ function ComponenteRedes() {
                 <div className="container">
                     <div className="row">
                         <Cartas 
-                            imagen = "99"
+                            imagen = "99.png"
                             texto = "Permite centralizar el acceso y la gestión de Internet desde un solo punto"
                         />
                         <Cartas 
-                            imagen = "84"
+                            imagen = "84.png"
                             texto = "Soporte técnico 24x7"
                         />
                         <Cartas 
-                            imagen = "93"
+                            imagen = "93.png"
                             texto = "Enlaces vía Fibra Óptica"
                         />
                         <Cartas 
-                            imagen = "85"
+                            imagen = "85.png"
                             texto = "Ancho de banda 100% garantizado"
                         />
                         <Cartas 
-                            imagen = "94"
+                            imagen = "94.png"
                             texto = "Conexión Simétrica"
                         />
                         <Cartas 
-                            imagen = "100"
+                            imagen = "100.png"
                             texto = "Permite integrar las sucursales de una empresa"
                         />
                         <Cartas 
-                            imagen = "101"
+                            imagen = "101.png"
                             texto = "Permite compartir múltiples recursos IP (Telefonía, cámaras, sistemas de información, etc)"
                         />
                     </div>

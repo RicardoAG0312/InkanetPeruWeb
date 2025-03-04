@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {ComponenteBarraNavegacion} from "../../routers/routers"
 import HeaderForm from '../ui/HeaderForm';
 import "./contactanos.css"
 
 function ComponenteContactanos() {
     const [seleccionados, setSeleccionados] = useState([]);
+
+    const formRef = useRef();
+    const nombresRef = useRef();
+    const apellidosRef = useRef();
+    const rucRef = useRef();
+    const telefonoRef = useRef();
+    const emailRef = useRef();
+
+
 
     const servicios = [
         "Conectividad",
@@ -25,6 +34,29 @@ function ComponenteContactanos() {
         } else {
           setSeleccionados([...seleccionados, servicio]); // Si no está, lo agrega
         }
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        
+        const nombresIngresados = nombresRef.current.value;
+        const apellidosIngresados = apellidosRef.current.value;
+        const rucIngresado = rucRef.current.value;
+        const telefonoIngresado = telefonoRef.current.value;
+        const emailIngresado = emailRef.current.value;
+
+        const correo = "ventas@inkanetperu.com";
+        const gmailHead = "Información Inkanet Perú";
+        const gmailBody = `Nombres: ${nombresIngresados}\nApellidos: ${apellidosIngresados}\nRuc: ${rucIngresado}\nTeléfono: ${telefonoIngresado}\nEmail: ${emailIngresado}`;
+
+        const urlGmail = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${correo}&su=${encodeURIComponent(
+        gmailHead
+        )}&body=${encodeURIComponent(gmailBody)}`;
+
+        window.open(urlGmail, "_blank");
+
+        // Limpiar los inputs después de enviar
+        formRef.current.reset();
     };
 
     return (
@@ -91,7 +123,7 @@ function ComponenteContactanos() {
                             <h1 style={{fontSize: "60px"}}> Contacta a un <span style={{fontWeight: "100"}}> experto </span></h1>
                             <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i> Llena tus datos y nos comunicaremos contigo. </p>
                         </div>
-                        <div className="mb-4">
+                        {/* <div className="mb-4">
                             <form>
                                 {["Nombres", "Apellidos", "Ruc", "Teléfono / Celular", "Email"].map((placeholder, index) => (
                                 <div key={index} className="mb-3">
@@ -114,6 +146,89 @@ function ComponenteContactanos() {
                                 </div>
                                 ))}
                             </form>
+                        </div> */}
+                        <div className="mb-4">
+                            <form className="w-100" onSubmit={handleSubmit} ref={formRef}>
+                                <div className="mb-3">
+                                <input
+                                    type="text"
+                                    placeholder="Nombres"
+                                    className="form-control border-0 border-bottom shadow-none"
+                                    style={{
+                                    backgroundColor: "transparent",
+                                    color: "#333",
+                                    fontSize: "16px",
+                                    padding: "10px 5px",
+                                    }}
+                                    required
+                                    ref={nombresRef}
+                                />
+                                </div>
+
+                                <div className="mb-3">
+                                <input
+                                    type="text"
+                                    placeholder="Apellidos"
+                                    className="form-control border-0 border-bottom shadow-none"
+                                    style={{
+                                    backgroundColor: "transparent",
+                                    color: "#333",
+                                    fontSize: "16px",
+                                    padding: "10px 5px",
+                                    }}
+                                    required
+                                    ref={apellidosRef}
+                                />
+                                </div>
+
+                                <div className="mb-3">
+                                <input
+                                    type="text"
+                                    placeholder="Ruc"
+                                    className="form-control border-0 border-bottom shadow-none"
+                                    style={{
+                                    backgroundColor: "transparent",
+                                    color: "#333",
+                                    fontSize: "16px",
+                                    padding: "10px 5px",
+                                    }}
+                                    required
+                                    ref={rucRef}
+                                />
+                                </div>
+
+                                <div className="mb-3">
+                                <input
+                                    type="text"
+                                    placeholder="Teléfono / Celular"
+                                    className="form-control border-0 border-bottom shadow-none"
+                                    style={{
+                                    backgroundColor: "transparent",
+                                    color: "#333",
+                                    fontSize: "16px",
+                                    padding: "10px 5px",
+                                    }}
+                                    required
+                                    ref={telefonoRef}
+                                />
+                                </div>
+
+                                <div className="mb-3">
+                                <input
+                                    type="email"
+                                    placeholder="Email"
+                                    className="form-control border-0 border-bottom shadow-none"
+                                    style={{
+                                    backgroundColor: "transparent",
+                                    color: "#333",
+                                    fontSize: "16px",
+                                    padding: "10px 5px",
+                                    }}
+                                    required
+                                    ref={emailRef}
+                                />
+                                </div>
+                            </form>
                         </div>
                         <div >
                             <form>
@@ -128,7 +243,7 @@ function ComponenteContactanos() {
                                     </label>
                                 </div>
                                 <button
-                                type=""
+                                type="submit"
                                 className="btn w-100"
                                 style={{
                                     backgroundColor: "black",
