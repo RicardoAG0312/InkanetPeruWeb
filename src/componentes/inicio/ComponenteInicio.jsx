@@ -163,7 +163,7 @@ export default function ComponenteInicio() {
                             gap: "6px",
                         }}
                         >
-                        <Image onClick={() => navigate("/servicios/conectividad")} src={require("../../images/Nuestros servicios 1.png")} roundedCircle style={{ width: '244px', height: '245px',  cursor: "pointer"  }} />
+                        <Image onClick={() => navigate("/servicios/conectividad")} src={require("../../images/Nuestros servicios 1.png")} roundedCircle style={{ width: '244px', height: '245px',  cursor: "pointer"  }} className='img-serv'/>
                         <bold style={{color: "white"}}> <p style={{fontWeight: "700", width: "120px", textAlign: "center", fontFamily: "Red Hat Display"}}> Conectividad en empresas </p> </bold>
                         </div>
                         <div
@@ -176,7 +176,7 @@ export default function ComponenteInicio() {
                             gap: "6px"
                         }}
                         >
-                        <Image onClick={() => navigate("/servicios/gestionados")} src={require("../../images/Nuestros servicios 2.png")} roundedCircle style={{ width: '244px', height: '245px',  cursor: "pointer"  }} />
+                        <Image onClick={() => navigate("/servicios/gestionados")} src={require("../../images/Nuestros servicios 2.png")} roundedCircle style={{ width: '244px', height: '245px',  cursor: "pointer"  }} className='img-serv' />
                         <strong style={{color: "white"}}> <p style={{fontWeight: "700", width: "120px", textAlign: "center", fontFamily: "Red Hat Display"}}> Servicios Gestionados </p> </strong>
                         </div>
                         <div
@@ -189,7 +189,7 @@ export default function ComponenteInicio() {
                             gap: "6px"
                         }}
                         >
-                        <Image onClick={() => navigate("/servicios/telefonia")} src={require("../../images/Nuestros servicios 3.png")} roundedCircle style={{ width: '244px', height: '245px',  cursor: "pointer" }} />
+                        <Image onClick={() => navigate("/servicios/telefonia")} src={require("../../images/Nuestros servicios 3.png")} roundedCircle style={{ width: '244px', height: '245px',  cursor: "pointer" }} className='img-serv'/>
                         <strong style={{color: "white"}}> <p style={{fontWeight: "700", width: "200px", textAlign: "center", fontFamily: "Red Hat Display"}}> Telefonia Corporativa y comunicaciones unificadas </p>  </strong>
                         </div>
                     </div>
@@ -205,7 +205,7 @@ export default function ComponenteInicio() {
                             marginRight: "180px"
                         }}
                         >
-                        <Image onClick={() => navigate("/servicios/seguridad")} src={require("../../images/Nuestros servicios 4.png")} roundedCircle style={{ width: '244px', height: '245px', cursor: "pointer" }} />
+                        <Image onClick={() => navigate("/servicios/seguridad")} src={require("../../images/Nuestros servicios 4.png")} roundedCircle style={{ width: '244px', height: '245px', cursor: "pointer" }} className='img-serv'/>
                         <strong style={{color: "white", paddingRight: "12px", fontFamily: "Red Hat Display"}}> Ciberseguridad en empresas </strong>
                         </div>
                         <div
@@ -218,7 +218,7 @@ export default function ComponenteInicio() {
                             gap: "6px"
                         }}
                         >
-                        <Image onClick={() => navigate("/servicios/cloud")} src={require("../../images/Nuestros servicios 5.png")} roundedCircle style={{ width: '244px', height: '245px',  cursor: "pointer"  }} />
+                        <Image onClick={() => navigate("/servicios/cloud")} src={require("../../images/Nuestros servicios 5.png")} roundedCircle style={{ width: '244px', height: '245px',  cursor: "pointer"  }} className='img-serv'/>
                         <strong style={{color: "white", paddingLeft: "65px", fontFamily: "Red Hat Display"}} > Servicios Cloud </strong>
                         </div>
                     </div>
@@ -227,7 +227,7 @@ export default function ComponenteInicio() {
             <section  data-aos="fade-right" style={{backgroundColor: "#FAFAFA", height: "auto", padding: "60px 0"}}>
                 <div className="tercera-seccion-inicio row p-0 m-0 h-100">
                     <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center" >
-                        <Image style={{width: "500px", height: "500px"}} src={require("./../../images/Diseño sin título(1).png")} rounded />
+                        <Image style={{width: "500px", height: "500px"}} src={require("../../images/diseño-inicio.png")} rounded />
                     </div>
                     <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-start">
                         <h1 style={{fontWeight: "100", width: "350px"}}> Contamos con Nuestro Propio <h1 style={{fontWeight: "bold", width: "200px"}}> Centro de Atención </h1> </h1>
@@ -245,7 +245,6 @@ export default function ComponenteInicio() {
                     </div>
                 </div>
             </section>
-
             <section data-aos="fade-right" style={{backgroundColor: "#3A4040", height: "auto",padding: "48px 150px"}}className="container-fluid cuarta-seccion-inicio">
                 <div>
                     <h1 style={{ fontSize: "80px", fontWeight: "100", color: "white" }}>
@@ -273,9 +272,15 @@ export default function ComponenteInicio() {
                         require("../../images/28.png"),
                         require("../../images/135.png"),
                         require("../../images/32.png"),
-
                         require("../../images/137.png"),
                         require("../../images/138.png"),
+                        require("../../images/143.png"),
+                        require("../../images/145.png"),
+                        require("../../images/147.png"),
+                        require("../../images/149.png"),
+                        require("../../images/151.png"),
+                        require("../../images/153.png"),
+
                     ].map((src, index) => (
                         <div key={index} className="grid-item">
                             <img src={src} alt={`Imagen ${index + 1}`} className="float-fluid" />

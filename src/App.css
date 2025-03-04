@@ -258,11 +258,11 @@ footer .contenedorPie {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .contenedorPie .contain2 div:nth-child(1) img {
-    width: 65px;
-    height: 40px;
+    width: 50px;
+    height: auto;
     margin: 0;
 }
 .contenedorPie .contain3 {

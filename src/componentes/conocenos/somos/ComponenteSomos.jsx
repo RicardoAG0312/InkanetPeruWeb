@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ComponenteBarraNavegacion } from "../../../routers/routers";
 import LogoInkanet from "../../../images/Recurso 2.svg";
 import Rombo from "../../../images/Grupo 74.svg";
+import Image from 'react-bootstrap/Image';
 import "./componenteSomos.css";
 import BotonAnimado from "../../ui/BotonAnimado";
 import ViñetasSomos from "../../ui/ViñetasSomos";
@@ -80,7 +81,8 @@ function ComponenteSomos() {
                         </div>
                     </div>
                     <div className="col-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
-                        <img src={require("./../../../images/diseño9.png")} alt="Imagen Logo Inkanet" className="img-fluid w-100 w-md-auto h-auto"/>
+                        {/* <img src={require("../../../images/diseño9.png")} alt="Imagen Logo Inkanet" className="img-fluid w-100 w-md-auto h-auto"/> */}
+                        <Image src={require("../../../images/diseño9.png")} rounded alt="Imagen Logo Inkanet" className="img-fluid w-100 w-md-auto h-auto"/>
                     </div>
                 </div>
             </section>
@@ -103,7 +105,7 @@ function ComponenteSomos() {
                                 4,800 Clientes
                             </h1>
                             <p className="text-white" style={{ maxWidth: "60%" }}>
-                                Alcanzando un índice de renovación de contratos por encima del 99%.
+                                Alcanzando un índice de renovación de contratos por encima del 100%.
                             </p>
                             <BotonAnimado 
                                 colorIconoBase="white"
@@ -118,7 +120,7 @@ function ComponenteSomos() {
                     </div>
                     <div className="col-12 col-md-6 d-flex flex-column justify-content-between align-items-center">
                         <ViñetasSomos 
-                            texto="Certificados... "
+                            texto="Certificados "
                             fondo="#1A1A1A"
                             fondoIcono="#1FB3AE"
                             colorLetra="white"

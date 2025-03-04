@@ -2,10 +2,6 @@
 import React, {useEffect} from 'react';
 // import { useLocation } from "react-router-dom";
 import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
-import React from 'react';
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
