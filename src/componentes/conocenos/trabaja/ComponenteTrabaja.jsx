@@ -1,7 +1,7 @@
 import React from 'react'
 import {ComponenteBarraNavegacion} from "../../../routers/routers"
 import HeaderForm from '../../ui/HeaderForm'
-import Group from "../../../images/diseñ80.png.png";
+import Group from "../../../images/group.png";
 import "./trabaja.css";
 
 function ComponenteTrabaja() {

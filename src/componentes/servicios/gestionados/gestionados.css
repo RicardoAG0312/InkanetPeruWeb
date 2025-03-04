@@ -4,7 +4,7 @@
 }
 .gestionados-section::before {
     content: "";
-    background-image: url("./../../../images/diseño14.png.png");
+    background-image: url("./../../../images/14.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

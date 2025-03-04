@@ -4,6 +4,7 @@ import HeaderForm from '../../ui/HeaderForm';
 import "./gestionados.css"
 import Help from '../../ui/Help';
 import SubSecciones from '../../ui/SubSecciones';
+import Tres from "../../../images/tres.png";
 
 function ComponenteGestionados() {
     return (
@@ -20,7 +21,7 @@ function ComponenteGestionados() {
             <section className="container-fluid seccion-sub-servicios" style={{backgroundColor: "#FFFFFF", height: "auto"}}>
                 <div className="row m-0 w-100 h-100">
                     <div className="col-md-7 col-12 d-flex justify-content-center align-items-center py-4">
-                        <img src={require("../../../images/diseño24.png.png")} alt="Imagen" className="img-fluid" />
+                        <img src={Tres} alt="Imagen" className="img-fluid" />
                     </div>
                     <div className="col-md-5 col-12 d-flex flex-column justify-content-between align-items-center py-4">
                         <SubSecciones 

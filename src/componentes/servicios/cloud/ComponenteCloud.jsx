@@ -36,37 +36,37 @@ function ComponenteCloud() {
                     }}
                 >
                     <DoorDesign
-                        image="67.png" 
+                        image="67.png.png" 
                         title="Backup como servicio" 
                         description="Transferencia de datos ilimitada" 
                         direccion="/contacto"
                     />
                     <DoorDesign
-                        image="68.png" 
+                        image="68.png.png" 
                         title="Infraestructura como servicio" 
                         description="Latencia menor a 10ms."
                         direccion="/contacto" 
                     />
                     <DoorDesign
-                        image="69.png" 
+                        image="69.png.png" 
                         title="Servicio de nube pública" 
                         description="Asesoria constante de optimización de recursos" 
                         direccion="/contacto"
                     />
                     <DoorDesign
-                        image="70.png" 
+                        image="70.png.png" 
                         title="Antispam de nube" 
                         description="Protege tu correo de spam y amenazas"
                         direccion="/contacto"
                     />
                     <DoorDesign
-                        image="71.png" 
+                        image="71.png.png" 
                         title="Malware Avanzado" 
                         description="Detecta y elimina amenazas digitales"
                         direccion="/contacto"
                     />
                     <DoorDesign
-                        image="72.png" 
+                        image="72.png.png" 
                         title="Ethical Hacking" 
                         description="Encuentra vulnerabilidades antes que los hackers"
                         direccion="/contacto"

@@ -7,6 +7,7 @@ import "./componenteSomos.css";
 import BotonAnimado from "../../ui/BotonAnimado";
 import ViñetasSomos from "../../ui/ViñetasSomos";
 import Principios from "../../ui/Principios";
+import Diseño1 from "../../../images/somos.png"
 
 
 function BotonAnimadoSomos({ onClick, activo }) {
@@ -82,7 +83,7 @@ function ComponenteSomos() {
                     </div>
                     <div className="col-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
                         {/* <img src={require("../../../images/diseño9.png")} alt="Imagen Logo Inkanet" className="img-fluid w-100 w-md-auto h-auto"/> */}
-                        <Image src={require("../../../images/diseño9.png.png")} rounded alt="Imagen Logo Inkanet" className="img-fluid w-100 w-md-auto h-auto"/>
+                        <Image src={Diseño1} rounded alt="Imagen Logo Inkanet" className="img-fluid w-100 w-md-auto h-auto"/>
                     </div>
                 </div>
             </section>
@@ -162,22 +163,22 @@ function ComponenteSomos() {
                         <Principios 
                             titulo="Confidencialidad"
                             texto="La confidencialidad es esencial para nosotros. Protegemos su información con sistemas de seguridad de vanguardia."
-                            imagen="1"
+                            imagen="1.png"
                         />
                         <Principios 
                             titulo="Integridad"
                             texto="Nos esforzamos por mantener la integridad de sus datos. Puede confiar en la precisión y fiabilidad de la información que manejamos."
-                            imagen="2"
+                            imagen="2.png"
                         />
                         <Principios 
                             titulo="Disponibilidad"
                             texto="Nuestros servicios están diseñados para estar siempre disponibles. Puede acceder a sus datos cuando los necesite."
-                            imagen="3"
+                            imagen="3.png"
                         />
                         <Principios 
                             titulo="Autenticidad"
                             texto="Nos aseguramos de que toda la información que manejamos sea auténtica y verificable. Puede confiar en la autenticidad de sus datos."
-                            imagen="4"
+                            imagen="4.png"
                         />
                     </div>
                 </div>

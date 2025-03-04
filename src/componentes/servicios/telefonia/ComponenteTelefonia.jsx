@@ -36,37 +36,37 @@ function ComponenteTelefonia() {
                     }}
                 >
                     <DoorDesign
-                        image="50.png" 
+                        image="50.png.png" 
                         title="Colaboración y videoconferencia" 
                         description="Salones privados de audio y videoconferencia. Calidad HD de video y audio." 
                         direccion="/contacto"
                     />
                     <DoorDesign
-                        image="51.png" 
+                        image="51.png.png" 
                         title="Centrales virtuales" 
                         description="Mejora las comunicaciones de tu empresa con una red robusta dedicada solo para VoIP." 
                         direccion="/contacto"
                     />
                     <DoorDesign
-                        image="52.png" 
+                        image="52.png.png" 
                         title="SIP Trunk Corporativo" 
                         description="Brindamos líneas troncales (Sip Trunks) a la medida de las empresas mediante enlaces." 
                         direccion="/contacto"
                     />
                     <DoorDesign
-                        image="53.png" 
+                        image="53.png.png" 
                         title="SIP Trunk Call Center" 
                         description="Brindamos líneas troncales optimizadas para empresas con Call Center de alta demanda." 
                         direccion="/contacto"
                     />
                     <DoorDesign
-                        image="54.png" 
+                        image="54.png.png" 
                         title="Equipamiento Telfónico IP-PBX" 
                         description="Contamos con Centrales telefónicos y terminales telefónicas" 
                         direccion="/contacto"
                     />
                     <DoorDesign
-                        image="55.png" 
+                        image="55.png.png" 
                         title="Contact Center en la Nube" 
                         description="Solución de reportes avanzadas para centrales físicas." 
                         direccion="/contacto"

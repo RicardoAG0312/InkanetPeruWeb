@@ -4,6 +4,7 @@ import HeaderForm from '../../ui/HeaderForm';
 import Portafolio from '../../ui/Portafolio';
 import Help from '../../ui/Help';
 import SubSecciones from '../../ui/SubSecciones';
+import Cuatro from "../../../images/cuatro.png"
 
 import "./conectividad.css"
 
@@ -27,7 +28,7 @@ function ComponenteConectividad() {
             <section className="container-fluid seccion-sub-servicios" style={{backgroundColor: "#FFFFFF", height: "auto"}}>
                 <div className="row m-0 w-100 h-100">
                     <div className="col-md-7 col-12 d-flex justify-content-center align-items-center py-4">
-                        <img src={require("../../../images/diseño21.png.png")} alt="Imagen" className="img-responsive-custom" />
+                        <img src={Cuatro} alt="Imagen" className="img-responsive-custom" />
                     </div>
                     <div className="col-md-5 col-12 d-flex flex-column justify-content-between align-items-center py-4">
                         <SubSecciones 

@@ -9,6 +9,7 @@ import VideoPortada2 from "../../images/Portada 2.mp4"
 import VideoPortada3 from "../../images/Portada 3.mp4"
 import VideoPortada4 from "../../images/Portada 5.mp4"
 import BotonAnimado from "../ui/BotonAnimado";
+import ImagenInicio from "../../images/inicio.png"
 
 // import Cisco from '../../images/8.png';
 // import Dell from '../../images/10.png';
@@ -227,7 +228,7 @@ export default function ComponenteInicio() {
             <section  data-aos="fade-right" style={{backgroundColor: "#FAFAFA", height: "auto", padding: "60px 0"}}>
                 <div className="tercera-seccion-inicio row p-0 m-0 h-100">
                     <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center" >
-                        <Image style={{width: "500px", height: "500px"}} src={require("../../images/diseño-inicio.png.png")} rounded />
+                        <Image style={{width: "500px", height: "500px"}} src={ImagenInicio} rounded />
                     </div>
                     <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-start">
                         <h1 style={{fontWeight: "100", width: "350px"}}> Contamos con Nuestro Propio <h1 style={{fontWeight: "bold", width: "200px"}}> Centro de Atención </h1> </h1>
