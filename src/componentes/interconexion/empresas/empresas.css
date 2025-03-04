@@ -4,7 +4,7 @@
 }
 .empresas-section::before {
     content: "";
-    background-image: url("../../../images/diseño4.png.png");
+    background-image: url("../../../images/4.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
