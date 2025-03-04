@@ -13,8 +13,6 @@ function ComponenteContactanos() {
     const telefonoRef = useRef();
     const emailRef = useRef();
 
-
-
     const servicios = [
         "Conectividad",
         "Servicios Gestionados",
@@ -30,24 +28,30 @@ function ComponenteContactanos() {
 
     const toggleSeleccion = (servicio) => {
         if (seleccionados.includes(servicio)) {
-          setSeleccionados(seleccionados.filter((item) => item !== servicio)); // Si ya está seleccionado, lo quita
+        setSeleccionados(seleccionados.filter((item) => item !== servicio)); 
         } else {
-          setSeleccionados([...seleccionados, servicio]); // Si no está, lo agrega
+        setSeleccionados([...seleccionados, servicio]); 
         }
     };
 
     const handleSubmit = (event) => {
         event.preventDefault();
+
+        if (seleccionados.length === 0) {
+            alert("Por favor, seleccione al menos un servicio a cotizar.");
+            return;
+        }
         
         const nombresIngresados = nombresRef.current.value;
         const apellidosIngresados = apellidosRef.current.value;
         const rucIngresado = rucRef.current.value;
         const telefonoIngresado = telefonoRef.current.value;
         const emailIngresado = emailRef.current.value;
+        const serviciosSeleccionados = seleccionados.join(", ");
 
         const correo = "ventas@inkanetperu.com";
         const gmailHead = "Información Inkanet Perú";
-        const gmailBody = `Nombres: ${nombresIngresados}\nApellidos: ${apellidosIngresados}\nRuc: ${rucIngresado}\nTeléfono: ${telefonoIngresado}\nEmail: ${emailIngresado}`;
+        const gmailBody = `Nombres: ${nombresIngresados}\nApellidos: ${apellidosIngresados}\nRuc: ${rucIngresado}\nTeléfono: ${telefonoIngresado}\nEmail: ${emailIngresado}\nServicios a cotizar: ${serviciosSeleccionados}\nRecibir información de ofertas: Sí\nPolítica de protección de datos: Sí`;
 
         const urlGmail = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${correo}&su=${encodeURIComponent(
         gmailHead
@@ -57,6 +61,7 @@ function ComponenteContactanos() {
 
         // Limpiar los inputs después de enviar
         formRef.current.reset();
+        setSeleccionados([]);
     };
 
     return (
@@ -106,7 +111,7 @@ function ComponenteContactanos() {
                                         }}
                                         ></span>
                                         <span>
-                                        {seleccionados.includes(servicio) ? servicio : servicio}
+                                        {servicio}
                                         </span>
                                     </button>
                                     </div>
@@ -123,30 +128,6 @@ function ComponenteContactanos() {
                             <h1 style={{fontSize: "60px"}}> Contacta a un <span style={{fontWeight: "100"}}> experto </span></h1>
                             <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i> Llena tus datos y nos comunicaremos contigo. </p>
                         </div>
-                        {/* <div className="mb-4">
-                            <form>
-                                {["Nombres", "Apellidos", "Ruc", "Teléfono / Celular", "Email"].map((placeholder, index) => (
-                                <div key={index} className="mb-3">
-                                    <input
-                                    type={placeholder === "Email" ? "email" : "text"}
-                                    
-                                    placeholder={placeholder}
-                                    style={{
-                                        backgroundColor: "transparent",
-                                        border: "none",
-                                        borderBottom: "1px solid #ccc",
-                                        borderRadius: "0",
-                                        color: "black",
-                                        fontSize: "16px",
-                                        padding: "10px 5px",
-                                        outline: "none",
-                                        width: "100%",
-                                    }}
-                                    />
-                                </div>
-                                ))}
-                            </form>
-                        </div> */}
                         <div className="mb-4">
                             <form className="w-100" onSubmit={handleSubmit} ref={formRef}>
                                 <div className="mb-3">
@@ -228,16 +209,12 @@ function ComponenteContactanos() {
                                     ref={emailRef}
                                 />
                                 </div>
-                            </form>
-                        </div>
-                        <div >
-                            <form>
                                 <div className="mb-2">
-                                    <input type="checkbox" id="info" className="me-2" />
+                                    <input type="checkbox" id="info" className="me-2" required/>
                                     <label htmlFor="info">Deseo recibir información de ofertas y promociones</label>
                                 </div>
                                 <div className="mb-4">
-                                    <input type="checkbox" id="politica" className="me-2" />
+                                    <input type="checkbox" id="politica" className="me-2" required/>
                                     <label htmlFor="politica">
                                         Acepto la <a href="/" style={{ color: "#05AFA5", textDecoration: "none" }}>Política de protección de datos</a>
                                     </label>
@@ -267,4 +244,4 @@ function ComponenteContactanos() {
     )
 }
 
-export default ComponenteContactanos
+export default ComponenteContactanos;

@@ -36,23 +36,23 @@ function ComponenteEmpresas() {
                 <div className="container">
                     <div className="row">
                         <Cartas 
-                            imagen = "92.png"
+                            imagen = "92"
                             texto = "Conexión privada y exclusiva."
                         />
                         <Cartas 
-                            imagen = "84.png"
+                            imagen = "84"
                             texto = "Soporte técnico 24x7"
                         />
                         <Cartas 
-                            imagen = "93.png"
+                            imagen = "93"
                             texto = "Ancho de banda virtualmente ilimitado."
                         />
                         <Cartas 
-                            imagen = "85.png"
+                            imagen = "85"
                             texto = "Ancho de banda 100% garantizado"
                         />
                         <Cartas 
-                            imagen = "94.png"
+                            imagen = "94"
                             texto = "Conexión Simétrica"
                         />
                     </div>

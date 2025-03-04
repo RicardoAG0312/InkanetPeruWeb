@@ -37,19 +37,19 @@ function ComponenteFibra() {
                 <div className="container">
                     <div className="row">
                         <Cartas 
-                            imagen = "83.png"
+                            imagen = "83"
                             texto = "Conexión privada y exclusiva."
                         />
                         <Cartas 
-                            imagen = "84.png"
+                            imagen = "84"
                             texto = "Soporte técnico 24x7"
                         />
                         <Cartas 
-                            imagen = "85.png"
+                            imagen = "85"
                             texto = "Ancho de banda virtualmente ilimitado."
                         />
                         <Cartas 
-                            imagen = "86.png"
+                            imagen = "86"
                             texto = "100% OPEX"
                         />
                     </div>
