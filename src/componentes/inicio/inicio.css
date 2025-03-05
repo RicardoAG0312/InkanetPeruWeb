@@ -53,7 +53,7 @@
   
   .grid-item img {
     width: 100%;
-    height: 90%;
+    height: 95%;
     object-fit: contain; /* Ajusta la imagen sin deformarla */
     border-radius: 8px;
     filter: brightness(0) invert(1) contrast(100%) saturate(100%); /* Convierte la imagen a blanco puro */
@@ -198,78 +198,6 @@
     -webkit-filter: grayscale(0);
 }
 
-/* .sect-ter {
-    height: auto;
-    margin: 0;
-    padding: 0;
-    background-color: red;
-}
-.sect-ter img {
-    width: 80px;
-    height: 80pm;
-}
-.sect-ter .titulo {
-    margin: 0;
-    padding: 0;
-    padding: 30px 40px;
-    
-}
-
-.sect-ter .contenedorInfo {
-    height: 450px;
-    width: 100%;
-    margin: 0;
-}
-.sect-ter .contenedorInfo .texto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 30px;
-    background-color: #FFFFFF;
-}
-.sect-ter .contenedorInfo .texto ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 10px;
-    font-family: "Red Hat Display";
-    font-size: 18px;
-}
-.sect-ter .contenedorInfo .img {
-    position: relative;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    transition: all ease-in-out 0.5s;
-    -webkit-transition: all ease-in-out 0.5s;
-    -moz-transition: all ease-in-out 0.5s;
-    -ms-transition: all ease-in-out 0.5s;
-    -o-transition: all ease-in-out 0.5s;
-    z-index: 1;
-}
-.sect-ter .contenedorInfo .img::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-    transition: all ease-in-out 0.5s;
-    -webkit-transition: all ease-in-out 0.5s;
-    -moz-transition: all ease-in-out 0.5s;
-    -ms-transition: all ease-in-out 0.5s;
-    -o-transition: all ease-in-out 0.5s;
-}
-.sect-ter .contenedorInfo:hover .img::before{
-    filter: brightness(30%);
-    -webkit-filter: brightness(30%);
-} */
-
 
 @keyframes fadeIn {
     from {
@@ -285,6 +213,42 @@
 
 /* Estilos para teléfonos pequeños */
 @media (width <= 480px) {
+    /* Primera seccion Carrusel principal */    
+    .video-texto2 {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 10px 20px;
+        width: 400px;
+        height: auto;
+        text-align: start;
+    }
+    
+    .video-texto3 {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 10px 20px;
+        max-width: 550px;
+        height: auto;
+        text-align: start;
+    }
+    
+    .video-texto4 {
+        top: 50%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 10px 20px;
+        width: 400px;
+        height: auto;
+        text-align: start;
+    }
+
+
+
     /* Segunda seccion Nuestros Servicios */
     .segunda-seccion-inicio {
         padding: 20px !important;
@@ -345,7 +309,8 @@
 
     /* Tercera seccion de Centro de Ateción */
     .tercera-seccion-inicio div:nth-child(1) img {
-        width: 90% !important;
+        width: 100% !important;
+        height: 100% !important;
     }
     .tercera-seccion-inicio div:nth-child(2) h1,  .tercera-seccion-inicio div:nth-child(2) p {
         text-align: center;
@@ -357,6 +322,7 @@
     /* Cuarta Seccion Partners */
     .cuarta-seccion-inicio {
         padding: 20px !important;
+        max-height: 350px !important;
     }
     .cuarta-seccion-inicio div:nth-child(1) {
         text-align: center;
@@ -377,7 +343,10 @@
         -moz-transform: scale(1.10) translate3d(5px, 5px, 1.5em) !important;
         -ms-transform: scale(1.10) translate3d(5px, 5px, 1.5em) !important;
         -o-transform: scale(1.10) translate3d(5px, 5px, 1.5em) !important;
-}
+    }
+    .contenedorPartners .carousel{
+        margin-top: 130px !important;
+    }
 }
 
 /* Estilos para teléfonos medianos y grandes */
@@ -394,3 +363,4 @@
 @media (1024px <= width <= 1200px) {
 
 }
+

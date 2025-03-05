@@ -3,7 +3,7 @@ import { BiCheckDouble } from "react-icons/bi";
 
 function ViñetasSomos({ texto, fondo, fondoIcono, colorIcono, colorLetra }) {
     return (
-        <div className="d-flex align-items-center justify-content-start" style={{
+        <div className="viñetas-somos d-flex align-items-center justify-content-start" style={{
             border: "1px solid #1FB3AE", 
             height: "80px", 
             borderRadius: "50px", 

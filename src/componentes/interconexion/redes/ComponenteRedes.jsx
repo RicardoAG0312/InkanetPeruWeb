@@ -20,7 +20,7 @@ function ComponenteRedes() {
                     form = {true}
                 />
             </section>
-            <section className='text-black container-fluid p-5 h-auto bg-white'> 
+            <section className='componente-textos-interconexion text-black container-fluid p-5 h-auto bg-white'> 
                 <Informacion 
                     titulo1 = "¿Qué es la"
                     span1 = "Interconexión de Sedes por Redes Privadas?"

@@ -11,64 +11,6 @@ import VideoPortada4 from "../../images/Portada 5.mp4"
 import BotonAnimado from "../ui/BotonAnimado";
 import ImagenInicio from "../../images/inicio.png"
 
-// import Cisco from '../../images/8.png';
-// import Dell from '../../images/10.png';
-// import GFI from '../../images/16.png';
-// import Hillstone from '../../images/18.png';
-// import Karpesky from '../../images/20.png';
-// import Nessus from '../../images/22.png';
-// import Juniper from '../../images/24.png';
-// import Paloalto from '../../images/26.png';
-// import Sophos from '../../images/28.png';
-// import Checkpoint from '../../images/32.png';
-// import Onap from '../../images/133.png';
-// import Sangfor from '../../images/135.png';
-// import Arista from '../../images/137.png';
-// import Hewlett from '../../images/138.png';
-// import Fortinet from '../../images/Fortinet.png';
-
-
-// const imagenes = [
-//     Cisco, Dell, GFI, Hillstone, Karpesky, Nessus, Juniper, Hillstone, Paloalto, Sophos, Checkpoint, Onap, Sangfor, Arista, Hewlett, Fortinet
-// ];
-
-// export function ComponentePartners() {
-//     const [indice, setIndice] = useState(0);
-//         useEffect(() => {
-//         const interval = setInterval(() => {
-//             setIndice((indice + 1) % (imagenes.length - 3));
-//         }, 3000);
-//         return () => clearInterval(interval);
-//     }, [indice]);
-//     return (
-//         <section style={{backgroundColor: "#3A4040", height: "auto",padding: "48px 150px"}} className="container-fluid">
-//             <div className="titulo">
-//                 <h1> NUESTROS ALIADOS: </h1>
-//             </div>
-//             <div id="carouselExample" className="carousel slide container-fluid" data-bs-ride="carousel">
-//             <div className="carousel-inner" id="Partners">
-//                 <div className="carousel-item active">
-//                     <div className="row contenedor-carusel" id="carusel">
-//                         {imagenes.slice(indice, indice + 4).map((imagen, index) => (
-//                             <div key={index} className="col col-carusel">
-//                                 <img src={imagen} className="d-inline-block" alt="Partner" />
-//                             </div>
-//                         ))}
-//                     </div>
-//                 </div>
-//             </div>
-//             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" onClick={() => setIndice((indice - 1 + (imagenes.length - 3)) % (imagenes.length - 3))}>
-//                 <span className="carousel-control-prev-icon" aria-hidden="true" id="flecha-izq"></span>
-//             </button>
-//             <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" onClick={() => setIndice((indice + 1) % (imagenes.length - 3))}>
-//                 <span className="carousel-control-next-icon" aria-hidden="true" id="flecha-der"></span>
-//             </button>
-//             </div>
-//         </section>
-//     );
-// }
-
-
 export default function ComponenteInicio() {
     const navigate = useNavigate();
     const images = [
@@ -95,7 +37,7 @@ export default function ComponenteInicio() {
         require("../../images/153.png.png"),
     ];
     // Dividir las imágenes en grupos de 4 para que se muestren en cada slide del carrusel
-    const chunkSize = 4;
+    const chunkSize = 3;
     const imageChunks = [];
     for (let i = 0; i < images.length; i += chunkSize) {
         imageChunks.push(images.slice(i, i + chunkSize));

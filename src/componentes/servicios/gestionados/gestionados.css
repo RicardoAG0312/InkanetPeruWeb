@@ -17,3 +17,29 @@
     filter: brightness(.6);
     -webkit-filter: brightness(.6);
 }
+
+/* Estilos para tablets en orientación horizontal o pantallas pequeñas */
+@media (1024px <= width <= 1200px) {
+}
+/* Estilos para tablets en orientación vertical */
+@media (768px <= width <= 1024px) {
+}
+/*  Estilos para teléfonos medianos y grandes */
+@media (480px <= width <= 768px) {
+}
+/* Estilos para teléfonos pequeños */
+@media (width <= 480px) {
+        /* Priemra seccion */
+        .gestionados-section div {
+            margin-left: 0px !important;
+            margin-top: 30px !important;
+        }
+        .gestionados-section h1{
+            font-size: 40px !important;
+            width: 100% !important;
+            text-align: center;
+        }
+        .gestionados-section .content-headForm{
+            display: none !important;
+        }
+}

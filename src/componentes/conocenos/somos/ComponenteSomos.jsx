@@ -59,7 +59,7 @@ function ComponenteSomos() {
                     </div>
 
                     {/* Sección de imagen */}
-                    <div className="mt-5 col-12 col-md-6 d-flex justify-content-center align-items-center flex-column min-vh-100">
+                    <div className="imagen-somos-inicio mt-5 col-12 col-md-6 d-flex justify-content-center align-items-center flex-column min-vh-100">
                         <img src={LogoInkanet} alt="Imagen Logo Inkanet" className="img-fluid w-75 w-md-auto h-auto"/>
                     </div>
                 </div>
@@ -94,7 +94,7 @@ function ComponenteSomos() {
                     </h1>
                 </div>
             </section>
-            <section className="container-fluid p-5 m-0" style={{background: "#1A1A1A", height: "auto"}}>
+            <section className="clientes container-fluid p-5 m-0" style={{background: "#1A1A1A", height: "auto"}}>
                 <div className="row p-4 m-0">
                     {/* Columna izquierda */}
                     <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-start">
@@ -119,7 +119,7 @@ function ComponenteSomos() {
                             />
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 d-flex flex-column justify-content-between align-items-center">
+                    <div className="clientes-beneficios col-12 col-md-6 d-flex flex-column justify-content-between align-items-center">
                         <ViñetasSomos 
                             texto="Certificados "
                             fondo="#1A1A1A"

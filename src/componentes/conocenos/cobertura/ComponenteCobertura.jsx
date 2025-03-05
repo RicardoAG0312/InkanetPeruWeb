@@ -16,7 +16,7 @@ function ComponenteCobertura() {
                     titulo = "Cobertura de fibra optica en todo el Perú"
                 />
             </section>
-            <section className='container'>
+            <section className='container red-en-peru'>
                 <div className='row m-5'>
                     <div className="col-md-6 col-12 d-flex justify-content-center align-content-center flex-column">
                         <h1 style={{fontSize: "4rem", fontWeight: "bold", width: "50%", marginBottom: "15px"}}>Red en <span style={{fontWeight: "100"}}> el Peru </span></h1>
@@ -81,7 +81,7 @@ function ComponenteCobertura() {
                         <div className="mb-4">
                             <input type="checkbox" id="politica" className="me-2" />
                             <label htmlFor="politica">
-                                Acepto la <a href="/" style={{ color: "#05AFA5", textDecoration: "none" }}>Política de protección de datos</a>
+                                Acepto la <a style={{ color: "#05AFA5", textDecoration: "none" }} href={process.env.PUBLIC_URL + "/Política_de_Privacidad_Inkanet.pdf"} download={"Política_Protección_Datos_Inkanet.pdf"} rel="noopener noreferrer">Política de protección de datos</a>
                             </label>
                         </div>
                         <button

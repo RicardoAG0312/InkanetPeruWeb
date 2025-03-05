@@ -45,3 +45,62 @@
     font-size: 1.5rem; /* Ajusta el tamaño del placeholder */
     margin-bottom: 0 !important;
 }
+
+/* Responsive */
+/* Estilos para tablets en orientación horizontal o pantallas pequeñas */
+@media (1024px <= width <= 1200px) {
+}
+/* Estilos para tablets en orientación vertical */
+@media (768px <= width <= 1024px) {
+}
+/*  Estilos para teléfonos medianos y grandes */
+@media (480px <= width <= 768px) {
+}
+/* Estilos para teléfonos pequeños */
+@media (width <= 480px) {
+    /* Primera seccion */
+    .trabaja-section div{
+        padding-left: 20px !important;
+    }
+    /* Segunda seccion */
+    .forma-parte {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .forma-parte h1{
+        font-size: 40px !important;
+    }
+    /* Tercera seccion */
+    .seccion-cv {
+        padding-left: 0 !important;
+    }
+    .seccion-cv .row div {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+    .seccion-cv .row div h1 {
+        font-size: 20px !important;
+    }
+    .seccion-cv .row div p {
+        font-size: 15px !important;
+    }
+
+    /* Cuarta seccion */
+    .form-trabajo div:nth-child(1) {
+        margin-left: 0 !important;
+    }
+    .form-trabajo h1{
+        font-size: 40px !important;
+        text-align: center;
+    }
+    .form-trabajo form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 30px;        
+    }
+    .form-trabajo form div {
+        width: 100% !important;
+    }
+}

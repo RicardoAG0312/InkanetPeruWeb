@@ -8,7 +8,7 @@ function Help() {
     const navigate = useNavigate();
 
     return (
-        <section className="container-fluid p-0" style={{ backgroundColor: "#3A4040", height: "auto"}}>
+        <section className="help container-fluid p-0" style={{ backgroundColor: "#3A4040", height: "auto"}}>
             <div className="row p-0 m-0 d-flex justify-content-center align-items-center text-center text-md-start">
                 <div className="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center p-4" >
                     <h1 className='text-white fw-bold text-center'>
@@ -25,7 +25,7 @@ function Help() {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-6 col-12 p-0 d-flex justify-content-end align-items-center">
+                <div className="img col-md-6 col-12 p-0 d-flex justify-content-end align-items-center">
                 <img 
                     src={Imagen2} 
                     alt="Diseño" 

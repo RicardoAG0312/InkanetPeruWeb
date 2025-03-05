@@ -191,3 +191,65 @@
     font-size: 16px;
     text-align: center;
 }
+
+
+/* Responsive */
+
+/* Estilos para teléfonos pequeños */
+@media (width <= 480px) {
+    /* Primera seccion  */
+    section .imagen-somos-inicio {
+        display: none !important;
+    }
+
+    /* Segunda seccion */
+    .lideres {
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .lideres h1 {
+        font-size: 1.8rem !important;
+    }
+    .lideres div {
+        width: auto !important;
+    }
+
+    /* Tercera sección */
+    section.clientes .row div:nth-child(1) div h1 {
+        font-size: 2.2rem !important;
+        width: 100% !important;
+    }
+    section.clientes .row div.clientes-beneficios {
+        margin-top: 35px;
+        padding: 0 !important;
+    }
+    section.clientes .row img {
+        width: 75%;
+    }
+    section.clientes .row div.clientes-beneficios div:nth-child(5) p {
+        font-size: 14px !important;
+    }
+
+    /* Cuarta seccion */
+    .seccion-principios .card {
+        margin-bottom: 30px !important;
+    }
+
+}
+/* Estilos para teléfonos medianos y grandes */
+@media (480px <= width <= 768px) {
+
+}
+
+/* Estilos para tablets en orientación vertical */
+@media (768px <= width <= 1024px) {
+
+}
+
+/* Estilos para tablets en orientación horizontal o pantallas pequeñas */
+@media (1024px <= width <= 1200px) {
+
+}

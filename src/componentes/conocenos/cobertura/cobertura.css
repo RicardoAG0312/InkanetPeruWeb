@@ -49,3 +49,48 @@
     max-height: 250px;
     width: auto;
 }
+
+/* Estilos para tablets en orientación horizontal o pantallas pequeñas */
+@media (1024px <= width <= 1200px) {
+}
+/* Estilos para tablets en orientación vertical */
+@media (768px <= width <= 1024px) {
+}
+/*  Estilos para teléfonos medianos y grandes */
+@media (480px <= width <= 768px) {
+}
+/* Estilos para teléfonos pequeños */
+@media (width <= 480px){
+    /* Primera seccion */
+    .cobertura-section div{
+        padding-left: 20px !important;
+    }
+
+    /* Segunda seccion */
+    .red-en-peru h1 {
+        width: 100% !important;
+    }
+    .red-en-peru img {
+        width: 95% !important;
+        margin-top: 15px;
+    }
+
+    /* Tercera Seccion */
+    .filaFigura {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    .figuraGeo {
+        margin-bottom: 40px !important;
+        border-bottom: 1px solid #09AEAF; /* Borde derecho */  
+    }
+
+    /* Cuarta seccion */
+    .formulario form div:nth-child(4), .formulario form div:nth-child(5)  {
+        font-size: 10px !important;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    
+    }
+}

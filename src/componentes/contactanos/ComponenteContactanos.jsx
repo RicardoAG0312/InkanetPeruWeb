@@ -21,9 +21,9 @@ function ComponenteContactanos() {
         "Data Center",
         "Cloud",
         "Ciberseguridad",
-        "SAP",
+        // "SAP",
         "Internet Satelital",
-        "CSIRT",
+        // "CSIRT",
     ];
 
     const toggleSeleccion = (servicio) => {
@@ -49,7 +49,7 @@ function ComponenteContactanos() {
         const emailIngresado = emailRef.current.value;
         const serviciosSeleccionados = seleccionados.join(", ");
 
-        const correo = "ventas@inkanetperu.com";
+        const correo = "marketing@inkanetperu.com";
         const gmailHead = "Información Inkanet Perú";
         const gmailBody = `Nombres: ${nombresIngresados}\nApellidos: ${apellidosIngresados}\nRuc: ${rucIngresado}\nTeléfono: ${telefonoIngresado}\nEmail: ${emailIngresado}\nServicios a cotizar: ${serviciosSeleccionados}\nRecibir información de ofertas: Sí\nPolítica de protección de datos: Sí`;
 
@@ -123,7 +123,7 @@ function ComponenteContactanos() {
                             ¿Necesitas otro servicio?
                         </div>        
                     </div>
-                    <div className="col-md-6 col-12 p-5"  style={{backgroundColor: "#FFFFFF", color: "black"}}>
+                    <div className="form-contact col-md-6 col-12 p-5"  style={{backgroundColor: "#FFFFFF", color: "black"}}>
                         <div className='mb-5'>
                             <h1 style={{fontSize: "60px"}}> Contacta a un <span style={{fontWeight: "100"}}> experto </span></h1>
                             <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i> Llena tus datos y nos comunicaremos contigo. </p>
@@ -209,14 +209,14 @@ function ComponenteContactanos() {
                                     ref={emailRef}
                                 />
                                 </div>
-                                <div className="mb-2">
+                                <div className=" mb-2">
                                     <input type="checkbox" id="info" className="me-2" required/>
                                     <label htmlFor="info">Deseo recibir información de ofertas y promociones</label>
                                 </div>
-                                <div className="mb-4">
+                                <div className=" mb-4">
                                     <input type="checkbox" id="politica" className="me-2" required/>
                                     <label htmlFor="politica">
-                                        Acepto la <a href="/" style={{ color: "#05AFA5", textDecoration: "none" }}>Política de protección de datos</a>
+                                        Acepto la <a  style={{ color: "#05AFA5", textDecoration: "none" }}  href={process.env.PUBLIC_URL + "/Política_de_Privacidad_Inkanet.pdf"} download={"Política_Protección_Datos_Inkanet.pdf"} rel="noopener noreferrer">Política de protección de datos</a>
                                     </label>
                                 </div>
                                 <button

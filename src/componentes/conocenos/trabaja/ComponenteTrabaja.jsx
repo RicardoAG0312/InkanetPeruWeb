@@ -47,7 +47,7 @@ function ComponenteTrabaja() {
                     texto1 = "En Inkanet estamos comprometidos con la innovación y el desarrollo de talento. Buscamos personas apasionadas, creativas y con ganas de crecer en un entorno dinámico, donde la tecnología y la ciberseguridad son el motor para transformar el futuro."
                 />
             </section>
-            <section className="container p-5 mt-5 mb-5">
+            <section className="forma-parte container p-5 mt-5 mb-5" style={{height: "auto"}}>
                 <div className="row">
                     <div className="col-md-6">
                         <h1 style={{fontSize: "50px"}}><span style={{fontWeight: "bold"}}>Forma parte de nuestro equipo</span> <span>si cumples con este perfil</span></h1>
@@ -64,7 +64,7 @@ function ComponenteTrabaja() {
                 </div>
             </section>
             <section className='container-fluid seccion-cv p-5'>
-                <div className='row w-100'>
+                <div className='row w-100 '>
                     <div className="col-md-6 p-5" style={{marginLeft: "50px", color: "white"}}>
                         <h1 style={{textShadow: "-5px 5px 5px rgba(0, 0, 0, 0.5)"}}>Si estás interesado en integrarte a Inkanet, envíanos tu CV al e-mail:</h1>
                         <button className="btn btn-light mt-3 mb-3" style={{borderRadius: "50px", minWidth: "100%"}}><h3 style={{color: "#09AEAF", margin: "0px"}}>administracion@inkanetperu.com</h3></button>
@@ -72,21 +72,18 @@ function ComponenteTrabaja() {
                             <p style={{fontSize: "18px"}}>En el asunto indícanos las áreas de tu interés, o completa el formulario a continuación. Apenas dispongamos de una vacante acorde a lo que buscas te contactaremos. Para mayor información sobre ofertas laborales visita nuestro perfil.</p>
                         </div>
                     </div>
-                    <div className="col-md-6">
-                    {/* <img src={imagenEjemplo} alt="Descripción de la imagen" className="img-fluid" /> */}
-                    </div>
                 </div>
             </section>
-            <section className='container p-5'>
+            <section className='form-trabajo container p-5'>
                 <div className='ms-5'>
-                <h1 style={{fontSize: "60px", fontWeight: "bold"}}> Contacta a un <span style={{fontWeight: "100"}}> <br/>experto </span></h1>
+                    <h1 style={{fontSize: "60px", fontWeight: "bold"}}> Contacta a un <span style={{fontWeight: "100"}}> <br/>experto </span></h1>
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-md-6 col-12"  style={{backgroundColor: "#FFFFFF", color: "black"}}>
                         <div className='mb-5 mt-3'>
                             <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i> Llena tus datos y nos comunicaremos contigo. </p>
                         </div>
-                        <div className="alex" style={{maxWidth: "400px"}}>
+                        <div  style={{maxWidth: "400px"}}>
                             <form  ref={formRef} onSubmit={handleSubmit}>
                                 <div className="row mb-3">
                                     <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Nombres' id="nombres" required ref={nombresRef}/>
@@ -106,10 +103,6 @@ function ComponenteTrabaja() {
                                 <div className="row mb-3">
                                     <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Carrera' id="carrera" required ref={carreraRef}/>
                                 </div>
-                                {/* <div className="row mb-3">
-                                    <label className="form-label">Adjuntar CV/Carta de presentación (opcional)</label>
-                                    <input type="file" className="form-control form-control-lg input-personalizado" placeholder='Examinar' id="file" required />
-                                </div> */}
                                 <button
                                 type="submit"
                                 className="btn w-50"

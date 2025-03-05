@@ -18,7 +18,7 @@ function ComponenteSatelital() {
                     form = {true}
                 />
             </section>
-            <section className="container-fluid p-5" style={{backgroundColor: "#3A4040"}}>
+            <section className="servicio-internet container-fluid p-5" style={{backgroundColor: "#3A4040"}}>
                 <div className="row">
                     <div className="col-md-6 p-5">
                         <h1 style={{fontSize: "50px"}}><span style={{fontWeight: "bold", color:"#FFFFFF"}}>CON EL SERVICIO DE INTERNET SATELITAL</span> <span style={{fontWeight: "bold", color: "#1EB3AF"}}>DE BAJA ÓRBITA DE INKANET</span></h1>
@@ -35,7 +35,7 @@ function ComponenteSatelital() {
                 <div className="text-center mt-3">
                     <h1 style={{fontSize: "50px", fontWeight: "bold", color:"#05AEAF"}}>BENEFICIOS</h1>
                 </div>
-                <div className="row justify-content-center mt-5 mb-5 seccion-puerta-satel">
+                <div className="beneficios-internet row justify-content-center mt-5 mb-5 seccion-puerta-satel">
                     <DoorDesign
                         image="103.png" 
                         title="Conexión sin límites" 

@@ -97,3 +97,56 @@
         margin-left: 0; /* Se ajusta al centro en pantallas pequeñas */
     }
 }
+
+
+/* Estilos para tablets en orientación horizontal o pantallas pequeñas */
+@media (1024px <= width <= 1200px) {
+}
+/* Estilos para tablets en orientación vertical */
+@media (768px <= width <= 1024px) {
+}
+/*  Estilos para teléfonos medianos y grandes */
+@media (480px <= width <= 768px) {
+}
+/* Estilos para teléfonos pequeños */
+@media (width <= 480px) {
+    /* Priemra seccion */
+    .conectividad-section div {
+        margin-left: 0px !important;
+        margin-top: 30px !important;
+    }
+    .conectividad-section h1{
+        font-size: 40px !important;
+        width: 100% !important;
+        text-align: center;
+    }
+    .conectividad-section .content-headForm{
+        display: none !important;
+    }
+
+    /* Segunda seccion */
+    .seccion-sub-servicios {
+        padding-bottom: 40px !important;
+    }
+    .seccion-sub-servicios img {
+        display: none !important;
+    }
+    .seccion-sub-servicios div div:nth-child(2) {
+        gap: 30px;
+    }
+    .seccion-sub-servicios div div:nth-child(2) p, .seccion-sub-servicios div div:nth-child(2) h1{
+        text-align: left !important;
+    }
+    .seccion-sub-servicios div div:nth-child(2) div:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    /* Tercera seccion */
+    .help .img img{
+        display: none !important;
+    }
+
+}
