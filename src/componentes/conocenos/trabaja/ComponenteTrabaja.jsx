@@ -1,10 +1,43 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import {ComponenteBarraNavegacion} from "../../../routers/routers"
 import HeaderForm from '../../ui/HeaderForm'
 import Group from "../../../images/group.png";
 import "./trabaja.css";
 
 function ComponenteTrabaja() {
+    const formRef = useRef();
+    const nombresRef = useRef();
+    const apellidosRef = useRef();
+    const emailRef = useRef();
+    const telefonoRef = useRef();
+    const estudiosRef = useRef();
+    const carreraRef = useRef();
+    
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        
+        const nombresIngresados = nombresRef.current.value;
+        const apellidosIngresados = apellidosRef.current.value;
+        const emailIngresado = emailRef.current.value;
+        const telefonoIngresado = telefonoRef.current.value;
+        const estudiosIngresado = estudiosRef.current.value;
+        const carreraIngresada = carreraRef.current.value;
+
+        const correo = "administracion@inkanetperu.com";
+        const gmailHead = "Información Inkanet Perú";
+        const gmailBody = `Nombres: ${nombresIngresados}\nApellidos: ${apellidosIngresados}\nEmail: ${emailIngresado}\nTeléfono: ${telefonoIngresado}\nUniversidad o Instituto: ${estudiosIngresado}\nCarrera: ${carreraIngresada}`;
+
+        const urlGmail = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${correo}&su=${encodeURIComponent(
+        gmailHead
+        )}&body=${encodeURIComponent(gmailBody)}`;
+
+        window.open(urlGmail, "_blank");
+
+        // Limpiar los inputs después de enviar
+        formRef.current.reset();
+    };
+
     return (
         <>
             <section className='container-fluid p-0 trabaja-section'>
@@ -54,35 +87,31 @@ function ComponenteTrabaja() {
                             <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i> Llena tus datos y nos comunicaremos contigo. </p>
                         </div>
                         <div className="alex" style={{maxWidth: "400px"}}>
-                            <form>
+                            <form  ref={formRef} onSubmit={handleSubmit}>
                                 <div className="row mb-3">
-                                    <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Nombres' id="nombres" />
+                                    <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Nombres' id="nombres" required ref={nombresRef}/>
                                 </div>
                                 <div className="row mb-3">
-                                    <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Apellidos' id="apellidos" />
+                                    <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Apellidos' id="apellidos"required ref={apellidosRef} />
                                 </div>
                                 <div className="row mb-3">
-                                    <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Email' id="email" />
+                                    <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Email' id="email" required ref={emailRef}/>
                                 </div>
                                 <div className="row mb-3">
-                                    <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Telefono/Celular' id="number" />
+                                    <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Telefono/Celular' id="number" required ref={telefonoRef}/>
                                 </div>
                                 <div className="row mb-3">
-                                    <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Universidad/Instituto' id="estudios" />
+                                    <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Universidad/Instituto' id="estudios" required ref={estudiosRef}/>
                                 </div>
                                 <div className="row mb-3">
-                                    <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Carrera' id="carrera" />
+                                    <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Carrera' id="carrera" required ref={carreraRef}/>
                                 </div>
-                                <div className="row mb-3">
+                                {/* <div className="row mb-3">
                                     <label className="form-label">Adjuntar CV/Carta de presentación (opcional)</label>
-                                    <input type="file" className="form-control form-control-lg input-personalizado" placeholder='Examinar' id="file" />
-                                </div>
-                            </form>
-                        </div>
-                        <div className='mb-5'>
-                            <form>
+                                    <input type="file" className="form-control form-control-lg input-personalizado" placeholder='Examinar' id="file" required />
+                                </div> */}
                                 <button
-                                type=""
+                                type="submit"
                                 className="btn w-50"
                                 style={{
                                     backgroundColor: "black",

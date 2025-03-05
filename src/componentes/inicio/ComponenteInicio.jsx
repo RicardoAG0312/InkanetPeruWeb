@@ -95,7 +95,7 @@ export default function ComponenteInicio() {
         require("../../images/153.png.png"),
     ];
     // Dividir las imágenes en grupos de 4 para que se muestren en cada slide del carrusel
-    const chunkSize = 3;
+    const chunkSize = 4;
     const imageChunks = [];
     for (let i = 0; i < images.length; i += chunkSize) {
         imageChunks.push(images.slice(i, i + chunkSize));
@@ -286,7 +286,7 @@ export default function ComponenteInicio() {
                     </p>
                 </div>
                 <div className="container contenedorPartners">
-                    <Carousel interval={3000} indicators={false} style={{marginTop: "200px"}}>
+                    <Carousel controls={false} interval={1500} indicators={false} style={{marginTop: "250px"}}>
                         {imageChunks.map((chunk, index) => (
                             <Carousel.Item key={index}>
                                 <div className="grid-container">
