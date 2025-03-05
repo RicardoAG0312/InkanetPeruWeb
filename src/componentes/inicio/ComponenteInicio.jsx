@@ -71,7 +71,35 @@ import ImagenInicio from "../../images/inicio.png"
 
 export default function ComponenteInicio() {
     const navigate = useNavigate();
-
+    const images = [
+        require("../../images/8.png.png"),
+        require("../../images/133.png.png"),
+        require("../../images/24.png.png"),
+        require("../../images/10.png.png"),
+        require("../../images/Fortinet.png.png"),
+        require("../../images/26.png.png"),
+        require("../../images/18.png.png"),
+        require("../../images/16.png.png"),
+        require("../../images/20.png.png"),
+        require("../../images/22.png.png"),
+        require("../../images/28.png.png"),
+        require("../../images/135.png.png"),
+        require("../../images/32.png.png"),
+        require("../../images/137.png.png"),
+        require("../../images/138.png.png"),
+        require("../../images/143.png.png"),
+        require("../../images/145.png.png"),
+        require("../../images/147.png.png"),
+        require("../../images/149.png.png"),
+        require("../../images/151.png.png"),
+        require("../../images/153.png.png"),
+    ];
+    // Dividir las imágenes en grupos de 4 para que se muestren en cada slide del carrusel
+    const chunkSize = 3;
+    const imageChunks = [];
+    for (let i = 0; i < images.length; i += chunkSize) {
+        imageChunks.push(images.slice(i, i + chunkSize));
+    }
     return (
         <>
             <section className='contenedorPrincipal'>
@@ -258,36 +286,19 @@ export default function ComponenteInicio() {
                     </p>
                 </div>
                 <div className="container contenedorPartners">
-                    <div className="grid-container">
-                    {[
-                        require("../../images/8.png.png"),
-                        require("../../images/133.png.png"),
-                        require("../../images/24.png.png"),
-                        require("../../images/10.png.png"),
-                        require("../../images/Fortinet.png.png"),
-                        require("../../images/26.png.png"),
-                        require("../../images/18.png.png"),
-                        require("../../images/16.png.png"),
-                        require("../../images/20.png.png"),
-                        require("../../images/22.png.png"),
-                        require("../../images/28.png.png"),
-                        require("../../images/135.png.png"),
-                        require("../../images/32.png.png"),
-                        require("../../images/137.png.png"),
-                        require("../../images/138.png.png"),
-                        require("../../images/143.png.png"),
-                        require("../../images/145.png.png"),
-                        require("../../images/147.png.png"),
-                        require("../../images/149.png.png"),
-                        require("../../images/151.png.png"),
-                        require("../../images/153.png.png"),
-
-                    ].map((src, index) => (
-                        <div key={index} className="grid-item">
-                            <img src={src} alt={`Imagen ${index + 1}`} className="float-fluid" />
-                        </div>
-                    ))}
-                    </div>
+                    <Carousel interval={3000} indicators={false} style={{marginTop: "200px"}}>
+                        {imageChunks.map((chunk, index) => (
+                            <Carousel.Item key={index}>
+                                <div className="grid-container">
+                                    {chunk.map((src, idx) => (
+                                        <div key={idx} className="grid-item">
+                                            <img src={src} alt={`Imagen ${idx + 1}`} className="float-fluid" />
+                                        </div>
+                                    ))}
+                                </div>
+                            </Carousel.Item>
+                        ))}
+                    </Carousel>
                 </div>
             </section>
             
