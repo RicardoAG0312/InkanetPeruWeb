@@ -19,7 +19,7 @@ function ComponenteCobertura() {
             <section className='container red-en-peru'>
                 <div className='row m-5'>
                     <div className="col-md-6 col-12 d-flex justify-content-center align-content-center flex-column">
-                        <h1 style={{fontSize: "4rem", fontWeight: "bold", width: "50%", marginBottom: "15px"}}>Red en <span style={{fontWeight: "100"}}> el Peru </span></h1>
+                        <h1 style={{fontSize: "4rem", fontWeight: "bold", width: "50%", marginBottom: "15px"}}>Red en <span style={{fontWeight: "100"}}> el Perú </span></h1>
                         <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i> Nuestra red de alta velocidad se fundamenta en un anillo de fibra óptica que abarca todo el territorio peruano, garantizando una conexión robusta y eficiente. </p>
                         <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i>  En Lima y Callao, la red metropolitana está compuesta por 12 nodos estratégicamente distribuidos, formando una infraestructura central que opera con tecnología Ten Gigabit Ethernet. Su diseño redundante asegura la continuidad del servicio incluso ante posibles fallos en las conexiones principales.</p>
                         <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i>  Utilizamos un protocolo de transmisión compatible con redes locales Ethernet, lo que minimiza los retrasos habituales en el mercado. </p>
@@ -32,13 +32,6 @@ function ComponenteCobertura() {
             </section>
             <section className='container-fluid' style={{backgroundColor:"#1A1A1A", height: "auto"}}>
                 <div className="row filaFigura justify-content-center">
-                    <div className="col figuraGeo text-center" style={{maxWidth: "400px"}}>
-                        <div className='imagenVineta d-flex justify-content-center'>
-                            <img src={CuatroTres} alt='43' className=''/>
-                        </div>
-                        <h1 className='mt-4'>Miembro de <span style={{color:"#09AEAF"}}>NAPerú</span></h1>
-                        <p>Desde 2006, Inkanet forma parte del NAP y, desde 2012, es miembro del Consejo Directivo de la Asociación NAP Perú, que reúne a las principales empresas de telecomunicaciones del país, facilitando el intercambio de datos entre sus redes.</p>
-                    </div>
                     <div className="col figuraGeo text-center" style={{maxWidth: "400px"}}>
                         <div className='imagenVineta d-flex justify-content-center'>
                             <img src={CuatroCuatro} alt='43' className=''/>
@@ -81,7 +74,7 @@ function ComponenteCobertura() {
                         <div className="mb-4">
                             <input type="checkbox" id="politica" className="me-2" />
                             <label htmlFor="politica">
-                                Acepto la <a style={{ color: "#05AFA5", textDecoration: "none" }} href={process.env.PUBLIC_URL + "/Política_de_Privacidad_Inkanet.pdf"} download={"Política_Protección_Datos_Inkanet.pdf"} rel="noopener noreferrer">Política de protección de datos</a>
+                                Acepto la <a style={{ color: "#05AFA5", textDecoration: "none" }} href={process.env.PUBLIC_URL + "../../../../public/Política_de_Privacidad_Inkanet.pdf"} download={"Política_Protección_Datos_Inkanet.pdf"} rel="noopener noreferrer">Política de protección de datos</a>
                             </label>
                         </div>
                         <button

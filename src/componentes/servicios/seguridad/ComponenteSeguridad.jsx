@@ -27,10 +27,10 @@ function ComponenteSeguridad() {
                     style={{
                         scrollSnapType: "x mandatory",
                         WebkitOverflowScrolling: "touch",
-                        scrollbarWidth: "none", // Oculta en Firefox
+                        // scrollbarWidth: "none", // Oculta en Firefox
                         paddingBottom: "10px",
                         overflowX: "scroll", // Asegura que el scroll funcione
-                        msOverflowStyle: "none" // Oculta scrollbar en IE y Edge
+                        // msOverflowStyle: "none" // Oculta scrollbar en IE y Edge
                     }}
                 >
                     <DoorDesign

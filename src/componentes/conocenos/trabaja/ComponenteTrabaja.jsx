@@ -24,7 +24,7 @@ function ComponenteTrabaja() {
         const estudiosIngresado = estudiosRef.current.value;
         const carreraIngresada = carreraRef.current.value;
 
-        const correo = "administracion@inkanetperu.com";
+        const correo = "rrhh@inkanetperu.com";
         const gmailHead = "Información Inkanet Perú";
         const gmailBody = `Nombres: ${nombresIngresados}\nApellidos: ${apellidosIngresados}\nEmail: ${emailIngresado}\nTeléfono: ${telefonoIngresado}\nUniversidad o Instituto: ${estudiosIngresado}\nCarrera: ${carreraIngresada}`;
 
@@ -67,7 +67,7 @@ function ComponenteTrabaja() {
                 <div className='row w-100 '>
                     <div className="col-md-6 p-5" style={{marginLeft: "50px", color: "white"}}>
                         <h1 style={{textShadow: "-5px 5px 5px rgba(0, 0, 0, 0.5)"}}>Si estás interesado en integrarte a Inkanet, envíanos tu CV al e-mail:</h1>
-                        <button className="btn btn-light mt-3 mb-3" style={{borderRadius: "50px", minWidth: "100%"}}><h3 style={{color: "#09AEAF", margin: "0px"}}>administracion@inkanetperu.com</h3></button>
+                        <button className="btn btn-light mt-3 mb-3" style={{borderRadius: "50px", minWidth: "100%"}}><h3 style={{color: "#09AEAF", margin: "0px"}}>rrhh@inkanetperu.com</h3></button>
                         <div>
                             <p style={{fontSize: "18px"}}>En el asunto indícanos las áreas de tu interés, o completa el formulario a continuación. Apenas dispongamos de una vacante acorde a lo que buscas te contactaremos. Para mayor información sobre ofertas laborales visita nuestro perfil.</p>
                         </div>
@@ -127,7 +127,7 @@ function ComponenteTrabaja() {
                             <h1 style={{color:"#000", fontSize:"50px"}}><span style={{fontWeight: "bold"}}>¡Te estamos</span> buscando!</h1>
                             <h2 style={{fontSize:"20px"}}>No solo conectamos cables, conectamos personas.</h2>
                             <p className='mt-3 mb-3'>En Inkanet ayudamos a las empresas en su evolución digital, para ello necesitamos talentos como tú.</p>
-                            <h3>Conoce nuestras vacantes en el siguiente portal</h3>
+                            <h3>Conoce nuestras vacantes en el siguiente portal: <a style={{color: "#161616", textDecoration: "none"}} href="https://www.linkedin.com/company/inkanet-per%C3%BA/" target='_blank' rel='noreferrer'> Linkedin </a></h3>
                             <div className='d-flex align-items-end mt-5'>
                                 <p className=''>¡Te estamos esperando!</p>
                             </div>

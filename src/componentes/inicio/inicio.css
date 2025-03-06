@@ -47,7 +47,7 @@
     align-items: center;
     overflow: hidden; /* Evita que la imagen sobresalga */
     border-radius: 8px;
-    width: 400px; /* Tamaño fijo del contenedor */
+    width: 320px; /* Tamaño fijo del contenedor */
     height: 220px; /* Para evitar que se deforme */
   }
   
@@ -198,6 +198,16 @@
     -webkit-filter: grayscale(0);
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    top: 23%;
+    transform: translateY(-50%);
+    height: 10px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
 
 @keyframes fadeIn {
     from {
@@ -347,6 +357,20 @@
     .contenedorPartners .carousel{
         margin-top: 130px !important;
     }
+    .grid-item {
+        width: 120px !important; /* Tamaño fijo del contenedor */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+    top: 32%;
+    transform: translateY(-60%);
+    height: 10px;
+    -webkit-transform: translateY(-60%);
+    -moz-transform: translateY(-60%);
+    -ms-transform: translateY(-60%);
+    -o-transform: translateY(-60%);
+}
 }
 
 /* Estilos para teléfonos medianos y grandes */

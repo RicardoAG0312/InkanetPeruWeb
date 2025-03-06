@@ -49,6 +49,9 @@ section {
     will-change: opacity, transform;
 }
 
+p {
+    font-size: 19px !important;
+}
 
 
 

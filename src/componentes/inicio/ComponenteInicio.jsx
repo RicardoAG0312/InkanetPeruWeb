@@ -216,7 +216,7 @@ export default function ComponenteInicio() {
                     </div>
                 </div>
             </section>
-            <section data-aos="fade-right" style={{backgroundColor: "#3A4040", height: "auto",padding: "48px 150px"}}className="container-fluid cuarta-seccion-inicio">
+            <section data-aos="fade-right" style={{backgroundColor: "#3A4040", minHeight: "auto",padding: "48px 150px"}}className="container-fluid cuarta-seccion-inicio">
                 <div>
                     <h1 style={{ fontSize: "80px", fontWeight: "100", color: "white" }}>
                     Nuestros <span style={{ fontWeight: "700" }}> Partners </span>
@@ -228,7 +228,7 @@ export default function ComponenteInicio() {
                     </p>
                 </div>
                 <div className="container contenedorPartners">
-                    <Carousel controls={false} interval={1500} indicators={false} style={{marginTop: "250px"}}>
+                    <Carousel controls={true} interval={1500} indicators={false} style={{marginTop: "250px"}}>
                         {imageChunks.map((chunk, index) => (
                             <Carousel.Item key={index}>
                                 <div className="grid-container">
