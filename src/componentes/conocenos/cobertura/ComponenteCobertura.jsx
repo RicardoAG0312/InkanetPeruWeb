@@ -74,7 +74,7 @@ function ComponenteCobertura() {
                         <div className="mb-4">
                             <input type="checkbox" id="politica" className="me-2" />
                             <label htmlFor="politica">
-                                Acepto la <a style={{ color: "#05AFA5", textDecoration: "none" }} href={process.env.PUBLIC_URL + "../../../../public/Política_de_Privacidad_Inkanet.pdf"} download={"Política_Protección_Datos_Inkanet.pdf"} rel="noopener noreferrer">Política de protección de datos</a>
+                                Acepto la <a style={{ color: "#05AFA5", textDecoration: "none" }} href={process.env.PUBLIC_URL + "/Politica_Privacidad.pdf"} download={"Política_Protección_Datos_Inkanet.pdf"} rel="noopener noreferrer">Política de protección de datos</a>
                             </label>
                         </div>
                         <button
