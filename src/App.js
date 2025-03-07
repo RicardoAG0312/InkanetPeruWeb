@@ -72,10 +72,10 @@ function App() {
                 </Router>
                 <footer class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-md-4 imagen">
+                        <div class="col-12 col-md-3 imagen"  >
                             <img class="footer-logo" src={LogoInkanetPie} alt="Logo Inkanet Perú" />
                         </div>
-                        <div class="col-12 col-md-8 contenedorPie">
+                        <div class="col-12 col-md-9 contenedorPie">
                             <div class="row">
                                 <div class="col-12 col-md-4 contain1">
                                     <div>
@@ -84,12 +84,8 @@ function App() {
                                         <a href="/conocenos/cobertura"> Cobertura en Perú </a>
                                         <a href="/conocenos/trabaja"> Trabaja con nosotros </a>
                                     </div>
-                                    {/* <div>
-                                        <h3> NUESTROS SERVICIOS </h3>
-                                    </div> */}
-                                </div>
-                                <div class="col-12 col-md-4 contain2">
                                     <div>
+                                        <h3 style={{display: "block", width: "100%"}}> CONTÁCTANOS </h3>
                                         <a href="https://www.linkedin.com/company/inkanet-per%C3%BA/" target="_blank" rel="noreferrer">
                                             <img src={require("./images/13.png.png")} alt="Imagen Linkdln" />
                                         </a>
@@ -99,6 +95,16 @@ function App() {
                                         <a href="mailto: ventas@inkanetperu.com" target="_blank" rel="noreferrer">
                                             <img src={require("./images/15.png.png")} alt="Imagen correo" />
                                         </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 contain2" >
+                                    <div>
+                                        <h3> NUESTROS SERVICIOS </h3>
+                                        <a href="/servicios/conectividad"> Conectividad en empresas </a>
+                                        <a href="/servicios/gestionados"> Servicios Gestionados </a>
+                                        <a href="/servicios/telefonia"> Telefonia Corporativa </a>
+                                        <a href="/servicios/seguridad"> Ciberseguridad en empresas </a>
+                                        <a href="/servicios/cloud"> Servicios Cloud </a>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-4 contain3">
