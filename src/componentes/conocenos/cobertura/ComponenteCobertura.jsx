@@ -45,26 +45,26 @@ function ComponenteCobertura() {
                 <div className="formulario p-5">
                     <h1 style={{fontSize: "60px"}}> Contacta a un <span style={{fontWeight: "100"}}> <br/>experto </span></h1>
                     <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i>Llena tus datos y nos comunicaremos contigo.</p>
-                    <form>
+                    <form action="https://formsubmit.co/ventas@inkanetperu.com" method="POST">
                         <div className="row mb-3">
                             <div className="col-md-6">
-                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Nombres' id="nombres" />
+                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Nombres' id="nombres" name="nombres"/>
                             </div>
                             <div className="col-md-6">
-                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Apellidos' id="apellidos" />
+                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Apellidos' name="apellidos" id="apellidos"/>
                             </div>
                         </div>
                         <div className="row mb-3">
                             <div className="col-md-6">
-                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='RUC' id="ruc" />
+                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='RUC' id="ruc" name="ruc"/>
                             </div>
                             <div className="col-md-6">
-                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Telefono/Celular' id="telefono" />
+                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Telefono/Celular' name="telefono" id="telefono"/>
                             </div>
                         </div>
                         <div className="row mb-3">
                             <div className="col-md-6">
-                                <input type="email" className="form-control form-control-lg input-personalizado" placeholder='Email' id="email" />
+                                <input type="email" className="form-control form-control-lg input-personalizado" placeholder='Email' id="email" name="email"/>
                             </div>
                         </div>
                         <div className="mb-2">
@@ -78,7 +78,7 @@ function ComponenteCobertura() {
                             </label>
                         </div>
                         <button
-                        type=""
+                        type="submit"
                         className="btn "
                         style={{
                             backgroundColor: "black",
