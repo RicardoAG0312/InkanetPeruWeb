@@ -45,34 +45,34 @@ function ComponenteCobertura() {
                 <div className="formulario p-5">
                     <h1 style={{fontSize: "60px"}}> Contacta a un <span style={{fontWeight: "100"}}> <br/>experto </span></h1>
                     <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i>Llena tus datos y nos comunicaremos contigo.</p>
-                    <form action="https://formsubmit.co/ventas@inkanetperu.com" method="POST">
+                    <form action="https://formsubmit.co/ea3030451b381f488f15a922403e35c4" method="POST">
                         <div className="row mb-3">
                             <div className="col-md-6">
-                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Nombres' id="nombres" name="nombres"/>
+                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Nombres' id="nombres" name="nombres" required/>
                             </div>
                             <div className="col-md-6">
-                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Apellidos' name="apellidos" id="apellidos"/>
+                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Apellidos' name="apellidos" id="apellidos" required/>
                             </div>
                         </div>
                         <div className="row mb-3">
                             <div className="col-md-6">
-                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='RUC' id="ruc" name="ruc"/>
+                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='RUC' id="ruc" name="ruc"required/>
                             </div>
                             <div className="col-md-6">
-                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Telefono/Celular' name="telefono" id="telefono"/>
+                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Telefono/Celular' name="telefono" id="telefono" required/>
                             </div>
                         </div>
                         <div className="row mb-3">
                             <div className="col-md-6">
-                                <input type="email" className="form-control form-control-lg input-personalizado" placeholder='Email' id="email" name="email"/>
+                                <input type="email" className="form-control form-control-lg input-personalizado" placeholder='Email' id="email" name="email" required/>
                             </div>
                         </div>
                         <div className="mb-2">
-                            <input type="checkbox" id="info" className="me-2" />
+                            <input type="checkbox" id="info" className="me-2" required/>
                             <label htmlFor="info">Deseo recibir información de ofertas y promociones</label>
                         </div>
                         <div className="mb-4">
-                            <input type="checkbox" id="politica" className="me-2" />
+                            <input type="checkbox" id="politica" className="me-2" required/>
                             <label htmlFor="politica">
                                 Acepto la <a style={{ color: "#05AFA5", textDecoration: "none" }} href={process.env.PUBLIC_URL + "/Politica_Privacidad.pdf"} download={"Política_Protección_Datos_Inkanet.pdf"} rel="noopener noreferrer">Política de protección de datos</a>
                             </label>

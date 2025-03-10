@@ -70,14 +70,14 @@ function App() {
                         <Route path='/servicios/telefonia' element={<ComponenteTelefonia />} />
                     </Routes>
                 </Router>
-                <footer class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 col-md-3 imagen"  >
-                            <img class="footer-logo" src={LogoInkanetPie} alt="Logo Inkanet Perú" />
+                <footer className="container-fluid">
+                    <div className="row">
+                        <div className="col-12 col-md-3 imagen"  >
+                            <img className="footer-logo" src={LogoInkanetPie} alt="Logo Inkanet Perú" />
                         </div>
-                        <div class="col-12 col-md-9 contenedorPie">
-                            <div class="row">
-                                <div class="col-12 col-md-4 contain1">
+                        <div className="col-12 col-md-9 contenedorPie">
+                            <div className="row">
+                                <div className="col-12 col-md-4 contain1">
                                     <div>
                                         <h3> CONÓCENOS </h3>
                                         <a href="/conocenos/somos"> ¿Quiénes Somos? </a>
@@ -97,7 +97,7 @@ function App() {
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4 contain2" >
+                                <div className="col-12 col-md-4 contain2" >
                                     <div>
                                         <h3> NUESTROS SERVICIOS </h3>
                                         <a href="/servicios/conectividad"> Conectividad en empresas </a>
@@ -107,8 +107,8 @@ function App() {
                                         <a href="/servicios/cloud"> Servicios Cloud </a>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4 contain3">
-                                    <p class="m-0">
+                                <div className="col-12 col-md-4 contain3">
+                                    <p className="m-0">
                                         «Somos una empresa peruana dedicada al rubro de las telecomunicaciones, enfocada en ofrecer fibra óptica a las distintas corporaciones del país, brindándoles un servicio estable de conexión»
                                     </p>
                                 </div>

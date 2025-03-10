@@ -1,6 +1,8 @@
 import React, { useState, useRef } from "react";
 import {ComponenteBarraNavegacion} from "../../routers/routers"
 import HeaderForm from '../ui/HeaderForm';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./contactanos.css"
 
 function ComponenteContactanos() {
@@ -34,11 +36,18 @@ function ComponenteContactanos() {
         }
     };
 
+    const showError = () => {
+        toast.error("Por favor, seleccione al menos un servicio a cotizar.", {
+            position: "top-right",
+            autoClose: 3000,
+        });
+    };
+    
     const handleSubmit = (event) => {
         event.preventDefault();
 
         if (seleccionados.length === 0) {
-            alert("Por favor, seleccione al menos un servicio a cotizar.");
+            showError()
             return;
         }
         
@@ -124,6 +133,7 @@ function ComponenteContactanos() {
                         </div>        
                     </div>
                     <div className="form-contact col-md-6 col-12 p-5"  style={{backgroundColor: "#FFFFFF", color: "black"}}>
+                        <ToastContainer />
                         <div className='mb-5'>
                             <h1 style={{fontSize: "60px"}}> Contacta a un <span style={{fontWeight: "100"}}> experto </span></h1>
                             <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i> Llena tus datos y nos comunicaremos contigo. </p>
