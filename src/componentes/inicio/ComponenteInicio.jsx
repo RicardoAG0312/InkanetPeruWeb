@@ -29,10 +29,10 @@ export default function ComponenteInicio() {
         require("../../images/32.png.png"),
         require("../../images/137.png.png"),
         require("../../images/138.png.png"),
-        require("../../images/143.png.png"),
+        // require("../../images/143.png.png"),
         require("../../images/145.png.png"),
-        require("../../images/147.png.png"),
-        require("../../images/149.png.png"),
+        // require("../../images/147.png.png"),
+        // require("../../images/149.png.png"),
         require("../../images/151.png.png"),
         require("../../images/153.png.png"),
     ];

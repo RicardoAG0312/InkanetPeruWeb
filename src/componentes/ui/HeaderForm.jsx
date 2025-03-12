@@ -20,14 +20,14 @@ function HeaderForm({ img, titulo, texto1, texto2, form }) {
                 <div className="container headForm h-100">
                     <h2>Contacta con un asesor</h2>
                     <p style={{ fontSize: "12px", textAlign: "center" }}>
-                    Ingresa los datos de tu empresa RUC y un asesor de negocios se comunicará contigo para ayudarte
+                    Ingresa los datos de tu empresa y un asesor de negocios se comunicará contigo para ayudarte
                     </p>
 
                     <form className="d-flex align-items-center justify-content-center flex-column gap-2 w-100" action="https://formsubmit.co/ea3030451b381f488f15a922403e35c4" method="POST">
                         <input className="w-100" type="text" name="nombres" placeholder="Nombres" required  />
                         <input className="w-100"type="text" name="apellidos" placeholder="Apellidos" required  />
                         <input className="w-100"type="text" name="ruc" placeholder="Ruc" required  />
-                        <input className="w-100"type="text" name="telefono" placeholder="Teléfono / Celular" required />
+                        <input className="w-100"type="number" name="telefono" placeholder="Teléfono / Celular" required />
                         <input className="w-100"type="email" name="email" placeholder="Email" required  />
                         <button type="submit" className="botton">Enviar</button>
                     </form>
