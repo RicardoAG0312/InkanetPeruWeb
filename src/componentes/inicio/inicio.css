@@ -7,10 +7,17 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: auto;
     width: 100%;
     z-index: 1;
 }
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50% !important; /* Esto los coloca verticalmente al centro */
+    transform: translateY(-50%) !important;/* Para ajustar la posición central */
+    z-index: 1; /* Asegúrate de que estén por encima del contenido */
+}
+
 .carousel video {
     width: 100%;
     height: 100vh;
