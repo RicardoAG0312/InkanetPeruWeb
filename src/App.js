@@ -102,7 +102,7 @@ function App() {
                                         <h3> NUESTROS SERVICIOS </h3>
                                         <a href="/servicios/conectividad"> Conectividad en empresas </a>
                                         <a href="/servicios/gestionados"> Servicios Gestionados </a>
-                                        <a href="/servicios/telefonia"> Telefonia Corporativa </a>
+                                        <a href="/servicios/telefonia"> Telefonía Corporativa </a>
                                         <a href="/servicios/seguridad"> Ciberseguridad en empresas </a>
                                         <a href="/servicios/cloud"> Servicios Cloud </a>
                                     </div>
