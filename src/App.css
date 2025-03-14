@@ -21,7 +21,17 @@ h1, h2, header, span {
 body {
     overflow-x: hidden !important; /* Elimina cualquier barra de desplazamiento horizontal */
 }
-
+/* Estilo para quitar los botones en todos los input de type number */
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Estilo para mostrar el dropdown al hacer hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important; /* Asegura que sea completamente visible */
+}
 
 
 @keyframes slideIn {

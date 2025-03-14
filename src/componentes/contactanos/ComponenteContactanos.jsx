@@ -190,7 +190,7 @@ function ComponenteContactanos() {
 
                                 <div className="mb-3">
                                 <input
-                                    type="text"
+                                    type="number"
                                     placeholder="Teléfono / Celular"
                                     className="form-control border-0 border-bottom shadow-none"
                                     style={{

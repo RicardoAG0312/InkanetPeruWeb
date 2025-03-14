@@ -62,7 +62,7 @@ function ComponenteTrabaja() {
                                     <input type="email" className="form-control form-control-lg input-personalizado" placeholder='Email' id="email" name="email" required />
                                 </div>
                                 <div className="row mb-3">
-                                    <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Telefono/Celular' id="number" name="number" required />
+                                    <input type="number" className="form-control form-control-lg input-personalizado" placeholder='Telefono/Celular' id="number" name="number" required />
                                 </div>
                                 <div className="row mb-3">
                                     <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Universidad/Instituto' id="estudios" name="estudios" required />

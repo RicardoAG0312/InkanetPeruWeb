@@ -59,7 +59,7 @@ function ComponenteCobertura() {
                                 <input type="text" className="form-control form-control-lg input-personalizado" placeholder='RUC' id="ruc" name="ruc"required/>
                             </div>
                             <div className="col-md-6">
-                                <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Telefono/Celular' name="telefono" id="telefono" required/>
+                                <input type="number" className="form-control form-control-lg input-personalizado" placeholder='Telefono/Celular' name="telefono" id="telefono" required/>
                             </div>
                         </div>
                         <div className="row mb-3">
