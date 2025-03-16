@@ -11,6 +11,7 @@
     width: 100%;
     z-index: 1;
 }
+/* cambiso */
 .carousel-control-prev,
 .carousel-control-next {
     top: 50% !important; /* Esto los coloca verticalmente al centro */

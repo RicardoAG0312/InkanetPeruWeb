@@ -1,5 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React, {useCallback} from 'react';
 import { useNavigate } from 'react-router-dom';
+
+
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim"; // Cambiado a "loadSlim"
+
+
 import "./inicio.css"
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
@@ -10,6 +16,9 @@ import VideoPortada3 from "../../images/Portada 3.mp4"
 import VideoPortada4 from "../../images/Portada 5.mp4"
 import BotonAnimado from "../ui/BotonAnimado";
 import ImagenInicio from "../../images/inicio.png"
+
+
+
 
 export default function ComponenteInicio() {
     const navigate = useNavigate();
@@ -42,10 +51,76 @@ export default function ComponenteInicio() {
     for (let i = 0; i < images.length; i += chunkSize) {
         imageChunks.push(images.slice(i, i + chunkSize));
     }
+
+    const particlesInit = useCallback(async (engine) => {
+        console.log("Inicializando partículas...");
+        await loadSlim(engine); // Usa loadSlim en lugar de loadFull
+    }, []);
+
     return (
         <>
             <section className='contenedorPrincipal'>
                 <ComponenteBarraNavegacion />
+                <Particles
+                    id="tsparticles"
+                    init={particlesInit}
+                    style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        zIndex: 999,
+                        pointerEvents: "none",
+                    }}
+                    options={{
+                        fullScreen: { enable: false },
+                        particles: {
+                            number: { value: 100 },
+                            shape: { type: "circle" },
+                            opacity: { value: 0.8 },
+                            size: { value: 2 },
+                            color: { value: "#ffffff" }, // Asegura que las partículas sean blancas
+                            move: {
+                                enable: true,
+                                speed: 5, // Aumentamos la velocidad
+                                direction: "none",
+                                random: false,
+                                straight: false,
+                                outModes: { default: "out" },
+                            },
+                            links: {
+                                enable: true, // Conectar partículas con líneas
+                                distance: 100,
+                                color: "#ffffff",
+                                opacity: 0.4,
+                                width: 1,
+                            },
+                        },
+                        interactivity: {
+                            events: {
+                                onHover: {
+                                    enable: true,
+                                    mode: "repulse", // Agarrar partículas en lugar de repulsarlas
+                                },
+                                onClick: {
+                                    enable: true,
+                                    mode: "push", // Agregar partículas al hacer clic
+                                },
+                            },
+                            modes: {
+                                grab: {
+                                    distance: 140,
+                                    links: { opacity: 0.6 },
+                                },
+                                push: {
+                                    quantity: 4, // Añadir más partículas al hacer clic
+                                },
+                            },
+                        },
+                        detectRetina: true,
+                    }}
+                />
                 <Carousel className='carousel' data-bs-theme="dark"  controls={false}>
                     <Carousel.Item interval={2500}>
                         <div className="video-container">
@@ -243,8 +318,6 @@ export default function ComponenteInicio() {
                     </Carousel>
                 </div>
             </section>
-            
-            {/* <ComponentePartners /> */}
         </>
     )
 }
