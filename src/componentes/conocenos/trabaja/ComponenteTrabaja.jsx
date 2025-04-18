@@ -2,6 +2,7 @@ import React from 'react'
 import {ComponenteBarraNavegacion} from "../../../routers/routers"
 import HeaderForm from '../../ui/HeaderForm'
 import Group from "../../../images/group.png";
+import AnimatedSection from '../../AnimatedSection';
 import "./trabaja.css";
 
 function ComponenteTrabaja() {
@@ -16,7 +17,7 @@ function ComponenteTrabaja() {
             </section>
             <section className="forma-parte container p-5 mt-5 mb-5" style={{height: "auto"}}>
                 <div className="row">
-                    <div className="col-md-6">
+                    <AnimatedSection as="div" direction="bottom" className="col-md-6">
                         <h1 style={{fontSize: "50px"}}><span style={{fontWeight: "bold"}}>Forma parte de nuestro equipo</span> <span>si cumples con este perfil</span></h1>
                         <ul style={{marginLeft: "-10px", marginTop: "20px", fontSize: "20px"}}>
                             <li>Proactivo e innovador</li>
@@ -24,55 +25,52 @@ function ComponenteTrabaja() {
                             <li>Enfocado al trabajo en equipo</li>
                             <li>Exigente</li>
                         </ul>
-                    </div>
-                    <div className="col-md-6 d-flex align-item-center justify-content-center">
+                    </AnimatedSection>
+                    <AnimatedSection as="div" direction="right" className="col-md-6 d-flex align-item-center justify-content-center">
                         <img src={Group} alt="Descripción de la imagen" className="img-fluid" style={{width:"", height:"400px"}}/>
-                    </div>
+                    </AnimatedSection>
                 </div>
             </section>
             <section className='container-fluid seccion-cv p-5'>
                 <div className='row w-100 '>
-                    <div className="col-md-6 p-5" style={{marginLeft: "50px", color: "white"}}>
+                    <AnimatedSection as="div" direction="right" className="col-md-6 p-5" style={{marginLeft: "50px", color: "white"}}>
                         <h1 style={{textShadow: "-5px 5px 5px rgba(0, 0, 0, 0.5)"}}>Si estás interesado en integrarte a Inkanet, envíanos tu CV al e-mail:</h1>
                         <button className="btn btn-light mt-3 mb-3" style={{borderRadius: "50px", minWidth: "100%"}}><h3 style={{color: "#09AEAF", margin: "0px"}}>rrhh@inkanetperu.com</h3></button>
                         <div>
                             <p style={{fontSize: "18px"}}>En el asunto indícanos las áreas de tu interés, o completa el formulario a continuación. Apenas dispongamos de una vacante acorde a lo que buscas te contactaremos. Para mayor información sobre ofertas laborales visita nuestro perfil.</p>
                         </div>
-                    </div>
+                    </AnimatedSection>
                 </div>
             </section>
             <section className='form-trabajo container p-5'>
-                <div className='ms-5'>
+                <AnimatedSection as="div" direction="bottom"  className='ms-5'>
                     <h1 style={{fontSize: "60px", fontWeight: "bold"}}> Contacta a un <span style={{fontWeight: "100"}}> <br/>experto </span></h1>
-                </div>
+                </AnimatedSection>
                 <div className="row justify-content-center">
                     <div className="col-md-6 col-12"  style={{backgroundColor: "#FFFFFF", color: "black"}}>
-                        <div className='mb-5 mt-3'>
+                        <AnimatedSection as="div" direction="bottom" className='mb-5 mt-3'>
                             <p style={{color: "black"}}> <i style={{color: "#1FB3AE"}} className="bi bi-play-fill"></i> Llena tus datos y nos comunicaremos contigo. </p>
-                        </div>
+                        </AnimatedSection>
                         <div  style={{maxWidth: "400px"}}>
                             <form action="https://formsubmit.co/1a034701971cea3895ef10689c27aae8" method="POST" encType="multipart/form-data">
-                                <div className="row mb-3">
+                                <AnimatedSection as="div" direction="right" className="row mb-3">
                                     <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Nombres' id="nombres" name="nombres" required />
-                                </div>
-                                <div className="row mb-3">
+                                </AnimatedSection>
+                                <AnimatedSection as="div" direction="left" className="row mb-3">
                                     <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Apellidos' id="apellidos" name="apellidos" required  />
-                                </div>
-                                <div className="row mb-3">
+                                </AnimatedSection>
+                                <AnimatedSection as="div" direction="right" className="row mb-3">
                                     <input type="email" className="form-control form-control-lg input-personalizado" placeholder='Email' id="email" name="email" required />
-                                </div>
-                                <div className="row mb-3">
+                                </AnimatedSection>
+                                <AnimatedSection as="div" direction="left" className="row mb-3">
                                     <input type="number" className="form-control form-control-lg input-personalizado" placeholder='Telefono/Celular' id="number" name="number" required />
-                                </div>
-                                <div className="row mb-3">
+                                </AnimatedSection>
+                                <AnimatedSection as="div" direction="right" className="row mb-3">
                                     <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Universidad/Instituto' id="estudios" name="estudios" required />
-                                </div>
-                                <div className="row mb-3">
+                                </AnimatedSection>
+                                <AnimatedSection as="div" direction="left" className="row mb-3">
                                     <input type="text" className="form-control form-control-lg input-personalizado" placeholder='Carrera' id="carrera" name="carrera" required />
-                                </div>
-                                {/* <div className="row mb-3">
-                                    <input type="file" className="form-control form-control-lg input-personalizado" placeholder='cv' id="cv" name="cv" required />
-                                </div> */}
+                                </AnimatedSection>
                                 <button
                                 type="submit"
                                 className="btn w-50"
@@ -93,15 +91,15 @@ function ComponenteTrabaja() {
                         </div>
                     </div>
                     <div className="col-md-6 d-flex" style={{backgroundColor: "#1FB3AE", borderRadius: "50px", maxWidth: "400px"}}>
-                        <div className='d-flex flex-column justify-content-center align-items-start ' style={{color: "white", paddingTop: "50px", paddingBottom: "0px", paddingLeft: "20px", paddingRight: "20px"}}>
+                        <AnimatedSection as="div" direction="right" className='d-flex flex-column justify-content-center align-items-start ' style={{color: "white", paddingTop: "50px", paddingBottom: "0px", paddingLeft: "20px", paddingRight: "20px"}}>
                             <h1 style={{color:"#000", fontSize:"50px"}}><span style={{fontWeight: "bold"}}>¡Te estamos</span> buscando!</h1>
                             <h2 style={{fontSize:"20px"}}>No solo conectamos cables, conectamos personas.</h2>
                             <p className='mt-3 mb-3'>En Inkanet ayudamos a las empresas en su evolución digital, para ello necesitamos talentos como tú.</p>
                             <h3>Conoce nuestras vacantes en el siguiente portal: <a style={{color: "#161616", textDecoration: "none"}} href="https://www.linkedin.com/company/inkanet-per%C3%BA/" target='_blank' rel='noreferrer'> Linkedin </a></h3>
-                            <div className='d-flex align-items-end mt-5'>
+                            <AnimatedSection as="div" direction="bottom" className='d-flex align-items-end mt-5'>
                                 <p className=''>¡Te estamos esperando!</p>
-                            </div>
-                        </div>
+                            </AnimatedSection>
+                        </AnimatedSection>
                     </div>
                 </div>
             </section>

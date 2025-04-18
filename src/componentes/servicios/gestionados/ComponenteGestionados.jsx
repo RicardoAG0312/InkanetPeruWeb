@@ -5,6 +5,7 @@ import "./gestionados.css"
 import Help from '../../ui/Help';
 import SubSecciones from '../../ui/SubSecciones';
 import Tres from "../../../images/tres.png";
+import AnimatedSection from '../../AnimatedSection';
 
 function ComponenteGestionados() {
     return (
@@ -20,9 +21,9 @@ function ComponenteGestionados() {
             </section>
             <section className="container-fluid seccion-sub-servicios" style={{backgroundColor: "#FFFFFF", height: "auto"}}>
                 <div className="row m-0 w-100 h-100">
-                    <div className="col-md-7 col-12 d-flex justify-content-center align-items-center py-4">
+                    <AnimatedSection as="div" direction="top" className="col-md-7 col-12 d-flex justify-content-center align-items-center py-4">
                         <img src={Tres} alt="Imagen" className="img-fluid" />
-                    </div>
+                    </AnimatedSection>
                     <div className="col-md-5 col-12 d-flex flex-column justify-content-between align-items-center py-4">
                         <SubSecciones 
                             titulo="LAN"

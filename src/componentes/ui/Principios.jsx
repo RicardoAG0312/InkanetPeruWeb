@@ -1,8 +1,9 @@
 import React from 'react'
+import AnimatedSection from '../AnimatedSection';
 
 function Principios({ titulo, texto, imagen }) {
     return (
-        <div className="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+        <AnimatedSection as="div" direction="right" className="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
             <div className="card position-relative m-2">
                 <div className="image-container">
                     <img 
@@ -19,7 +20,7 @@ function Principios({ titulo, texto, imagen }) {
                     <p className="card-text">{texto}</p>
                 </div>
             </div>
-        </div>
+        </AnimatedSection>
     );
 }
 

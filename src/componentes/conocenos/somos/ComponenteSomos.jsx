@@ -8,6 +8,7 @@ import BotonAnimado from "../../ui/BotonAnimado";
 import ViñetasSomos from "../../ui/ViñetasSomos";
 import Principios from "../../ui/Principios";
 import Diseño1 from "../../../images/somos.png"
+import AnimatedSection from "../../AnimatedSection";
 
 
 function BotonAnimadoSomos({ onClick, activo }) {
@@ -37,7 +38,7 @@ function ComponenteSomos() {
                 <ComponenteBarraNavegacion />
                 <div className="row p-0 m-0">
                     {/* Sección de texto */}
-                    <div className="col-12 col-md-6 d-flex justify-content-center align-items-center flex-column text-center text-md-start min-vh-100">
+                    <AnimatedSection as="div" direction="top" className="col-12 col-md-6 d-flex justify-content-center align-items-center flex-column text-center text-md-start min-vh-100">
                         <div className="d-flex flex-column align-items-md-start align-items-center justify-content-center w-75 w-md-75 gap-1 mb-5 ">
                             <h1 className="text-white fw-bold display-4" style={{ width: "60%" }}>
                                 ¿Quiénes <span className="fw-light"> Somos?</span>
@@ -56,18 +57,18 @@ function ComponenteSomos() {
                                 activo={mostrarTexto}
                             />
                         </div>
-                    </div>
+                    </AnimatedSection>
 
                     {/* Sección de imagen */}
-                    <div className="imagen-somos-inicio mt-5 col-12 col-md-6 d-flex justify-content-center align-items-center flex-column min-vh-100">
+                    <AnimatedSection as="div" direction="bottom" className="imagen-somos-inicio mt-5 col-12 col-md-6 d-flex justify-content-center align-items-center flex-column min-vh-100">
                         <img src={LogoInkanet} alt="Imagen Logo Inkanet" className="img-fluid w-75 w-md-auto h-auto"/>
-                    </div>
+                    </AnimatedSection>
                 </div>
             </section>
             <section className="container-fluid p-0" style={{ background: "#FFFFFF", height: "auto" }}>
                 <div className="row p-5 m-0">
                     <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-start">
-                        <div className="d-flex flex-column justify-content-center align-items-start gap-3">
+                        <AnimatedSection as="div" direction="bottom" className="d-flex flex-column justify-content-center align-items-start gap-3">
                             <h1 className="text-black fw-bold display-4" style={{ fontSize: "3.5rem", maxWidth: "70%" }}>
                                 Nuestro <span className="fw-light">Enfoque </span>
                             </h1>
@@ -79,12 +80,12 @@ function ComponenteSomos() {
                                 <i style={{ color: "#1FB3AE" }} className="bi bi-play-fill"></i> 
                                 Nos posicionamos como un aliado confiable en ciberseguridad, ofreciendo soluciones de vanguardia adaptadas a las necesidades del entorno digital cambiante.
                             </p>
-                        </div>
+                        </AnimatedSection>
                     </div>
-                    <div className="col-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
+                    <AnimatedSection as="div" direction="top" className="col-12 col-md-6 d-flex justify-content-center align-items-center flex-column">
                         {/* <img src={require("../../../images/diseño9.png")} alt="Imagen Logo Inkanet" className="img-fluid w-100 w-md-auto h-auto"/> */}
                         <Image src={Diseño1} rounded alt="Imagen Logo Inkanet" className="img-fluid w-100 w-md-auto h-auto"/>
-                    </div>
+                    </AnimatedSection>
                 </div>
             </section>
             <section className="container-fluid p-5 m-0 lideres">
@@ -98,7 +99,7 @@ function ComponenteSomos() {
                 <div className="row p-4 m-0">
                     {/* Columna izquierda */}
                     <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-start">
-                        <div className="d-flex flex-column justify-content-center align-items-start gap-3">
+                        <AnimatedSection as="div" direction="right" className="d-flex flex-column justify-content-center align-items-start gap-3">
                             <h1 className="text-white display-4" style={{ fontSize: "3rem", maxWidth: "100%", width: "80%" }}>
                                 Actualmente Atendemos a más de
                             </h1>
@@ -117,7 +118,7 @@ function ComponenteSomos() {
                                 colorLetraPress="black"
                                 nav="/contacto"
                             />
-                        </div>
+                        </AnimatedSection>
                     </div>
                     <div className="clientes-beneficios col-12 col-md-6 d-flex flex-column justify-content-between align-items-center">
                         <ViñetasSomos 

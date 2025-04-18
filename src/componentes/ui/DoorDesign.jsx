@@ -1,20 +1,22 @@
 import React from 'react';
 import BotonAnimado from './BotonAnimado';
+import AnimatedSection from '../AnimatedSection';
+
 const ServiceColumn = ({ image, title, description, boton, direccion }) => {
     return (
         <div className="col-md-4">
             <div className="disenio">
                 <div className="design card-body d-flex flex-column justif align-items-center">
-                    <div className="circle-image">
+                    <AnimatedSection as="div" direction="top" className="circle-image">
                         <img src={require(`../../images/${image}`)} alt={title} className="img-fluid rounded-circle" />
-                    </div>
-                    <div className='mt-3 mb-auto'>
+                    </AnimatedSection>
+                    <AnimatedSection as="div" direction="bottom" className='mt-3 mb-auto'>
                         <h2 className="card-title text-center">{title}</h2>
-                    </div>
+                    </AnimatedSection>
                     <p className="card-text text-center">{description}</p>
                     {/* <a href="#" className="btn btn-info">Información</a> */}
                     {boton !== "none" && (
-                        <div className="mt-auto mb-5">
+                        <AnimatedSection as="div" direction="right" className="mt-auto mb-5">
                             <BotonAnimado
                                 colorIconoBase="#05AFA5"
                                 colorLetraBase="white"
@@ -24,7 +26,7 @@ const ServiceColumn = ({ image, title, description, boton, direccion }) => {
                                 colorLetraPress="white"
                                 nav={direccion}
                             />
-                        </div>
+                        </AnimatedSection>
                     )}
                 </div>
             </div>
