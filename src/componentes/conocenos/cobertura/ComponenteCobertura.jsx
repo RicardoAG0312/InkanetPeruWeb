@@ -34,6 +34,7 @@ function ComponenteCobertura() {
                     <AnimatedSection as="div" direction="right" className="col figuraGeo text-center" style={{maxWidth: "400px"}}>
                         <div className='imagenVineta d-flex justify-content-center'>
                             <img src={CuatroCuatro} alt='43' className=''/>
+                            
                         </div>
                         <h1 className='mt-4'>Velocidad <span style={{color:"#09AEAF"}}>de conexión</span></h1>
                         <p>Nos ajustamos a los requerimientos de conectividad de tu empresa, ofreciendo un servicio de Internet por fibra óptica que es altamente escalable, confiable y compatible con diversas soluciones de seguridad informática.</p>
