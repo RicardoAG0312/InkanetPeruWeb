@@ -20,6 +20,7 @@ function ComponenteBarraNavegacion() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" id="botonBarra" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="barra-nav">
+                    <Nav.Link as={Link} to="/academia"> Academia </Nav.Link>
                     <NavDropdown title="Conócenos" id="basic-nav-dropdown"
                         onMouseEnter={() => setShowConocenos(true)}
                         onMouseLeave={() => setShowConocenos(false)}

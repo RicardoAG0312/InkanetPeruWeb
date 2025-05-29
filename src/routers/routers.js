@@ -1,6 +1,9 @@
 // Exportaciones seccion barra nav
 export { default as ComponenteBarraNavegacion } from "../componentes/barranav/ComponenteBarraNavegacion.jsx"
 
+// Exportaciones seccion academia
+export { default as ComponenteAcademia } from "../componentes/academia/ComponenteAcademia";
+
 // Exportaciones seccion inicio
 export { default as ComponenteInicio } from "../componentes/inicio/ComponenteInicio";
 

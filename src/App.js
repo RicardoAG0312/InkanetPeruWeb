@@ -7,7 +7,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./App.css";
 import LogoInkanetPie from "./images/Recurso 2.svg";
 import AnimatedSection from './componentes/AnimatedSection';
-import { ComponenteInicio, ComponenteContactanos, ComponenteCobertura, ComponenteSomos, ComponenteTrabaja, ComponenteCloud, ComponenteConectividad, ComponenteGestionados, ComponenteSeguridad, ComponenteTelefonia, ComponenteEmpresas, ComponenteRedes, ComponenteSatelital, ComponenteFibra } from "./routers/routers"
+import { ComponenteAcademia, ComponenteInicio, ComponenteContactanos, ComponenteCobertura, ComponenteSomos, ComponenteTrabaja, ComponenteCloud, ComponenteConectividad, ComponenteGestionados, ComponenteSeguridad, ComponenteTelefonia, ComponenteEmpresas, ComponenteRedes, ComponenteSatelital, ComponenteFibra } from "./routers/routers"
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -50,6 +50,7 @@ function App() {
                     <Routes>
                         <Route index path='/' element={<Navigate to="/inicio" />} />
                         <Route path='/inicio' element={<ComponenteInicio />} />
+                        <Route path='/academia' element={<ComponenteAcademia />} />
                         <Route path='/contacto' element={<ComponenteContactanos />} />
 
                         <Route path='/interconexion/empresas' element={<ComponenteEmpresas />} />

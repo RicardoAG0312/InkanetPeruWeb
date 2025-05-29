@@ -81,7 +81,7 @@ function ComponenteContactanos() {
                     titulo="Consulta y cotiza nuestras soluciones para tu empresa"
                     texto1="Contamos con un equipo de consultores e ingenieros certificados que atenderán tus solicitudes de forma personalizada en las próximas horas."
                     texto2=""
-                    form={false}
+                    form={true}
                 />
             </section>
             <section className='container-fluid p-0' style={{ height: "auto" }}>
