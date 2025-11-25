@@ -17,6 +17,7 @@ import "./inicio.css"
 
 export default function ComponenteInicio() {
     const navigate = useNavigate();
+    // Dividir las imágenes en grupos de 4 para que se muestren en cada slide del carrusel para cada partner
     const images = [
         require("../../images/8.png.png"),
         require("../../images/133.png.png"),
@@ -33,19 +34,35 @@ export default function ComponenteInicio() {
         require("../../images/32.png.png"),
         require("../../images/137.png.png"),
         require("../../images/138.png.png"),
-        // require("../../images/143.png.png"),
         require("../../images/145.png.png"),
-        // require("../../images/147.png.png"),
-        // require("../../images/149.png.png"),
         require("../../images/151.png.png"),
         require("../../images/153.png.png"),
     ];
-    // Dividir las imágenes en grupos de 4 para que se muestren en cada slide del carrusel
     const chunkSize = 3;
     const imageChunks = [];
     for (let i = 0; i < images.length; i += chunkSize) {
         imageChunks.push(images.slice(i, i + chunkSize));
     }
+
+    // Dividir las imágenes en grupos de 4 para que se muestren en cada slide del carrusel para cada cliente
+    const imagesClients = [
+        require("../../images/Universidad Nacional SAM.webp"),
+        require("../../images/Universidad Nacial de Trujillo.webp"),
+        require("../../images/Universidad Nacional Intercultural de Quillabamba.webp"),
+        require("../../images/Montoya, Chacón y Montoya -Abogados-.webp"),
+        require("../../images/Municipalidad de Ate.webp"),
+        require("../../images/Municipalidad de Santa Maria de Huachipa.webp"),
+        require("../../images/Gobierno Regional Amazonas.webp"),
+        require("../../images/Hospital Regional Docente Cajamarca.webp"),
+        require("../../images/Municipalidad de Ventanilla.webp"),
+
+    ];
+    const chunkSizeClient = 3;
+    const imageChunksClient = [];
+    for (let i = 0; i < imagesClients.length; i += chunkSizeClient) {
+        imageChunksClient.push(imagesClients.slice(i, i + chunkSizeClient));
+    }
+
 
     const particlesInit = useCallback(async (engine) => {
         console.log("Inicializando partículas...");
@@ -187,10 +204,10 @@ export default function ComponenteInicio() {
                     </Carousel.Item>
                 </Carousel>
             </section>
-            <section data-aos="fade-right" style={{ backgroundColor: "#3A4040", height: "auto", padding: "48px 150px", paddingBottom: "130px" }} className="container-fluid segunda-seccion-inicio">
+            <section data-aos="fade-right" style={{ backgroundColor: "#FAFAFA", height: "auto", padding: "48px 150px", paddingBottom: "130px" }} className="container-fluid segunda-seccion-inicio">
                 <div>
-                    <h1 style={{ fontSize: "80px", fontWeight: "700", color: "white" }}> Nuestros <span style={{ fontWeight: "100" }}> Servicios </span> </h1>
-                    <p style={{ color: "white" }}> <i style={{ color: "#1FB3AE" }} className="bi bi-play-fill"></i> Impulsamos la innovación tecnológica a través de nuestro portafolio de soluciones para mejorar la productividad y competitividad de las empresas. </p>
+                    <h1 style={{ fontSize: "80px", fontWeight: "700", color: "black" }}> Nuestros <span style={{ fontWeight: "100" }}> Servicios </span> </h1>
+                    <p style={{ color: "black" }}> <i style={{ color: "#1FB3AE" }} className="bi bi-play-fill"></i> Impulsamos la innovación tecnológica a través de nuestro portafolio de soluciones para mejorar la productividad y competitividad de las empresas. </p>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', height: '550px', marginTop: "40px", rowGap: "20px" }}>
                     <div style={{ display: 'flex', flex: 1 }}>
@@ -205,7 +222,7 @@ export default function ComponenteInicio() {
                             }}
                         >
                             <Image onClick={() => navigate("/servicios/conectividad")} src={require("../../images/Nuestros servicios 1.png.png")} roundedCircle style={{ width: '244px', height: '245px', cursor: "pointer" }} className='img-serv' />
-                            <bold style={{ color: "white" }}> <p style={{ fontWeight: "700", width: "120px", textAlign: "center", fontFamily: "Red Hat Display" }}> Conectividad en empresas </p> </bold>
+                            <bold style={{ color: "black" }}> <p style={{ fontWeight: "700", width: "120px", textAlign: "center", fontFamily: "Red Hat Display" }}> Conectividad en empresas </p> </bold>
                         </AnimatedSection>
                         <AnimatedSection as="div" direction="left"
                             style={{
@@ -218,7 +235,7 @@ export default function ComponenteInicio() {
                             }}
                         >
                             <Image onClick={() => navigate("/servicios/gestionados")} src={require("../../images/Nuestros servicios 2.png.png")} roundedCircle style={{ width: '244px', height: '245px', cursor: "pointer" }} className='img-serv' />
-                            <strong style={{ color: "white" }}> <p style={{ fontWeight: "700", width: "120px", textAlign: "center", fontFamily: "Red Hat Display" }}> Servicios Gestionados </p> </strong>
+                            <strong style={{ color: "black" }}> <p style={{ fontWeight: "700", width: "120px", textAlign: "center", fontFamily: "Red Hat Display" }}> Servicios Gestionados </p> </strong>
                         </AnimatedSection>
                         <AnimatedSection as="div" direction="right"
                             style={{
@@ -231,7 +248,7 @@ export default function ComponenteInicio() {
                             }}
                         >
                             <Image onClick={() => navigate("/servicios/telefonia")} src={require("../../images/Nuestros servicios 3.png.png")} roundedCircle style={{ width: '244px', height: '245px', cursor: "pointer" }} className='img-serv' />
-                            <strong style={{ color: "white" }}> <p style={{ fontWeight: "700", width: "200px", textAlign: "center", fontFamily: "Red Hat Display" }}> Telefonia Corporativa y comunicaciones unificadas </p>  </strong>
+                            <strong style={{ color: "black" }}> <p style={{ fontWeight: "700", width: "200px", textAlign: "center", fontFamily: "Red Hat Display" }}> Telefonia Corporativa y comunicaciones unificadas </p>  </strong>
                         </AnimatedSection>
                     </div>
                     <div className='sec' style={{ display: 'flex', flex: 1 }}>
@@ -247,7 +264,7 @@ export default function ComponenteInicio() {
                             }}
                         >
                             <Image onClick={() => navigate("/servicios/seguridad")} src={require("../../images/Nuestros servicios 4.png.png")} roundedCircle style={{ width: '244px', height: '245px', cursor: "pointer" }} className='img-serv' />
-                            <strong style={{ color: "white", paddingRight: "12px", fontFamily: "Red Hat Display" }}> Ciberseguridad en empresas </strong>
+                            <strong style={{ color: "black", paddingRight: "12px", fontFamily: "Red Hat Display" }}> Ciberseguridad en empresas </strong>
                         </AnimatedSection>
                         <AnimatedSection as="div" direction="right"
                             style={{
@@ -260,9 +277,35 @@ export default function ComponenteInicio() {
                             }}
                         >
                             <Image onClick={() => navigate("/servicios/cloud")} src={require("../../images/Nuestros servicios 5.png.png")} roundedCircle style={{ width: '244px', height: '245px', cursor: "pointer" }} className='img-serv' />
-                            <strong style={{ color: "white", paddingLeft: "65px", fontFamily: "Red Hat Display" }} > Servicios Cloud </strong>
+                            <strong style={{ color: "black", paddingLeft: "65px", fontFamily: "Red Hat Display" }} > Servicios Cloud </strong>
                         </AnimatedSection>
                     </div>
+                </div>
+            </section>
+            <section data-aos="fade-right" style={{ backgroundColor: "#3A4040", minHeight: "auto", padding: "48px 150px" }} className="container-fluid cuarta-seccion-inicio">
+                <div>
+                    <h1 style={{ fontSize: "80px", fontWeight: "100", color: "white" }}>
+                        Nuestros <span style={{ fontWeight: "700" }}> Clientes </span>
+                    </h1>
+                    <p style={{ color: "white" }}>
+                        <i style={{ color: "#1FB3AE" }} className="bi bi-play-fill"></i>
+                        Nuestros clientes cuentan con nuestro compromiso constante para ofrecerles soluciones seguras, modernas y orientadas al futuro.
+                    </p>
+                </div>
+                <div className="container contenedorPartners">
+                    <Carousel controls={true} interval={1500} indicators={false} style={{ marginTop: "250px" }}>
+                        {imageChunksClient.map((chunk, index) => (
+                            <Carousel.Item key={index}>
+                                <div className="grid-container">
+                                    {chunk.map((src, idx) => (
+                                        <div key={idx} className="grid-item">
+                                            <img src={src} alt={`Imagen ${idx + 1}`} className="float-fluid" />
+                                        </div>
+                                    ))}
+                                </div>
+                            </Carousel.Item>
+                        ))}
+                    </Carousel>
                 </div>
             </section>
             <section data-aos="fade-right" style={{ backgroundColor: "#FAFAFA", height: "auto", padding: "60px 0" }}>
