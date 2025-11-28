@@ -46,13 +46,13 @@ export default function ComponenteInicio() {
 
     // Dividir las imágenes en grupos de 4 para que se muestren en cada slide del carrusel para cada cliente
     const imagesClients = [
-        require("../../images/Universidad Nacional SAM.webp"),
-        require("../../images/Universidad Nacial de Trujillo.webp"),
-        require("../../images/Universidad Nacional Intercultural de Quillabamba.webp"),
-        require("../../images/Montoya, Chacón y Montoya -Abogados-.webp"),
-        require("../../images/Municipalidad de Ate.webp"),
+        require("../../images/Universidad Nacional S.A.M..webp"),
         require("../../images/Municipalidad de Santa Maria de Huachipa.webp"),
-        require("../../images/Gobierno Regional Amazonas.webp"),
+        require("../../images/Universidad Nacional Intercultural de Quillabamba.webp"),
+        require("../../images/Montoya, Chacón y Montoya  -Abogados-.webp"),
+        require("../../images/Municipalidad Distrital de Ate.webp"),
+        require("../../images/Universidad Nacional de Trujillo.webp"),
+        require("../../images/Cobierno Regional Amazonas.webp"),
         require("../../images/Hospital Regional Docente Cajamarca.webp"),
         require("../../images/Municipalidad de Ventanilla.webp"),
 
@@ -282,28 +282,28 @@ export default function ComponenteInicio() {
                     </div>
                 </div>
             </section>
-            <section data-aos="fade-right" style={{ backgroundColor: "#3A4040", minHeight: "auto", padding: "48px 150px" }} className="container-fluid cuarta-seccion-inicio">
+            <section data-aos="fade-right" style={{ backgroundColor: "#FAFAFA", minHeight: "auto", padding: "48px 150px" }} className="container-fluid cuarta-seccion-inicio">
                 <div>
-                    <h1 style={{ fontSize: "80px", fontWeight: "100", color: "white" }}>
+                    <h1 style={{ fontSize: "80px", fontWeight: "100", color: "black" }}>
                         Nuestros <span style={{ fontWeight: "700" }}> Clientes </span>
                     </h1>
-                    <p style={{ color: "white" }}>
+                    <p style={{ color: "black" }}>
                         <i style={{ color: "#1FB3AE" }} className="bi bi-play-fill"></i>
                         Nuestros clientes cuentan con nuestro compromiso constante para ofrecerles soluciones seguras, modernas y orientadas al futuro.
                     </p>
                 </div>
-                <div className="container contenedorPartners">
-                    <Carousel controls={true} interval={1500} indicators={false} style={{ marginTop: "250px" }}>
+                <div className="container contenedorClient">
+                    <Carousel controls={true} interval={1000} indicators={false} style={{ marginTop: "150px" }}>
                         {imageChunksClient.map((chunk, index) => (
                             <Carousel.Item key={index}>
-                                <div className="grid-container">
+                                <div className="grid-containerClient">
                                     {chunk.map((src, idx) => (
-                                        <div key={idx} className="grid-item">
-                                            <img src={src} alt={`Imagen ${idx + 1}`} className="float-fluid" />
+                                        <div key={idx} className="grid-itemClient">
+                                            <img  style={{height: "300px", width: "80%"}} src={src} alt={`Imagen ${idx + 1}`}  />
                                         </div>
                                     ))}
                                 </div>
-                            </Carousel.Item>
+                            </Carousel.Item>    
                         ))}
                     </Carousel>
                 </div>
