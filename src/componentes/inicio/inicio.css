@@ -88,15 +88,6 @@
   transform: scale(1.1) translate3d(10px, 10px, 3em) !important;
 }
 
-
-
-
-
-
-
-
-
-
 .contenedorClient {
   display: flex;
   justify-content: center;
@@ -126,31 +117,12 @@
   width: 100%;
   height: 500px !important;
   object-fit: contain;
-  /*Ajustalaimagensindeformarla*/border-radius: 8px;
-  /*Conviertelaimagenablancopuro*/transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  /*Ajustalaimagensindeformarla*/
+  border-radius: 8px;
+  /*Conviertelaimagenablancopuro*/
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
   padding: 10px 5px;
-
-  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .video-container {
   position: relative;
@@ -440,6 +412,9 @@
     -moz-transform: translateY(-60%);
     -ms-transform: translateY(-60%);
     -o-transform: translateY(-60%);
+  }
+    .contenedorClient .carousel {
+    margin-top: 0px !important;
   }
 }
 

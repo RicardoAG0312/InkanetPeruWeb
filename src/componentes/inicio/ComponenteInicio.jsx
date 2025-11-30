@@ -293,19 +293,43 @@ export default function ComponenteInicio() {
                     </p>
                 </div>
                 <div className="container contenedorClient">
-                    <Carousel controls={true} interval={1000} indicators={false} style={{ marginTop: "150px" }}>
+                    <Carousel
+                        controls={true}
+                        interval={1000}
+                        indicators={false}
+                        style={{ marginTop: "150px" }}
+                        prevIcon={
+                            <span
+                                aria-hidden="true"
+                                className="carousel-control-prev-icon me-5"
+                                style={{ filter: "invert(1)" }}  // icono negro
+                            />
+                        }
+                        nextIcon={
+                            <span
+                                aria-hidden="true"
+                                className="carousel-control-next-icon ms-5"
+                                style={{ filter: "invert(1)" }}  // icono negro
+                            />
+                        }
+                    >
                         {imageChunksClient.map((chunk, index) => (
                             <Carousel.Item key={index}>
                                 <div className="grid-containerClient">
                                     {chunk.map((src, idx) => (
                                         <div key={idx} className="grid-itemClient">
-                                            <img  style={{height: "300px", width: "80%"}} src={src} alt={`Imagen ${idx + 1}`}  />
+                                            <img
+                                                style={{ height: "300px", width: "80%" }}
+                                                src={src}
+                                                alt={`Imagen ${idx + 1}`}
+                                            />
                                         </div>
                                     ))}
                                 </div>
-                            </Carousel.Item>    
+                            </Carousel.Item>
                         ))}
                     </Carousel>
+
                 </div>
             </section>
             <section data-aos="fade-right" style={{ backgroundColor: "#FAFAFA", height: "auto", padding: "60px 0" }}>
