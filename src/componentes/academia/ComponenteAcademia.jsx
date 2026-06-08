@@ -15,7 +15,7 @@ function ComponenteAcademia() {
                 <div className="row h-100 m-4 row-header d-flex justify-content-center align-items-center">
                     <AnimatedSection as="div" direction="top" className="p-5 col-md-6 col-12 d-flex justify-content-center align-items-start flex-column gap-3">
                         <h1 className="text-white fw-bold" style={{ fontSize: "60px", width: "60%", textShadow: "2px 2px 2px black" }}>
-                            Academia Inkanet: Conocimiento que impulsa tu crecimiento
+                            Academia Grupo Inkanet: Conocimiento que impulsa tu crecimiento
                         </h1>
                         <h5 className="text-white"> Para visualizar nuestros cursos y manuales, inicia sesión con tu usuario y contraseña. </h5>
                         <p className="text-white"> Este contenido esta disponible solo para clientes y colaboradores autorizados. </p>
@@ -40,8 +40,8 @@ function ComponenteAcademia() {
             <section className='container red-en-peru'>
                 <div className='row m-5'>
                     <AnimatedSection as="div" direction="top" className="col-md-6 col-12 d-flex justify-content-center align-content-center flex-column">
-                        <h1 style={{ fontSize: "4rem", fontWeight: "100", marginBottom: "15px" }}> ¿Qué es la <span style={{ fontWeight: "bold" }}> Academia Inkanet? </span></h1>
-                        <p style={{ color: "black" }}> <i style={{ color: "#1FB3AE" }} className="bi bi-play-fill"></i> La La Academia Inkanet es nuestra plataforma de capacitación exclusiva, diseñada para brindarte el conocimiento necesario para aprovechar al máximo los servicios y soluciones tecnológicas que ofrecemos.  </p>
+                        <h1 style={{ fontSize: "4rem", fontWeight: "100", marginBottom: "15px" }}> ¿Qué es la <span style={{ fontWeight: "bold" }}> Academia Grupo Inkanet? </span></h1>
+                        <p style={{ color: "black" }}> <i style={{ color: "#1FB3AE" }} className="bi bi-play-fill"></i> La La Academia Grupo Inkanet es nuestra plataforma de capacitación exclusiva, diseñada para brindarte el conocimiento necesario para aprovechar al máximo los servicios y soluciones tecnológicas que ofrecemos.  </p>
                         <p style={{ color: "black" }}> <i style={{ color: "#1FB3AE" }} className="bi bi-play-fill"></i> A través de cursos, manuales interactivos y sesiones especializadas, te acompañamos en cada paso para que gestiones, configures y optimices tu infraestructura TI con confianza. </p>
                     </AnimatedSection>
                     <AnimatedSection as="div" direction="bottom" className="col-md-6 col-12 d-flex justify-content-center align-items-center img-fluid">
@@ -61,7 +61,7 @@ function ComponenteAcademia() {
                                 Inkanet podrás:
                             </h1>
                             <p className="text-white" style={{ maxWidth: "60%" }}>
-                                Este servicio está incluido para clientes activos y partners de Inkanet como parte de nuestro compromiso con una atención integral y soporte continuo.
+                                Este servicio está incluido para clientes activos y partners de Grupo Inkanet como parte de nuestro compromiso con una atención integral y soporte continuo.
                             </p>
                         </AnimatedSection>
                     </div>

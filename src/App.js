@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./App.css";
-import LogoInkanetPie from "./images/Recurso 2.svg";
+import LogoInkanetPie from "./images/Recurso 46.svg";
 import AnimatedSection from './componentes/AnimatedSection';
 import { ComponenteAcademia, ComponenteInicio, ComponenteContactanos, ComponenteCobertura, ComponenteSomos, ComponenteTrabaja, ComponenteCloud, ComponenteConectividad, ComponenteGestionados, ComponenteSeguridad, ComponenteTelefonia, ComponenteEmpresas, ComponenteRedes, ComponenteSatelital, ComponenteFibra } from "./routers/routers"
 

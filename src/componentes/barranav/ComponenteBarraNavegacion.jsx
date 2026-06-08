@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import LogoInkanet from "../../images/inkanet Blanco.svg"
+import LogoInkanet from "../../images/Recurso 44.svg"
 import { useState } from 'react';
 import IconConectividad from '../../images/34.png.png';
 import IconGestionados from '../../images/35.png.png';

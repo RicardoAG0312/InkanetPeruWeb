@@ -22,7 +22,7 @@ function ComponenteSatelital() {
             <section className="servicio-internet container-fluid p-5" style={{ backgroundColor: "#3A4040" }}>
                 <div className="row">
                     <AnimatedSection as="div" direction="right" className="col-md-6 p-5">
-                        <h1 style={{ fontSize: "50px" }}><span style={{ fontWeight: "bold", color: "#FFFFFF" }}>CON EL SERVICIO DE INTERNET SATELITAL</span> <span style={{ fontWeight: "bold", color: "#1EB3AF" }}>DE BAJA ÓRBITA DE INKANET</span></h1>
+                        <h1 style={{ fontSize: "50px" }}><span style={{ fontWeight: "bold", color: "#FFFFFF" }}>CON EL SERVICIO DE INTERNET SATELITAL</span> <span style={{ fontWeight: "bold", color: "#1EB3AF" }}>DE BAJA ÓRBITA DE GRUPO INKANET</span></h1>
                         <p style={{ marginLeft: "-10px", marginTop: "20px", fontSize: "20px" }} className='text-light'>
                             Podrás conectar tus equipos y sedes desde cualquier lugar remoto del país a alta velocidad, donde no se cuenta con un acceso convencional a Internet e impulsa el crecimiento de tu empresa.
                         </p>

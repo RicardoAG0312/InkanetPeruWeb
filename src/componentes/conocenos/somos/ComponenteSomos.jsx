@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ComponenteBarraNavegacion } from "../../../routers/routers";
-import LogoInkanet from "../../../images/Recurso 2.svg";
+import LogoInkanet from "../../../images/Recurso 44.svg";
 import Rombo from "../../../images/Grupo 74.svg";
 import Image from 'react-bootstrap/Image';
 import "./componenteSomos.css";
@@ -44,7 +44,7 @@ function ComponenteSomos() {
                                 ¿Quiénes <span className="fw-light"> Somos?</span>
                             </h1>
                             <p className="text-white"> 
-                                Inkanet Perú S.A.C. es una empresa 100% de capital peruano, especializada en ciberseguridad y reconocida por trabajar con las mejores marcas del sector, contando con personal altamente calificado.
+                                Grupo Inkanet S.A.C. es una empresa 100% de capital peruano, especializada en ciberseguridad y reconocida por trabajar con las mejores marcas del sector, contando con personal altamente calificado.
                             </p>
 
                             {/* Párrafo oculto con animación */}

@@ -58,7 +58,7 @@ function ComponenteContactanos() {
         const serviciosSeleccionados = seleccionados.join(", ");
 
         const correo = "marketing@inkanetperu.com";
-        const gmailHead = "Información Inkanet Perú";
+        const gmailHead = "Información Grupo Inkanet Perú";
         const gmailBody = `Nombres: ${nombresIngresados}\nApellidos: ${apellidosIngresados}\nRuc: ${rucIngresado}\nTeléfono: ${telefonoIngresado}\nEmail: ${emailIngresado}\nServicios a cotizar: ${serviciosSeleccionados}\nRecibir información de ofertas: Sí\nPolítica de protección de datos: Sí`;
 
         const urlGmail = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${correo}&su=${encodeURIComponent(
