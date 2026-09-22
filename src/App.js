@@ -88,7 +88,7 @@ function App() {
                                         <a href="https://www.linkedin.com/company/inkanet-per%C3%BA/" target="_blank" rel="noreferrer">
                                             <img src={require("./images/13.png.png")} alt="Imagen Linkdln" />
                                         </a>
-                                        <a href="https://wa.me/51909827506" target="_blank" rel="noreferrer">
+                                        <a href="https://wa.me/51973037884" target="_blank" rel="noreferrer">
                                             <img src={require("./images/14.png.png")} alt="Imagen whatsapp" />
                                         </a>
                                         <a href="mailto: ventas@inkanetperu.com" target="_blank" rel="noreferrer">
